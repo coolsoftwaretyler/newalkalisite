@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "npm run build && next export && mv out_static"
+    "export": "npm run build && next export && mv out _static"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
