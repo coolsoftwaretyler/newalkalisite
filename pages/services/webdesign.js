@@ -18,27 +18,49 @@ function Webdesign() {
             <div>
                 <div className="p-4 pt-36 flex justify-between items-center max-w-7xl m-auto">
                     <div className="w-3/6 mr-14">
-                        <div className="portfolio-title font-open text-alkaligrey-400 text-lg font-medium uppercase">The Goal</div>
-                        <h3 className="font-play font-bold text-4xl pt-5 pb-14 max-w-2xl leading-tight">Rebrand Existing Site</h3>
-                        <p className="text-lg font-open font-normal pb-7">Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. </p>
-                        <p className="text-lg font-open font-normal">Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. </p>
+                        <div className="portfolio-title font-open text-alkaligrey-400 text-lg font-medium uppercase">Tailed to you</div>
+                        <h3 className="font-play font-bold text-4xl pt-5 pb-14 max-w-2xl leading-tight">Each Business is Unique</h3>
+                        <p className="text-lg font-open font-normal pb-7">Talk about how we tailor plans for each company, there is no true one size fits all approach. Talk about how we tailor plans for each company, there is no true one size fits all approach. Talk about how we tailor plans for each company, there is no true one size fits all approach. Talk about how we tailor plans for each company, there is no true one size fits all approach. Talk about how we tailor plans for each company, there is no true one size fits all approach. Talk about how we tailor plans for each company, there is no true one size fits all approach.</p>
                     </div>
                     <div className="w-3/6 bg-white">
                         <div className="portfolio-image-container"><center><img className="portfolio-image rounded-md shadow-2xl" src="../images/carro-desktop.png"></img></center></div>
                     </div>
                 </div>
-                <div className="p-4 py-48 flex justify-between items-center max-w-7xl m-auto">
-                    <div className="w-3/6 mr-14">
-                        <div className="portfolio-image-container"><img className="portfolio-image2 rounded-md shadow-2xl" src="../images/carro-desktop.png"></img></div>
-                    </div>
-                    <div className="w-3/6 bg-white">
-                        <div className="portfolio-title font-open text-alkaligrey-400 text-lg font-medium uppercase">The Goal</div>
-                        <h3 className="font-play font-bold text-4xl pt-5 pb-14 max-w-2xl leading-tight">Rebrand Existing Site</h3>
-                        <p className="text-lg font-open font-normal pb-7">Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. </p>
-                        <p className="text-lg font-open font-normal">Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. </p>
-                    </div>
+                <div>
+                    <p className="text-alkaligrey-400 uppercase font-open text-md text-center font-bold">What we bring to the table</p>
+                    <h1 className="text-center text-5xl font-play font-bold max-w-4xl m-auto leading-tight pt-4">A Website is the First Touchpoint in Your Customer's Journey</h1>
+                    <p className="text-center text-alkaligrey-400 font-open font-medium text-lg font-normal max-w-5xl m-auto py-12">Making sure your website accurately represents your brand is critical to your success. Making sure your website accurately represents your brand is critical to your success.</p>
                 </div>
-                <h3 className="text-center text-4xl font-play font-bold max-w-2xl m-auto mb-14 leading-tight">First Impressions Matter Experience Their Website For Yourself</h3>
+                <ul className="flex justify-between items-center max-w-7xl m-auto">
+                    <li className="w-1/3 px-3">
+                        <div className="flex items-center">
+                            <div className=""><img className="cardimage w-36" src="../images/alkalismall.png"></img></div>
+                            <div class="px-7">
+                                <h3 className="text-2xl">Expensify</h3>
+                                <p className="pt-3">An application for expense management, receipt scanning, and business travel.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li className="w-1/3 px-3">
+                        <div className="flex items-center">
+                            <div className=""><img className="cardimage w-36" src="../images/alkalismall.png"></img></div>
+                            <div class="px-7">
+                                <h3 className="text-2xl">Expensify</h3>
+                                <p className="pt-3">An application for expense management, receipt scanning, and business travel.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li className="w-1/3 px-3">
+                        <div className="flex items-center">
+                            <div className=""><img className="cardimage w-36" src="../images/alkalismall.png"></img></div>
+                            <div class="px-7">
+                                <h3 className="text-2xl">Expensify</h3>
+                                <p className="pt-3">An application for expense management, receipt scanning, and business travel.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <h3 className="text-center pt-24 text-4xl font-play font-bold max-w-2xl m-auto mb-14 leading-tight">First Impressions Matter Experience Their Website For Yourself</h3>
                 <center><a href="" className="p-3 px-12 font-semibold text-white shadow-2xl rounded-md transition duration-500 ease-in-out bg-alkali-500 hover:bg-alkali-600 transform hover:-translate-y-1 hover:scale-110">View Site</a></center>
             </div>
             <div className="p-4 flex justify-between items-center max-w-7xl m-auto">

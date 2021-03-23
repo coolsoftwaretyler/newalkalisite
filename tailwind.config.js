@@ -32,7 +32,10 @@ module.exports = {
     }
   },
   variants: {
-    extend: {},
+    extend: {
+      overflow: ['hover'],
+      height: ['hover'],
+    },
   },
   plugins: [],
 }

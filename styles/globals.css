@@ -88,7 +88,7 @@ a {
 }
 
 .portfolio-image2 {
-  transform: translate3d(-15%,0,0) rotate(-45deg);
+  transform: translate3d(-20%,0,0) rotate(-45deg);
 }
 
 .portfolio-image-container {
@@ -148,4 +148,34 @@ a {
   top:-280px;
 }
 
+.featureicon {
+  background-color: #000000;
+}
+
+.featureicon::before {
+  transform: skewX(-12deg) !important;
+}
+
+
 /* duration-500 ease-in-out bg-white hover:bg-alkaligrey-700 transform hover:-translate-y-1 hover:scale-110*/
+
+/*
+
+.grow2 {
+  padding: 5px 5px 5px 5px;
+  border-radius: 10px;
+  height: 49px;
+  width: 22%;
+  margin: 5px 1% 5px 1%;
+  float: left;
+  position: relative;
+  transition: height 0.5s;
+  -webkit-transition: height 0.5s;
+  text-align: center;
+  overflow: hidden;
+}
+.grow2:hover {
+  height: 145px;
+}
+
+*/

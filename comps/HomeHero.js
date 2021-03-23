@@ -5,8 +5,8 @@ function HomeHero() {
     <Header />
     <div className="pt-28 flex justify-between max-w-6xl justify-center m-auto">
       <div className="relative">
-        <h1 className="text-white text-5xl">Enhance Your Online Presence</h1>
-        <h2 className="text-white text-xl py-7">Expanding online can be challenging. We make it easy.</h2>
+        <h1 className="font-play text-white font-bold text-6xl">Enhance Your Online Presence</h1>
+        <h2 className="font-play font-bold text-white text-2xl py-7">Expanding online can be challenging. We make it easy.</h2>
         <p className="text-white max-w-2xl pb-10">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
       </div>
     </div>
