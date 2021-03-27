@@ -13,7 +13,7 @@ const StaticTestimonial = props => {
                     </svg>
                     <div className="relative py-12 lg:py-24 px-8 lg:px-16 text-gray-700 leading-relaxed">
                         <p className="text-gray-900 font-open font-medium">
-                            "Starting off as a new business we realized the importance of having a sound online presence early on. We are extremely grateful we found Alkali Designs we did. They have provided us the tools we need to adequately serve our customers."</p>
+                            "Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial.Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial."</p>
                         <p className="mt-3 font-open font-bold">
                             -Eric Sanchez, Operations Manager</p>
                     </div>

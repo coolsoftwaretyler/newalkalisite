@@ -17,10 +17,8 @@ const ResponsiveScreens = props => {
                         <div className="screenshot-container w-2/3 mx-3">
                             <img className="rounded-md screenshot-t w-96 shadow-2xl duration-500 transform -rotate-45 -translate-x-21 hover:-translate-y-1 hover:scale-110" src={props.tabletImg}></img>
                         </div>
-                        <div className="screenshot-container w-1/3 mx-3">
-                            
-                                <img className="rounded-md screenshot-p w-52 shadow-2xl duration-500 transform -rotate-45 -translate-x-21 hover:-translate-y-1 hover:scale-110" src={props.phoneImg}></img>
-                            
+                        <div className="text-center screenshot-container w-1/3 mx-3">                
+                                <img className="rounded-md screenshot-p w-52 shadow-2xl duration-500 transform -rotate-45 -translate-x-21 hover:-translate-y-1 hover:scale-110" src={props.phoneImg}></img>          
                         </div>
                     </div>
                 </div>
