@@ -1,5 +1,5 @@
-import Modal from '../comps/Modal'
-import Header from '../comps/Header'
+import Modal from '../components/Modal'
+import Header from '../components/Header'
 function HomeHero() {
     return <div className="home-hero-bg">
     <Header />

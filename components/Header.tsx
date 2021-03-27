@@ -1,4 +1,4 @@
-import Modal from '../comps/Modal'
+import Modal from '../components/Modal'
 
 function HeaderAlt() {
     return <div className="py-8 flex justify-between max-w-7xl justify-center m-auto">

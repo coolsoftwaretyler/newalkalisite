@@ -1,4 +1,4 @@
-import Modal from '../comps/Modal'
+import Modal from '../components/Modal'
 
 const PageHero = props => {
     return (

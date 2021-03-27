@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
 import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons"; // import the icons you need
-import HomeHero from '../comps/HomeHero'
+import HomeHero from '../components/HomeHero'
 
 export default function Home() {
   return (
