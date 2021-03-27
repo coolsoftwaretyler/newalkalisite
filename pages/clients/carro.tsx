@@ -19,7 +19,7 @@ function Carro2() {
       button1="Learn More"
       button1url="https://google.com"
       button2=""
-      image="../images/brands.png"
+      image="../images/carro-figure.png"
     />
     <svg id="section-divider" className="-mt-36 z-0" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 66"><polygon className="cls-1" points="0 0 500 43 500 66 0 66 0 0" /></svg>
     <SplitTextImageAlt
