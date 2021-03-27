@@ -1,9 +1,9 @@
-import HeaderAlt from '../../comps/HeaderAlt'
-import Modal from '../../comps/Modal'
-import ResponsiveScreens from '../../comps/ResponsiveScreens'
-import SimpleSlider from '../../comps/SimpleSlider'
-import ServiceBreakdown from '../../comps/ServiceBreakdown'
-import SplitTextImageAlt from '../../comps/SplitTextImageAlt'
+import HeaderAlt from '../../components/HeaderAlt'
+import Modal from '../../components/Modal'
+import ResponsiveScreens from '../../components/ResponsiveScreens'
+import SimpleSlider from '../../components/SimpleSlider'
+import ServiceBreakdown from '../../components/ServiceBreakdown'
+import SplitTextImageAlt from '../../components/SplitTextImageAlt'
 
 function Webdesign() {
     return <div className="m-auto">

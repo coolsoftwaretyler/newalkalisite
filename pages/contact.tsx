@@ -1,5 +1,5 @@
-import HeaderAlt from "../comps/HeaderAlt"
-import Modal from "../comps/Modal"
+import HeaderAlt from "../components/HeaderAlt"
+import Modal from "../components/Modal"
 
 function Clients() {
     return (

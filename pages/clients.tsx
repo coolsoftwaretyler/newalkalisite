@@ -1,6 +1,6 @@
-import ClientContainer from '../comps/ClientContainer'
+import ClientContainer from '../components/ClientContainer'
 import Link from 'next/link'
-import HeaderAlt from '../comps/HeaderAlt'
+import HeaderAlt from '../components/HeaderAlt'
 
 function Clients() {
   return <div>

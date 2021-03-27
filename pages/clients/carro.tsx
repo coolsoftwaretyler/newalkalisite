@@ -1,9 +1,9 @@
-import HeaderAlt from '../../comps/HeaderAlt'
-import Modal from '../../comps/Modal'
-import ResponsiveScreens from '../../comps/ResponsiveScreens'
-import SectionIntro from '../../comps/SectionIntro'
-import SplitTextImage from '../../comps/SplitTextImage'
-import SplitTextImageAlt from '../../comps/SplitTextImageAlt'
+import HeaderAlt from '../../components/HeaderAlt'
+import Modal from '../../components/Modal'
+import ResponsiveScreens from '../../components/ResponsiveScreens'
+import SectionIntro from '../../components/SectionIntro'
+import SplitTextImage from '../../components/SplitTextImage'
+import SplitTextImageAlt from '../../components/SplitTextImageAlt'
 
 function Carro() {
   return <div className="max-w-7xl m-auto">

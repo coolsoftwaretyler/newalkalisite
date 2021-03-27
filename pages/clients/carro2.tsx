@@ -1,11 +1,11 @@
-import HeaderAlt from '../../comps/HeaderAlt'
-import Modal from '../../comps/Modal'
-import ResponsiveScreens from '../../comps/ResponsiveScreens'
-import SectionIntro from '../../comps/SectionIntro'
-import SplitTextImage from '../../comps/SplitTextImage'
-import SplitTextImageAlt from '../../comps/SplitTextImageAlt'
-import PageHero from '../../comps/PageHero'
-import StaticTestimonial from '../../comps/StaticTestimonial'
+import HeaderAlt from '../../components/HeaderAlt'
+import Modal from '../../components/Modal'
+import ResponsiveScreens from '../../components/ResponsiveScreens'
+import SectionIntro from '../../components/SectionIntro'
+import SplitTextImage from '../../components/SplitTextImage'
+import SplitTextImageAlt from '../../components/SplitTextImageAlt'
+import PageHero from '../../components/PageHero'
+import StaticTestimonial from '../../components/StaticTestimonial'
 
 function Carro2() {
   return <div className="m-auto">

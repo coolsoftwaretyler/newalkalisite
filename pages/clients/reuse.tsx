@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import SectionIntro from '../../comps/SectionIntro'
+import SectionIntro from '../../components/SectionIntro'
 
 class Reuse extends Component {
     render() {
