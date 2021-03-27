@@ -7,20 +7,20 @@ const ResponsiveScreens = props => {
                 <div id="arrow-container">
                     <div className="p-4 flex justify-between items-center max-w-7xl m-auto">
                         <div className="screenshot-container mx-3">
-                            <center><img className="-mb-10 rounded-md screenshot-d shadow-2xl duration-500 transform -rotate-45 -translate-x-24 hover:-translate-y-1 hover:scale-110" src={props.desktopImgL}></img></center>
+                            <img className="-mb-10 rounded-md screenshot-d shadow-2xl duration-500 transform -rotate-45 -translate-x-24 hover:-translate-y-1 hover:scale-110" src={props.desktopImgL}></img>
                         </div>
                         <div className="screenshot-container mx-3 mb-4">
-                            <center><img className="rounded-md screenshot-d-alt shadow-2xl duration-500 transform rotate-45 translate-x-24 translate-y-3 hover:-translate-y-1 hover:scale-110" src={props.desktopImgR}></img></center>
+                            <img className="rounded-md screenshot-d-alt shadow-2xl duration-500 transform rotate-45 translate-x-24 translate-y-3 hover:-translate-y-1 hover:scale-110" src={props.desktopImgR}></img>
                         </div>
                     </div>
                     <div className="p-4 flex justify-between items-center max-w-7xl m-auto">
                         <div className="screenshot-container w-2/3 mx-3">
-                            <center><img className="rounded-md screenshot-t w-96 shadow-2xl duration-500 transform -rotate-45 -translate-x-21 hover:-translate-y-1 hover:scale-110" src={props.tabletImg}></img></center>
+                            <img className="rounded-md screenshot-t w-96 shadow-2xl duration-500 transform -rotate-45 -translate-x-21 hover:-translate-y-1 hover:scale-110" src={props.tabletImg}></img>
                         </div>
                         <div className="screenshot-container w-1/3 mx-3">
-                            <center>
+                            
                                 <img className="rounded-md screenshot-p w-52 shadow-2xl duration-500 transform -rotate-45 -translate-x-21 hover:-translate-y-1 hover:scale-110" src={props.phoneImg}></img>
-                            </center>
+                            
                         </div>
                     </div>
                 </div>
