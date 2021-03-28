@@ -69,7 +69,7 @@ function Webdesign() {
                 </div>
                 <ServiceBreakdown
                     style=""
-                    img1="../images/icons/website-responsive.png"
+                    img1="../images/icons/website-responsive3.png"
                     title1="Responsive"
                     text1="This is text about the title. This is text about the title. This is text about the title. This is text about the title."
                     img2="../images/icons/website-search-engine-optimization.png"
@@ -91,7 +91,7 @@ function Webdesign() {
                     img2="../images/icons/website-reporting-analytics.png"
                     title2="Reporting & Analytics"
                     text2="This is text about the title. This is text about the title. This is text about the title. This is text about the title."
-                    img3="../images/icons/website-live-chat.png"
+                    img3="../images/icons/website-live-chat2.png"
                     title3="Live Chat"
                     text3="This is text about the title. This is text about the title. This is text about the title. This is text about the title."
                     img4="../images/icons/website-crm.png"

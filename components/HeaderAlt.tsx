@@ -4,7 +4,7 @@ import Link from 'next/link'
 function HeaderAlt() {
     return <div className="py-8 flex justify-between max-w-7xl justify-center m-auto">
         <div className="flex items-center">
-            <a href="/"><img className="w-36" src="../images/alkali-logo-blue.png"></img></a>
+            <a href="/"><img className="w-40" src="../images/alkali-logo-blue.png"></img></a>
         </div>
         <div>
             <Link href="/clients"><a className="text-black font-play font-bold uppercase inline-block p-5 hover:text-alkali-500">Clients</a></Link>
