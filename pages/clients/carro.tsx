@@ -7,6 +7,8 @@ import SplitTextImageAlt from '../../components/SplitTextImageAlt'
 import PageHero from '../../components/PageHero'
 import StaticTestimonial from '../../components/StaticTestimonial'
 import SimpleSlider from '../../components/SimpleSlider'
+import ClientContainer from '../../components/ClientContainer'
+import Link from 'next/link'
 
 function Carro2() {
   return <div className="m-auto">
@@ -32,6 +34,10 @@ function Carro2() {
     <div className="pb-24 -mt-36">
       <StaticTestimonial
         style="max-w-7xl m-auto shadow-2xl"
+        quote="Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial.Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial."
+        name="-Eric Sanchez, Operations Manager"
+        background="../images/carro-testimonial-bg.jpg"
+        logo="../images/carro-logo-white.png"
       />
     </div>
     <div className="p-4 pt-16 pb-24 flex justify-between items-center max-w-7xl m-auto">
@@ -61,7 +67,44 @@ function Carro2() {
       phoneImg="../images/carro-phone.png"
     />
     <div className="bg-alkaligrey-300 -mt-36 pt-36 pb-48">
-    <SimpleSlider />
+      <SimpleSlider />
+    </div>
+    <div className="max-w-7xl m-auto my-36">
+      <h3 className="text-4xl font-play font-bold m-auto leading-tight pt-7 pb-5">Other Clients</h3>
+      <ul className="group flex flex-wrap max-w-7xl space-x-10 m-auto transition duration-500">
+        <Link href="/clients/carro">
+          <a>
+            <ClientContainer
+              style={{ backgroundImage: "url(../../images/carro-cover.jpg)", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}
+              title="Carro"
+            />
+          </a>
+        </Link>
+        <Link href="/clients/carro">
+          <a>
+            <ClientContainer
+              style={{ backgroundImage: "url(../../images/carro-cover.jpg)", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}
+              title="Carro"
+            />
+          </a>
+        </Link>
+        <Link href="/clients/carro">
+          <a>
+            <ClientContainer
+              style={{ backgroundImage: "url(../../images/carro-cover.jpg)", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}
+              title="Carro"
+            />
+          </a>
+        </Link>
+        <Link href="/clients/carro">
+          <a>
+            <ClientContainer
+              style={{ backgroundImage: "url(../../images/carro-cover.jpg)", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}
+              title="Carro"
+            />
+          </a>
+        </Link>
+      </ul>
     </div>
   </div>
 }

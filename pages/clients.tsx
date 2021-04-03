@@ -22,7 +22,7 @@ function Clients() {
         Social
       </div>
     </div>
-    <ul className="group flex flex-wrap max-w-7xl justify-center m-auto transition duration-500">
+    <ul className="group flex flex-wrap flex-grow max-w-7xl justify-center m-auto transition duration-500">
       <ClientContainer
         style={{ backgroundImage: "url(../../images/carro-cover.jpg)", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}
         title="Homewatch Amelia"
@@ -30,7 +30,7 @@ function Clients() {
       <Link href="/clients/carro">
         <a>
           <ClientContainer
-            style={{ backgroundImage: "url(../../images/cartalk-repair-cover.jpg)", backgroundSize: "cover" }}
+            style={{ backgroundImage: "url(../../images/carro-cover.jpg)", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}
             title="Carro"
           />
         </a>
