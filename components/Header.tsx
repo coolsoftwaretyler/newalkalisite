@@ -11,9 +11,9 @@ function HeaderAlt() {
             <a href="#" className="text-white font-play font-bold uppercase inline-block p-5 hover:text-alkali-500">Solutions</a>
         </div>
         <div>
-            <Modal 
-            style="mt-1 p-3 px-6 font-semibold text-white shadow-2xl rounded-md transition duration-500 ease-in-out bg-alkali-500 hover:bg-alkali-700"
-            text="Schedule a call"
+            <Modal
+                style="mt-1 p-3 px-6 font-semibold text-white shadow-2xl rounded-md transition duration-500 ease-in-out bg-alkali-500 hover:bg-alkali-700"
+                text="Schedule a call"
             />
         </div>
     </div>

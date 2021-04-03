@@ -41,7 +41,7 @@ export default class SimpleSlider extends Component {
     };
 
     return (
-      <div className="mt-48 max-w-7xl m-auto shadow-2xl">
+      <div className="max-w-7xl m-auto shadow-2xl">
         <Slider {...settings}>
           <div className="">
             <div className="relative">

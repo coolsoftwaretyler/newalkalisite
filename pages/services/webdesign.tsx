@@ -18,8 +18,8 @@ function Webdesign() {
                     <div className="flex max-w-7xl m-auto items-center pt-7">
                         <div>
                             <a href="https://google.com">
-                            <button className="bg-alkali-500 border-1 p-2 px-6 text-white rounded-md shadow-2xl">
-                                Our Features
+                                <button className="bg-alkali-500 border-1 p-2 px-6 text-white rounded-md shadow-2xl">
+                                    Our Features
                             </button>
                             </a>
                         </div>
@@ -82,7 +82,7 @@ function Webdesign() {
                     title4="Built to Convert"
                     text4="This is text about the title. This is text about the title. This is text about the title. This is text about the title."
                 />
-                
+
                 <ServiceBreakdown
                     style="pt-16"
                     img1="../images/icons/website-content.png"
@@ -104,12 +104,12 @@ function Webdesign() {
         <div className="pb-36 -mt-96">
             <SimpleSlider />
         </div>
-        <SplitTextImageAlt 
-        style="pb-36"
-        sub="More info"
-        title="More info title"
-        text="Making sure your website accurately represents your brand is critical to your success. Making sure your website accurately represents your brand is critical to your success."
-        image2="../images/carro-before.png"
+        <SplitTextImageAlt
+            style="pb-36"
+            sub="The Goal"
+            title="Rebrand Existing Site"
+            image="../images/carro-before.png"
+            text="Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website."
         />
         <ResponsiveScreens
             style="text-center"
