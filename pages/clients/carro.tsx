@@ -1,31 +1,48 @@
-import HeaderAlt from '../../components/HeaderAlt'
+import Header from '../../components/Header'
 import Modal from '../../components/Modal'
 import ResponsiveScreens from '../../components/ResponsiveScreens'
 import SectionIntro from '../../components/SectionIntro'
-import SplitTextImage from '../../components/SplitTextImage'
+import AngledSplitTextImage from '../../components/AngledSplitTextImage'
 import SplitTextImageAlt from '../../components/SplitTextImageAlt'
 import PageHero from '../../components/PageHero'
 import StaticTestimonial from '../../components/StaticTestimonial'
 import SimpleSlider from '../../components/SimpleSlider'
 import ClientContainer from '../../components/ClientContainer'
 import Link from 'next/link'
+import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons"; // import the icons you need
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
+
 
 function Carro2() {
   return <div className="m-auto">
-    <div>
-      <HeaderAlt />
+    <div className="carro-bg">
+      <Header />
+      <div className="max-w-7xl flex justify-between items-center m-auto py-14">
+        <div className="ml-7 2xl:mx-0">
+          <p className="uppercase text-white font-open font-medium">Technology</p>
+          <h1 className="text-6xl text-white font-play font-bold py-7">Carro</h1>
+          <div className="max-w-7xl m-auto">
+            <div className="border border-white p-2 rounded-md text-xs text-center text-white uppercase font-open font-bold hover:bg-white hover:text-alkaligrey-800">
+              Web Development
+          </div>
+          </div>
+        </div>
+        <div>
+          <img src="../images/carro-header-image.png"></img>
+        </div>
+      </div>
     </div>
-    <PageHero
-      title="Carro"
-      text="Carro is the world’s largest collaborative commerce network, with more than 25,000 brands and 6.5 million influencers. The platform seamlessly enables brands to work with influencers and each other so they can sell more, together.      "
-      button1="Learn More"
-      button1url="https://google.com"
-      button2=""
-      image="../images/carro-figure.png"
-    />
-    <svg id="section-divider" className="-mt-36 z-0" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 66"><polygon className="cls-1" points="0 0 500 43 500 66 0 66 0 0" /></svg>
+    <div className="py-24 flex flex-col md:flex-row justify-between max-w-7xl items-center justify-center m-auto mx-7 xl:mx-auto">
+      <div className="w-full xs:w-1/2 pb-14 lg:pb-0">
+        <h3 className="text-4xl alkaligrey-800 font-play font-bold m-auto leading-tight pb-4 lg:pb-7">About Carro</h3>
+        <a href="" className="uppercase font-open font-bold text-lg text-alkali-500 duration-500 hover:mr-3">Visit Website</a><FontAwesomeIcon className="text-alkali-500 ml-3" icon={faLongArrowAltRight}></FontAwesomeIcon>
+      </div>
+      <div className="w-full xs:w-1/2 ">
+        <p className="text-alkaligrey-400 font-open max-w-4xl text-lg font-normal">Carro is the world’s largest collaborative commerce network, with more than 25,000 brands and 6.5 million influencers. The platform seamlessly enables brands to work with influencers and each other so they can sell more, together.</p>
+      </div>
+    </div>
     <SplitTextImageAlt
-      style="bg-alkaligrey-300 -mt-3 pb-64"
+      style="bg-alkaligrey-300 pt-36 pb-72 overflow-hidden"
       sub="The Goal"
       title="Rebrand Existing Site"
       image="../images/carro-before.png"
@@ -33,31 +50,34 @@ function Carro2() {
     />
     <div className="pb-24 -mt-36">
       <StaticTestimonial
-        style="max-w-7xl m-auto shadow-2xl"
+        style="max-w-7xl m-auto shadow-2xl rounded-md overflow-hidden mx-7 xl:mx-auto"
         quote="Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial.Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial."
         name="-Eric Sanchez, Operations Manager"
         background="../images/carro-testimonial-bg.jpg"
         logo="../images/carro-logo-white.png"
       />
     </div>
-    <div className="p-4 pt-16 pb-24 flex justify-between items-center max-w-7xl m-auto">
-      <div><h3 className="text-4xl font-play font-bold max-w-2xl m-auto mb-14 leading-tight">We're here to realize your vision.</h3></div>
-      <div className="-mt-14">
-        <Modal
-          style="p-3 px-6 font-semibold text-white shadow-2xl rounded-md transition duration-500 ease-in-out bg-alkali-500 hover:bg-alkali-700"
-          text="Schedule a call"
-        />
-      </div>
-    </div>
-    <SplitTextImage
-      style="pb-24"
+    <AngledSplitTextImage
+      style="pb-24 overflow-hidden"
       sub="The Goal"
       title="Rebrand Existing Site"
       image="../images/carro-desktop.png"
       text="Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website."
     />
+    <div className="p-4 py-24 bg-alkali-500">
+      <div className="flex flex-col lg:flex-row justify-between items-center max-w-7xl m-auto mx-3 xl:mx-auto">
+        <div><h3 className="text-4xl font-play font-bold max-w-7xl m-auto text-white leading-tight text-center mb-14 lg:mb-0">We're here to realize your vision.</h3></div>
+        <div className="">
+          <Modal
+            style="p-3 px-6 font-semibold text-alkali-500 shadow-2xl rounded-md transition duration-500 ease-in-out bg-white hover:bg-alkali-700"
+            text="Schedule a call"
+          />
+        </div>
+      </div>
+    </div>
+    <div className="">
     <ResponsiveScreens
-      style="text-center pt-14"
+      style="text-center py-36 overflow-hidden"
       link="https://getcarro.com"
       title="First Impressions Matter Experience Their Website For Yourself"
       buttonName="Visit Site"
@@ -66,45 +86,45 @@ function Carro2() {
       tabletImg="../images/carro-tablet.png"
       phoneImg="../images/carro-phone.png"
     />
-    <div className="bg-alkaligrey-300 -mt-36 pt-36 pb-48">
-      <SimpleSlider />
     </div>
-    <div className="max-w-7xl m-auto my-36">
-      <h3 className="text-4xl font-play font-bold m-auto leading-tight pt-7 pb-5">Other Clients</h3>
-      <ul className="group flex flex-wrap max-w-7xl space-x-10 m-auto transition duration-500">
-        <Link href="/clients/carro">
-          <a>
-            <ClientContainer
-              style={{ backgroundImage: "url(../../images/carro-cover.jpg)", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}
-              title="Carro"
-            />
-          </a>
-        </Link>
-        <Link href="/clients/carro">
-          <a>
-            <ClientContainer
-              style={{ backgroundImage: "url(../../images/carro-cover.jpg)", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}
-              title="Carro"
-            />
-          </a>
-        </Link>
-        <Link href="/clients/carro">
-          <a>
-            <ClientContainer
-              style={{ backgroundImage: "url(../../images/carro-cover.jpg)", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}
-              title="Carro"
-            />
-          </a>
-        </Link>
-        <Link href="/clients/carro">
-          <a>
-            <ClientContainer
-              style={{ backgroundImage: "url(../../images/carro-cover.jpg)", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}
-              title="Carro"
-            />
-          </a>
-        </Link>
-      </ul>
+    <div className="bg-alkaligrey-300">
+      <div className="max-w-7xl m-auto py-36 pt-72 -mt-72">
+        <h3 className="text-4xl font-play font-bold m-auto leading-tight pt-7 pb-5">Other Projects</h3>
+        <ul className="group flex flex-wrap max-w-7xl transition duration-500 m-auto">
+          <Link href="/clients/carro">
+            <a>
+              <ClientContainer
+                style={{ backgroundImage: "url(../../images/carro-cover.jpg)", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}
+                title="Carro"
+              />
+            </a>
+          </Link>
+          <Link href="/clients/carro">
+            <a>
+              <ClientContainer
+                style={{ backgroundImage: "url(../../images/carro-cover.jpg)", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}
+                title="Carro"
+              />
+            </a>
+          </Link>
+          <Link href="/clients/carro">
+            <a>
+              <ClientContainer
+                style={{ backgroundImage: "url(../../images/carro-cover.jpg)", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}
+                title="Carro"
+              />
+            </a>
+          </Link>
+          <Link href="/clients/carro">
+            <a>
+              <ClientContainer
+                style={{ backgroundImage: "url(../../images/carro-cover.jpg)", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}
+                title="Carro"
+              />
+            </a>
+          </Link>
+        </ul>
+      </div>
     </div>
   </div>
 }
