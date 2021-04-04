@@ -3,7 +3,7 @@ import Modal from '../../components/Modal'
 import ResponsiveScreens from '../../components/ResponsiveScreens'
 import SimpleSlider from '../../components/SimpleSlider'
 import ServiceBreakdown from '../../components/ServiceBreakdown'
-import SplitTextImageAlt from '../../components/SplitTextImageAlt'
+import AngledSplitTextImageAlt from '../../components/AngledSplitTextImageAlt'
 
 function Webdesign() {
     return <div className="m-auto">
@@ -104,7 +104,7 @@ function Webdesign() {
         <div className="pb-36 -mt-96">
             <SimpleSlider />
         </div>
-        <SplitTextImageAlt
+        <AngledSplitTextImageAlt
             style="pb-36"
             sub="The Goal"
             title="Rebrand Existing Site"

@@ -36,6 +36,7 @@ module.exports = {
     extend: {
       overflow: ['hover'],
       height: ['hover'],
+      margin: ['hover'],
     },
   },
   plugins: [],

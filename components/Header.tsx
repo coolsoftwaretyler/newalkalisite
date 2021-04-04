@@ -1,7 +1,7 @@
 import Modal from '../components/Modal'
 
 function HeaderAlt() {
-    return <div className="py-8 flex justify-between max-w-7xl justify-center m-auto">
+    return <div className="pt-8 flex justify-between max-w-7xl justify-center m-auto">
         <div className="flex items-center">
             <a href="/"><img className="w-40" src="../images/alkali-logo-white.png"></img></a>
         </div>

@@ -2,8 +2,8 @@ import HeaderAlt from '../../components/HeaderAlt'
 import Modal from '../../components/Modal'
 import ResponsiveScreens from '../../components/ResponsiveScreens'
 import SectionIntro from '../../components/SectionIntro'
-import SplitTextImage from '../../components/SplitTextImage'
-import SplitTextImageAlt from '../../components/SplitTextImageAlt'
+import AngledSplitTextImage from '../../components/AngledSplitTextImage'
+import AngledSplitTextImageAlt from '../../components/AngledSplitTextImageAlt'
 
 function Carro() {
   return <div className="max-w-7xl m-auto">
@@ -20,7 +20,7 @@ function Carro() {
         <img className="w-5/6 xl:w-full m-auto z-0" src="../images/carro-hero.jpg"></img>
       </div>
       <div className="py-48">
-        <SplitTextImage 
+        <AngledSplitTextImage 
         sub="The Goal" 
         title="Rebrand Existing Site" 
         image="../images/carro-before.png" 
@@ -32,7 +32,7 @@ function Carro() {
       <div className="-mt-14"><Modal /></div>
     </div>
       <div className="pb-48">
-        <SplitTextImageAlt 
+        <AngledSplitTextImageAlt 
         sub="The Goal" 
         title="Rebrand Existing Site" 
         image="../images/carro-desktop.png" 
@@ -61,7 +61,7 @@ function Carro() {
       <div><h3 className="text-4xl font-play font-bold max-w-2xl m-auto mb-14 leading-tight">We're here to realize your vision.</h3></div>
       <div className="-mt-14"><Modal /></div>
     </div>
-    <SplitTextImage 
+    <AngledSplitTextImage 
     sub="The Goal" 
     title="Rebrand Existing Site" 
     image="../images/carro-desktop.png" 
