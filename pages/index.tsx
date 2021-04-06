@@ -7,6 +7,9 @@ import SplitTextImageAlt from '../components/SplitTextImageAlt'
 import SplitTextImage from '../components/SplitTextImage'
 import Link from 'next/link'
 import ResponsiveScreens from '../components/ResponsiveScreens'
+import Modal from '../components/Modal'
+import Footer from '../components/Footer'
+
 
 export default function Home() {
   return (
@@ -111,6 +114,17 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className="p-4 py-24 bg-alkali-500">
+        <div className="flex flex-col lg:flex-row justify-between items-center max-w-7xl m-auto mx-3 xl:mx-auto">
+          <div><h3 className="text-4xl font-play font-bold max-w-7xl m-auto text-white leading-tight text-center mb-14 lg:mb-0">We're here to realize your vision.</h3></div>
+          <div className="">
+            <Modal
+              style="p-3 px-6 font-semibold text-alkali-500 shadow-2xl rounded-md transition duration-500 ease-in-out bg-white hover:bg-alkali-700"
+              text="Schedule a call"
+            />
+          </div>
+        </div>
+      </div>
       <div>
         <ResponsiveScreens
           style="text-center pt-14"
@@ -129,6 +143,7 @@ export default function Home() {
         image="../images/carro-before.png"
         text="At Alkali we value relationships over short-term profit. The greatest "
       />
+      <Footer />
     </div>
   )
 }
