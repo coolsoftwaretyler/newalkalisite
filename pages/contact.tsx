@@ -12,7 +12,6 @@ function Contact() {
                 </div>
             </div>
             <div className="flex flex-col md:flex-row space-x-0 md:space-x-10 mx-7 xl:mx-auto justify-between items-center max-w-7xl -mt-32">
-                <center>
                     <div className="rounded-md mb-24 md:mb-0 shadow-2xl p-14 bg-white">
                         <div className="">
                             <img className="-mt-24 w-32 h-32 text-center rounded-full p-5 bg-white shadow-2xl" src="../images/alkalismall.png"></img>
@@ -23,8 +22,6 @@ function Contact() {
                             Chat Now
                     </button>
                     </div>
-                </center>
-                <center>
                     <div className="rounded-md mb-24 md:mb-0 shadow-2xl p-14 bg-white">
                         <div className="">
                             <img className="-mt-24 w-32 h-32 text-center rounded-full p-5 bg-white shadow-2xl" src="../images/alkalismall.png"></img>
@@ -35,8 +32,6 @@ function Contact() {
                             Chat Now
                     </button>
                     </div>
-                </center>
-                <center>
                     <div className="rounded-md mb-24 md:mb-0 shadow-2xl p-14 bg-white">
                         <div className="">
                             <img className="-mt-24 w-32 h-32 text-center rounded-full p-5 bg-white shadow-2xl" src="../images/alkalismall.png"></img>
@@ -47,7 +42,6 @@ function Contact() {
                             Chat Now
                     </button>
                     </div>
-                </center>
             </div>
         </div>
     )
