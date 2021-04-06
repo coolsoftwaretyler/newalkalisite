@@ -11,7 +11,7 @@ import ClientContainer from '../../components/ClientContainer'
 import Link from 'next/link'
 import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons"; // import the icons you need
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
-
+import ClientsSummary from "../../components/ClientsSummary"
 
 function Carro2() {
   return <div className="m-auto">
@@ -42,12 +42,12 @@ function Carro2() {
       </div>
     </div>
     <div id="arrow-container-container2">
-    <div id="arrow-container">
-      <div className="screenshot-container2">
-        <img className="screenshot-d2" src="../images/carro-devices.png"></img>
+      <div id="arrow-container2">
+        <div className="screenshot-container2">
+          <img className="screenshot-d2" src="../images/carro-devices.png"></img>
+        </div>
       </div>
     </div>
-  </div>
 
     <style jsx>{`
     <div id="arrow-container-container2">
@@ -106,45 +106,20 @@ function Carro2() {
         phoneImg="../images/carro-phone.png"
       />
     </div>
-    <div className="bg-alkaligrey-300">
-      <div className="max-w-7xl m-auto py-36 pt-72 -mt-72">
-        <h3 className="text-4xl font-play font-bold m-auto leading-tight pt-7 pb-5 text-center xl:text-left ml-4 xl:text-left md:ml-24">Other Projects</h3>
-        <ul className="group flex flex-wrap max-w-7xl transition duration-500 ml-10 m-auto justify-center md:justify-left">
-          <Link href="/clients/carro">
-            <a>
-              <ClientContainer
-                style={{ backgroundImage: "url(../../images/carro-cover.jpg)", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}
-                title="Carro"
-              />
-            </a>
-          </Link>
-          <Link href="/clients/carro">
-            <a>
-              <ClientContainer
-                style={{ backgroundImage: "url(../../images/carro-cover.jpg)", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}
-                title="Carro"
-              />
-            </a>
-          </Link>
-          <Link href="/clients/carro">
-            <a>
-              <ClientContainer
-                style={{ backgroundImage: "url(../../images/carro-cover.jpg)", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}
-                title="Carro"
-              />
-            </a>
-          </Link>
-          <Link href="/clients/carro">
-            <a>
-              <ClientContainer
-                style={{ backgroundImage: "url(../../images/carro-cover.jpg)", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}
-                title="Carro"
-              />
-            </a>
-          </Link>
-        </ul>
-      </div>
-    </div>
+    <ClientsSummary
+      client1Style={{ backgroundImage: "url(../../images/cartalk-repair-cover.jpg)", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}
+      client1Title="CarTalk Repair"
+      client1Link="https://cartalkrepair.com"
+      client2Style={{ backgroundImage: "url(../../images/carro-cover.jpg)", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}
+      client2Title="Carro"
+      client2Link="https://carro.com"
+      client3Style={{ backgroundImage: "url(../../images/carro-cover.jpg)", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}
+      client3Title="Carro"
+      client3Link="https://carro.com"
+      client4Style={{ backgroundImage: "url(../../images/carro-cover.jpg)", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}
+      client4Title="Carro"
+      client4Link="https://carro.com"
+    />
   </div>
 }
 

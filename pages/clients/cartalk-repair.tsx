@@ -22,12 +22,12 @@ function CarTalkRepair() {
         <div className="max-w-7xl flex justify-between items-center m-auto py-56">
           <div className="ml-7 2xl:mx-0">
             <p className="uppercase text-white font-open font-medium">Automotive</p>
-            <h1 className="text-6xl text-white font-play font-bold py-7">CarTalk Repair</h1>
+            <h1 className="text-6xl text-white font-play font-bold pt-3 py-10">CarTalk Repair</h1>
             <div className="max-w-7xl m-auto flex space-x-7">
-              <div className="border border-white p-2 rounded-md text-xs text-center text-white uppercase font-open font-bold hover:bg-white hover:text-alkaligrey-800">
+              <div className="border border-white p-2 px-5 tracking-widest rounded-md text-xs text-center text-white uppercase font-play font-bold hover:bg-white hover:text-alkaligrey-800">
                 Web Development
               </div>
-              <div className="border border-white p-2 rounded-md text-xs text-center text-white uppercase font-open font-bold hover:bg-white hover:text-alkaligrey-800">
+              <div className="border border-white p-2 px-5 tracking-widest rounded-md text-xs text-center text-white uppercase font-play font-bold hover:bg-white hover:text-alkaligrey-800">
                 Branding
               </div>
             </div>
@@ -45,7 +45,6 @@ function CarTalkRepair() {
       </div>
     </div>
     <div className="max-w-7xl m-auto">
-      <img className="" src="../images/carro-devices.png"></img>
     </div>
 
     <style jsx>{`
@@ -59,13 +58,13 @@ function CarTalkRepair() {
 `}</style>
 
     <SplitTextImageAlt
-      style="bg-alkaligrey-300 pt-36 pb-72 overflow-hidden"
+      style="bg-alkaligrey-300 pt-36 pb-80 overflow-hidden"
       sub="The Goal"
       title="Rebrand Existing Site"
       image="../images/carro-before.png"
       text="Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website."
     />
-    <div className="pb-24 -mt-36">
+    <div className="pb-24 -mt-40">
       <StaticTestimonial
         style="max-w-7xl m-auto shadow-2xl rounded-md overflow-hidden mx-7 xl:mx-auto"
         quote="Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial.Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial."

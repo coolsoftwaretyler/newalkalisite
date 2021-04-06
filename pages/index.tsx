@@ -9,11 +9,16 @@ import Link from 'next/link'
 import ResponsiveScreens from '../components/ResponsiveScreens'
 import Modal from '../components/Modal'
 import Footer from '../components/Footer'
-
+import Parts from '../components/Parts';
 
 export default function Home() {
   return (
     <div className="">
+      <style jsx>{`
+      <div className="particle-header">
+      <Parts />
+      </div>
+`}</style>
       <HomeHero />
       <div className="">
         <SplitTextImageAlt
