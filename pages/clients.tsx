@@ -23,15 +23,19 @@ function Clients() {
       </div>
     </div>
     <ul className="group flex flex-wrap flex-grow max-w-7xl justify-center m-auto transition duration-500">
-      <ClientContainer
-        style={{ backgroundImage: "url(../../images/carro-cover.jpg)", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}
-        title="Homewatch Amelia"
-      />
-      <Link href="/clients/carro">
+    <Link href="/clients/carro">
         <a>
           <ClientContainer
             style={{ backgroundImage: "url(../../images/carro-cover.jpg)", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}
             title="Carro"
+          />
+        </a>
+      </Link>
+      <Link href="/clients/cartalk-repair">
+        <a>
+          <ClientContainer
+            style={{ backgroundImage: "url(../../images/cartalk-repair-cover.jpg)", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}
+            title="CarTalk Repair"
           />
         </a>
       </Link>

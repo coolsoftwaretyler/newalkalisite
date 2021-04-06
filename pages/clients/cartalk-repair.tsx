@@ -11,43 +11,42 @@ import ClientContainer from '../../components/ClientContainer'
 import Link from 'next/link'
 import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons"; // import the icons you need
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
+import { url } from 'node:inspector'
 
 
-function Carro2() {
+function CarTalkRepair() {
   return <div className="m-auto">
-    <div className="carro-bg">
-      <Header />
-      <div className="max-w-7xl flex justify-between items-center m-auto py-14">
-        <div className="ml-7 2xl:mx-0">
-          <p className="uppercase text-white font-open font-medium">Technology</p>
-          <h1 className="text-6xl text-white font-play font-bold py-7">Carro</h1>
-          <div className="max-w-7xl m-auto">
-            <div className="border border-white p-2 rounded-md text-xs text-center text-white uppercase font-open font-bold hover:bg-white hover:text-alkaligrey-800">
-              Web Development
+    <div className="">
+      <div className="client-hero" style={{ backgroundImage: "url(../../images/cartalk-hero.jpg)", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}>
+        <Header />
+        <div className="max-w-7xl flex justify-between items-center m-auto py-56">
+          <div className="ml-7 2xl:mx-0">
+            <p className="uppercase text-white font-open font-medium">Automotive</p>
+            <h1 className="text-6xl text-white font-play font-bold py-7">CarTalk Repair</h1>
+            <div className="max-w-7xl m-auto flex space-x-7">
+              <div className="border border-white p-2 rounded-md text-xs text-center text-white uppercase font-open font-bold hover:bg-white hover:text-alkaligrey-800">
+                Web Development
+              </div>
+              <div className="border border-white p-2 rounded-md text-xs text-center text-white uppercase font-open font-bold hover:bg-white hover:text-alkaligrey-800">
+                Branding
+              </div>
+            </div>
           </div>
-          </div>
-        </div>
-        <div>
-          <img src="../images/carro-header-image.png"></img>
         </div>
       </div>
     </div>
     <div className="py-24 flex flex-col md:flex-row justify-between max-w-7xl items-center justify-center m-auto mx-7 xl:mx-auto">
       <div className="w-full xs:w-1/2 pb-14 lg:pb-0">
-        <h3 className="text-4xl alkaligrey-800 font-play font-bold m-auto leading-tight pb-4 lg:pb-7">About Carro</h3>
-        <a href="" className="uppercase font-open font-bold text-lg text-alkali-500 duration-500 hover:mr-3">Visit Website</a><FontAwesomeIcon className="text-alkali-500 ml-3" icon={faLongArrowAltRight}></FontAwesomeIcon>
+        <h3 className="text-4xl alkaligrey-800 font-play font-bold m-auto leading-tight pb-4 lg:pb-7">About CarTalk Repair</h3>
+      <Link href="https://cartalkrepair.com"><a target="_blank" rel="noopener noreferrer" className="uppercase font-open font-bold text-lg text-alkali-500 duration-500 hover:mr-3">Visit Website</a></Link><FontAwesomeIcon className="text-alkali-500 ml-3" icon={faLongArrowAltRight}></FontAwesomeIcon>
       </div>
       <div className="w-full xs:w-1/2 ">
         <p className="text-alkaligrey-400 font-open max-w-4xl text-lg font-normal">Carro is the world’s largest collaborative commerce network, with more than 25,000 brands and 6.5 million influencers. The platform seamlessly enables brands to work with influencers and each other so they can sell more, together.</p>
       </div>
     </div>
-    <div id="arrow-container-container2">
-    <div id="arrow-container">
-      <div className="screenshot-container2">
-        <img className="screenshot-d2" src="../images/carro-devices.png"></img>
-      </div>
+    <div className="max-w-7xl m-auto">
+      <img className="" src="../images/carro-devices.png"></img>
     </div>
-  </div>
 
     <style jsx>{`
     <div id="arrow-container-container2">
@@ -70,10 +69,11 @@ function Carro2() {
       <StaticTestimonial
         style="max-w-7xl m-auto shadow-2xl rounded-md overflow-hidden mx-7 xl:mx-auto"
         quote="Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial.Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial."
-        name="-Eric Sanchez, Operations Manager"
-        background="../images/carro-testimonial-bg.jpg"
-        backgroundOverlay="absolute inset-0 bg-pink-300 opacity-75"
-        logo="../images/carro-logo-white.png"
+        name="- Cody Lintz, Owner"
+        background="../images/CarTalk-Testimonial-Image.jpg"
+        backgroundOverlay="absolute inset-0 bg-red-400 opacity-75"
+        logo="../images/CarTalk-Repair.png"
+        logoSize="275"
       />
     </div>
     <AngledSplitTextImage
@@ -108,8 +108,8 @@ function Carro2() {
     </div>
     <div className="bg-alkaligrey-300">
       <div className="max-w-7xl m-auto py-36 pt-72 -mt-72">
-        <h3 className="text-4xl font-play font-bold m-auto leading-tight pt-7 pb-5 text-center xl:text-left ml-4 xl:text-left md:ml-24">Other Projects</h3>
-        <ul className="group flex flex-wrap max-w-7xl transition duration-500 ml-10 m-auto justify-center md:justify-left">
+        <h3 className="text-4xl font-play font-bold m-auto leading-tight pt-7 pb-5">Other Projects</h3>
+        <ul className="group flex flex-wrap max-w-7xl transition duration-500 m-auto">
           <Link href="/clients/carro">
             <a>
               <ClientContainer
@@ -148,4 +148,4 @@ function Carro2() {
   </div>
 }
 
-export default Carro2
+export default CarTalkRepair

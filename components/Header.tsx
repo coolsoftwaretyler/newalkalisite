@@ -2,13 +2,14 @@ import Modal from '../components/Modal'
 
 function HeaderAlt() {
     return <div className="pt-8 flex justify-between max-w-7xl justify-center m-auto">
-        <div className="flex items-center">
+        <div className="flex items-center z-20">
             <a href="/"><img className="w-40" src="../images/alkali-logo-white.png"></img></a>
         </div>
-        <div>
+        <div className="z-20">
             <a href="/clients" className="text-white font-play font-bold uppercase inline-block p-5 hover:text-alkali-500">Clients</a>
             <a href="#" className="text-white font-play font-bold uppercase inline-block p-5 hover:text-alkali-500">About</a>
             <a href="#" className="text-white font-play font-bold uppercase inline-block p-5 hover:text-alkali-500">Solutions</a>
+            <a href="/contact" className="text-white font-play font-bold uppercase inline-block p-5 hover:text-alkali-500">Contact</a>
         </div>
         <div>
             <Modal
