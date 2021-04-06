@@ -3,7 +3,7 @@ import HeaderAlt from '../components/HeaderAlt'
 import Link from 'next/link'
 
 function HomeHero() {
-  return <div className="bg-alkaligrey-200 home-hero-bg">
+  return <div className="bg-alkaligrey-200">
     <HeaderAlt />
     <div className="pt-20 flex justify-between max-w-7xl justify-center m-auto z-20">
       <div className="relative z-20">
