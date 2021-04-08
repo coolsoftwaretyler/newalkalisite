@@ -27,7 +27,23 @@ function SamplePrevArrow(props) {
   );
 }
 
-export default class SimpleSlider extends Component {
+type SimpleSliderProps = {
+  background1: string,
+  backgroundOverlay1: string,
+  logo1: string,
+  quote1: string,
+  name1: string,
+  cta1: string,
+  background2: string,
+  backgroundOverlay2: string,
+  logo2: string,
+  quote2: string,
+  name2: string,
+  cta2: string,
+};
+
+
+export default class SimpleSlider extends Component<SimpleSliderProps> {
   render() {
     const settings = {
       infinite: true,
