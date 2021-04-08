@@ -1,4 +1,4 @@
-const SectionIntroAlt = props => {
+const SectionIntro = props => {
     return (
         <div className={props.style}>
             <div className="flex flex-col-reverse lg:flex-row justify-between items-center max-w-7xl m-auto">
@@ -15,4 +15,4 @@ const SectionIntroAlt = props => {
         </div>
     )
 }
-export default SectionIntroAlt
+export default SectionIntro

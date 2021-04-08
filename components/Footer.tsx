@@ -13,10 +13,10 @@ function Footer() {
                         <div className="">
                             <div className="text-white font-bold uppercase text-lg">
                                 Solutions
-                        </div>
+                            </div>
                             <div className="text-alkaligrey-400 text-lg pt-4">
                                 Digital Marketing
-                        </div>
+                            </div>
                             <div className="text-alkaligrey-400 text-lg pt-4">
                                 Web Design & Development
                         </div>
