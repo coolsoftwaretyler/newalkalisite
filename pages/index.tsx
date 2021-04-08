@@ -50,7 +50,20 @@ export default function Home() {
       />
       <div className="pt-24 -mt-96">
         <h3 className="text-4xl pt-2 pb-16 font-play font-bold text-center">What Our Clients Say</h3>
-        <SimpleSlider />
+        <SimpleSlider
+          background1={'/images/carro-after.jpg'}
+          backgroundOverlay1={'/images/carro-cover.jpg'}
+          logo1={'/images/alkali-logo-alt.png'}
+          quote1={'Some sample quote here'}
+          name1={'Name here'}
+          cta1={'Take action'}
+          background2={'/images/carro-after.jpg'}
+          backgroundOverlay2={'/images/carro-cover.jpg'}
+          logo2={'/images/alkali-logo-alt.png'}
+          quote2={'Some sample quote here'}
+          name2={'Name here'}
+          cta2={'Take action'}
+        />
       </div>
       <div className="pt-48">
         <h3 id="services" className="text-4xl font-play font-bold text-center">Our Services</h3>
