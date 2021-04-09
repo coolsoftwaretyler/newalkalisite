@@ -666,10 +666,10 @@ button {
 	font-feature-settings: "pnum";
 	font-variant-numeric: proportional-nums;
 	box-sizing: border-box;
-	width: 3000px;
-	height: 460px;
+	width: 1920px;
+	height: 700px;
 	position: relative;
-	left: 50px;
+	left: 200px;
 }
 .Icon {
 	--scrollbarWidth: 0px;
@@ -724,6 +724,13 @@ button {
 	width: 152px;
 	height: 152px;
 }
+.Icon-imgQuickBooks {
+	background: url(/images/icons/quickbooks-icon.svg) center center no-repeat;
+	background-size: 100%;
+	width: 152px;
+	height: 152px;
+}
+
 .Icon span {
 	--scrollbarWidth: 0px;
 	--windowWidth: calc(100vw - var(--scrollbarWidth));
