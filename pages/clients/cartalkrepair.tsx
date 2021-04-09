@@ -6,7 +6,6 @@ import AngledSplitTextImage from '../../components/AngledSplitTextImage'
 import SplitTextImageAlt from '../../components/SplitTextImageAlt'
 import PageHero from '../../components/PageHero'
 import StaticTestimonial from '../../components/StaticTestimonial'
-import SimpleSlider from '../../components/SimpleSlider'
 import ClientContainer from '../../components/ClientContainer'
 import Link from 'next/link'
 import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons"; // import the icons you need

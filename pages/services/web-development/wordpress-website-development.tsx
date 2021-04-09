@@ -12,6 +12,8 @@ import ServiceSplitSectionAlt from '../../../components/ServiceSplitSectionAlt'
 import ServiceLeadSection from '../../../components/ServiceLeadSection'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
+import LogoContainer from '../../../components/LogoContainer'
+
 
 function WordPressWebsiteDevelopment() {
     return <div className="m-auto">
@@ -282,19 +284,6 @@ function WordPressWebsiteDevelopment() {
         <div className="-mt-72">
             <h3 className="text-4xl text-center font-play font-bold m-auto leading-tight pb-10">Hear It Straight From Our Clients</h3>
             <SimpleSlider
-                background1={'../../images/CarTalk-Testimonial-Image.jpg'}
-                backgroundOverlay1={'absolute inset-0 bg-alkali-600 opacity-75'}
-                logo1={'../../images/CarTalk-Repair.png'}
-                name1={'-Cody Lintz, Owner of CarTalk Repair'}
-                quote1={'Starting off as a new business we realized the importance of having a sound online presence early on. We are extremely grateful we found Alkali we did. They have provided us the tools we need to adequately serve our customers.'}
-                cta1={'Learn more about CarTalks project &rarr;'}
-                background2="../../images/carro-testimonial-bg.jpg"
-                backgroundOverlay2={'absolute inset-0 bg-pink-300 opacity-75'}
-                logo2={'../../images/carro-logo-white.png'}
-                name2={'-Eric Sanchez, Operations Manager'}
-                quote2={'Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial.Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial.'}
-                cta2={'Learn more about Carros project &rarr;'}
-
             />
         </div>
         <ServiceSplitSection
@@ -309,13 +298,16 @@ function WordPressWebsiteDevelopment() {
             text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus turpis diam, scelerisque at porta a, vulputate a purus. Fusce ipsum diam, pellentesque a scelerisque sollicitudin, cursus nec tellus. In sit amet laoreet quam. Proin euismod metus ut consectetur ultrices. Suspendisse ac est eget augue venenatis congue ac a odio. Sed feugiat elementum malesuada. Phasellus augue dolor, accumsan quis ante in, eleifend placerat metus."
             image="../../images/carro-before.png"
         />
-        <ServiceSplitSection
-            style="bg-white mt-20 p-4 py-24 px-0 lg:px-14"
-            title="Headline for Integration With Current Business Processes"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus turpis diam, scelerisque at porta a, vulputate a purus. Fusce ipsum diam, pellentesque a scelerisque sollicitudin, cursus nec tellus. In sit amet laoreet quam. Proin euismod metus ut consectetur ultrices. Suspendisse ac est eget augue venenatis congue ac a odio. Sed feugiat elementum malesuada. Phasellus augue dolor, accumsan quis ante in, eleifend placerat metus."
-            image="../../images/carro-before.png"
-        />
         <div className="py-24">
+            <h6 className="text-4xl pb-7 text-center font-play font-bold m-auto leading-tight">Components of Custom WordPress Website Development</h6>
+            <p className="font-open text-center max-w-4xl m-auto text-lg font-normal pt-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo, urna ut ultrices maximus, felis libero ultricies justo, quis bibendum ante felis dictum augue. Etiam efficitur odio non tortor finibus feugiat mollis quis ex. Mauris porta tellus a dignissim vestibulum. Praesent sagittis sodales ex, nec.
+            </p>
+        </div>
+        <div className="py-24">
+        <LogoContainer />
+        </div>
+        <div className="mt-72">
             <h6 className="text-4xl pb-7 text-center font-play font-bold m-auto leading-tight">How Our Process Works</h6>
             <p className="font-open text-center max-w-4xl m-auto text-lg font-normal pt-4">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo, urna ut ultrices maximus, felis libero ultricies justo, quis bibendum ante felis dictum augue. Etiam efficitur odio non tortor finibus feugiat mollis quis ex. Mauris porta tellus a dignissim vestibulum. Praesent sagittis sodales ex, nec.
