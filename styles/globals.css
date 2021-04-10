@@ -28,6 +28,128 @@ body {
 .st14{fill:#4DC4D0;}
 .st15{fill:#384E72;}
 
+.IntegrationIcon:hover > .IconSpan {
+	opacity: 1;
+}
+
+.IntegrationIcon span {
+	opacity: 0;
+    font-family: Camphor,Open Sans,Segoe UI,sans-serif;
+    font-style: normal;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "pnum";
+    font-variant-numeric: proportional-nums;
+    box-sizing: border-box;
+    will-change: transform,opacity;
+    left: 50%;
+    bottom: -40px;
+    padding: 5px 12px;
+    background: #fff;
+    box-shadow: 0 15px 35px rgb(50 50 93 / 10%), 0 5px 15px rgb(0 0 0 / 7%);
+    border-radius: 50px;
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 500;
+    color: #566b78;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transform: translate(-50%,-10px);
+    opacity: 0;
+    transition-property: opacity,transform;
+    transition-duration: 500ms;
+    transition-timing-function: ease-out;
+}
+
+.IntegrationIcon {
+	height: 150px;
+	width: 150px;
+	background-size: 100%;
+	border-radius: 50%;
+	background: url('/images/icons/facebook.png') center center no-repeat;
+    font-size: 62.5%;
+    font-weight: 400;
+    font-style: normal;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    box-sizing: border-box;
+    border-radius: 50%;
+    opacity: 1;
+}
+
+.IntegrationIcon2 {
+	height: 150px;
+	width: 150px;
+	background-size: 100%;
+	border-radius: 50%;
+	background: url('/images/icons/hubspot.png') center center no-repeat;
+    font-size: 62.5%;
+    font-weight: 400;
+    font-style: normal;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    box-sizing: border-box;
+    border-radius: 50%;
+    opacity: 1;
+}
+
+.IntegrationIcon3 {
+	height: 150px;
+	width: 150px;
+	background-size: 100%;
+	border-radius: 50%;
+	background: url('/images/icons/outlook.png') center center no-repeat;
+    font-size: 62.5%;
+    font-weight: 400;
+    font-style: normal;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    box-sizing: border-box;
+    border-radius: 50%;
+    opacity: 1;
+}
+
+.IntegrationIcon4 {
+	height: 150px;
+	width: 150px;
+	background-size: 100%;
+	border-radius: 50%;
+	background: url('/images/icons/shopify.png') center center no-repeat;
+    font-size: 62.5%;
+    font-weight: 400;
+    font-style: normal;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    box-sizing: border-box;
+    border-radius: 50%;
+    opacity: 1;
+}
+
+.IntegrationIcon5 {
+	height: 150px;
+	width: 150px;
+	background-size: 100%;
+	border-radius: 50%;
+	background: url('/images/icons/mailchimp.png') center center no-repeat;
+    font-size: 62.5%;
+    font-weight: 400;
+    font-style: normal;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    box-sizing: border-box;
+    border-radius: 50%;
+    opacity: 1;
+}
+
 a {
   color: inherit;
   text-decoration: none;

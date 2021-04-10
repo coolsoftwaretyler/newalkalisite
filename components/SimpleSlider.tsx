@@ -66,7 +66,7 @@ export default class SimpleSlider extends Component {
                                             <polygon points="50,0 100,0 50,100 0,100" />
                                         </svg>
                                         <div className="relative py-12 lg:py-24 px-8 lg:px-16 text-gray-700 leading-relaxed">
-                                            <p className="text-gray-900 font-open font-medium">
+                                            <p className="text-gray-900 font-open font-medium">4
                                                 {info.quote}
                                             </p>
                                             <p className="mt-3 font-open font-bold">
