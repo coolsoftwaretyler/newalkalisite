@@ -1,28 +1,28 @@
 const NewSlider = props => {
     const icons = [
-        { "name": "Spotify1", "fileName": "imgSpotify", "speed": "slow", "translateX": 1150, "translateY": 350, scale: 1 },
-        { "name": "Spotify1", "fileName": "imgSpotify", "speed": "slow", "translateX": 1175, "translateY": 550, scale: 1 },
-        { "name": "Spotify1", "fileName": "imgSpotify", "speed": "slow", "translateX": 1000, "translateY": 150, scale: 1 },
-        { "name": "Spotify1", "fileName": "imgSpotify", "speed": "slow", "translateX": 950, "translateY": 350, scale: 1 },
-        { "name": "Spotify1", "fileName": "imgSpotify", "speed": "slow", "translateX": 975, "translateY": 550, scale: 1 },
-        { "name": "Spotify1", "fileName": "imgSpotify", "speed": "slow", "translateX": 800, "translateY": 150, scale: 1 },
-        { "name": "Spotify1", "fileName": "imgSpotify", "speed": "slow", "translateX": 750, "translateY": 350, scale: 1 },
-        { "name": "Spotify1", "fileName": "imgSpotify", "speed": "slow", "translateX": 775, "translateY": 550, scale: 1 },
-        { "name": "Spotify1", "fileName": "imgSpotify", "speed": "slow", "translateX": 600, "translateY": 150, scale: 1 },
-        { "name": "Spotify1", "fileName": "imgSpotify", "speed": "slow", "translateX": 550, "translateY": 350, scale: 1 },
-        { "name": "Spotify1", "fileName": "imgSpotify", "speed": "slow", "translateX": 575, "translateY": 550, scale: 1 },
-        { "name": "Spotify1", "fileName": "imgSpotify", "speed": "slow", "translateX": 400, "translateY": 150, scale: 1 },
-        { "name": "Spotify1", "fileName": "imgSpotify", "speed": "slow", "translateX": 350, "translateY": 350, scale: 1 },
-        { "name": "Spotify1", "fileName": "imgSpotify", "speed": "slow", "translateX": 375, "translateY": 550, scale: 1 },
-        { "name": "Spotify1", "fileName": "imgSpotify", "speed": "slow", "translateX": 200, "translateY": 150, scale: 1 },
-        { "name": "Spotify1", "fileName": "imgSpotify", "speed": "slow", "translateX": 150, "translateY": 350, scale: 1 },
-        { "name": "Spotify1", "fileName": "imgSpotify", "speed": "slow", "translateX": 175, "translateY": 550, scale: 1 }
+        { "name": "Spotify1", "fileName": "imgSpotify", "speed": "", "translateX": 1175, "translateY": 550, scale: 1 },
+        { "name": "Spotify1", "fileName": "imgSpotify", "speed": "", "translateX": 1150, "translateY": 350, scale: 1 },
+        { "name": "Spotify1", "fileName": "imgSpotify", "speed": "", "translateX": 1000, "translateY": 150, scale: 1 },
+        { "name": "Spotify1", "fileName": "imgSpotify", "speed": "", "translateX": 975, "translateY": 550, scale: 1 },
+        { "name": "Spotify1", "fileName": "imgSpotify", "speed": "", "translateX": 950, "translateY": 350, scale: 1 },
+        { "name": "Spotify1", "fileName": "imgSpotify", "speed": "", "translateX": 800, "translateY": 150, scale: 1 },
+        { "name": "Spotify1", "fileName": "imgSpotify", "speed": "", "translateX": 775, "translateY": 550, scale: 1 },
+        { "name": "Spotify1", "fileName": "imgSpotify", "speed": "", "translateX": 750, "translateY": 350, scale: 1 },
+        { "name": "Spotify1", "fileName": "imgSpotify", "speed": "", "translateX": 600, "translateY": 150, scale: 1 },
+        { "name": "Spotify1", "fileName": "imgSpotify", "speed": "", "translateX": 575, "translateY": 550, scale: 1 },
+        { "name": "Spotify1", "fileName": "imgSpotify", "speed": "", "translateX": 550, "translateY": 350, scale: 1 },
+        { "name": "Spotify1", "fileName": "imgSpotify", "speed": "", "translateX": 400, "translateY": 150, scale: 1 },
+        { "name": "Spotify1", "fileName": "imgSpotify", "speed": "", "translateX": 350, "translateY": 350, scale: 1 },
+        { "name": "Spotify1", "fileName": "imgSpotify", "speed": "", "translateX": 375, "translateY": 550, scale: 1 },
+        { "name": "Spotify1", "fileName": "imgSpotify", "speed": "", "translateX": 200, "translateY": 150, scale: 1 },
+        { "name": "Spotify1", "fileName": "imgSpotify", "speed": "", "translateX": 150, "translateY": 350, scale: 1 },
+        { "name": "Spotify1", "fileName": "imgSpotify", "speed": "", "translateX": 175, "translateY": 550, scale: 1 },
 
     ];
 
     const info = [
         { "company": "CarTalkRepair", "background": "CarTalk-Testimonial-Image.jpg", "backgroundOverlay": "bg-alkali-600", "logo": "CarTalk-Repair.png", "name": "Cody Lintz, Owner", "quote": "Starting off as a new business we realized the importance of having a sound online presence early on. We are extremely grateful we found Alkali we did. They have provided us the tools we need to adequately serve our customers." },
-        { "company": "CarTalkRepair", "background": "carro-testimonial-bg.jpg", "backgroundOverlay": "bg-alkali-600", "logo": "CarTalk-Repair.png", "name": "Cody Lintz, Owner", "quote": "Starting off as a new business we realized the importance of having a sound online presence early on. We are extremely grateful we found Alkali we did. They have provided us the tools we need to adequately serve our customers." },
+        { "company": "CarTalkRepair", "background": "CarTalk-Testimonial-Image.jpg", "backgroundOverlay": "bg-alkali-600", "logo": "CarTalk-Repair.png", "name": "Cody Lintz, Owner", "quote": "Starting off as a new business we realized the importance of having a sound online presence early on. We are extremely grateful we found Alkali we did. They have provided us the tools we need to adequately serve our customers." },
     ];
     return (
         <div className="">
