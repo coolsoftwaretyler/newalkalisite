@@ -283,8 +283,8 @@ function WordPressWebsiteDevelopment() {
         </div>
         <div className="-mt-72">
             <h3 className="text-4xl text-center font-play font-bold m-auto leading-tight pb-10">Hear It Straight From Our Clients</h3>
-            <SimpleSlider
-            />
+            {/* <SimpleSlider
+            /> */}
         </div>
         <ServiceSplitSection
             style="bg-white mt-20 p-4 py-24 px-0 lg:px-14"

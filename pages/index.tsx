@@ -50,6 +50,19 @@ export default function Home() {
       />
       <div className="pt-24 -mt-96">
         <h3 className="text-4xl pt-2 pb-16 font-play font-bold text-center">What Our Clients Say</h3>
+        {/* <SimpleSlider
+          backgroundOverlay1={'absolute inset-0 bg-alkali-600 opacity-75'}
+          logo1={'../../images/CarTalk-Repair.png'}
+          name1={'-Cody Lintz, Owner of CarTalk Repair'}
+          quote1={'Starting off as a new business we realized the importance of having a sound online presence early on. We are extremely grateful we found Alkali we did. They have provided us the tools we need to adequately serve our customers.'}
+          cta1={'Learn more about CarTalks project &rarr;'}
+          background2="../../images/carro-testimonial-bg.jpg"
+          backgroundOverlay2={'absolute inset-0 bg-pink-300 opacity-75'}
+          logo2={'../../images/carro-logo-white.png'}
+          name2={'-Eric Sanchez, Operations Manager'}
+          quote2={'Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial.Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial.'}
+          cta2={'Learn more about Carros project &rarr;'}
+        /> */}
       </div>
       <div className="pt-48">
         <h3 id="services" className="text-4xl font-play font-bold text-center">Our Services</h3>

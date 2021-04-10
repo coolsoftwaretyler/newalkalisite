@@ -102,7 +102,7 @@ function Webdesign() {
         </div>
 
         <div className="pb-36 -mt-96">
-            <SimpleSlider
+            {/* <SimpleSlider
                 background1={'../../images/CarTalk-Testimonial-Image.jpg'}
                 backgroundOverlay1={'absolute inset-0 bg-alkali-600 opacity-75'}
                 logo1={'../../images/CarTalk-Repair.png'}
@@ -115,7 +115,7 @@ function Webdesign() {
                 name2={'-Eric Sanchez, Operations Manager'}
                 quote2={'Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial.Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial.'}
                 cta2={'Learn more about Carros project &rarr;'}
-            />
+            /> */}
         </div>
         <AngledSplitTextImageAlt
             style="pb-36"
