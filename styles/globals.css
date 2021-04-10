@@ -11,143 +11,27 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-.st0{fill:#eaecf2;}
-.st1{fill:#5E7EBE;}
-.st2{opacity:0.5;fill:#FFFFFF;}
-.st3{fill:#FFFFFF;}
-.st4{opacity:0.5;fill:#B9BCC1;}
-.st5{opacity:0.1;fill:#5E7EBE;}
-.st6{fill:none;stroke:#5E7EBE;stroke-miterlimit:10;}
-.st7{fill:#FFFFFF;stroke:#5E7EBE;stroke-miterlimit:10;}
-.st8{fill:none;stroke:#4DC4D0;stroke-miterlimit:10;}
-.st9{opacity:0.1;fill:#4DC4D0;}
-.st10{fill:#FFFFFF;stroke:#4DC4D0;stroke-miterlimit:10;}
-.st11{fill:none;stroke:#5E7EBE;stroke-width:18;stroke-miterlimit:10;}
-.st12{fill:none;stroke:#4DC4D0;stroke-width:18;stroke-miterlimit:10;}
-.st13{fill:none;stroke:#384E72;stroke-width:18;stroke-miterlimit:10;}
-.st14{fill:#4DC4D0;}
-.st15{fill:#384E72;}
-
 .IntegrationIcon:hover > .IconSpan {
 	opacity: 1;
 }
 
 .IntegrationIcon span {
-	opacity: 0;
     font-family: Camphor,Open Sans,Segoe UI,sans-serif;
     font-style: normal;
-    -webkit-text-size-adjust: 100%;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-    font-feature-settings: "pnum";
-    font-variant-numeric: proportional-nums;
-    box-sizing: border-box;
     will-change: transform,opacity;
-    left: 50%;
-    bottom: -40px;
     padding: 5px 12px;
-    background: #fff;
-    box-shadow: 0 15px 35px rgb(50 50 93 / 10%), 0 5px 15px rgb(0 0 0 / 7%);
+    background: #949494;
     border-radius: 50px;
     white-space: nowrap;
     font-size: 16px;
     font-weight: 500;
-    color: #566b78;
+    color: #fff;
     pointer-events: none;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    transform: translate(-50%,-10px);
     opacity: 0;
-    transition-property: opacity,transform;
-    transition-duration: 500ms;
-    transition-timing-function: ease-out;
-}
-
-.IntegrationIcon {
-	height: 150px;
-	width: 150px;
-	background-size: 100%;
-	border-radius: 50%;
-	background: url('/images/icons/facebook.png') center center no-repeat;
-    font-size: 62.5%;
-    font-weight: 400;
-    font-style: normal;
-    -webkit-text-size-adjust: 100%;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-    box-sizing: border-box;
-    border-radius: 50%;
-    opacity: 1;
-}
-
-.IntegrationIcon2 {
-	height: 150px;
-	width: 150px;
-	background-size: 100%;
-	border-radius: 50%;
-	background: url('/images/icons/hubspot.png') center center no-repeat;
-    font-size: 62.5%;
-    font-weight: 400;
-    font-style: normal;
-    -webkit-text-size-adjust: 100%;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-    box-sizing: border-box;
-    border-radius: 50%;
-    opacity: 1;
-}
-
-.IntegrationIcon3 {
-	height: 150px;
-	width: 150px;
-	background-size: 100%;
-	border-radius: 50%;
-	background: url('/images/icons/outlook.png') center center no-repeat;
-    font-size: 62.5%;
-    font-weight: 400;
-    font-style: normal;
-    -webkit-text-size-adjust: 100%;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-    box-sizing: border-box;
-    border-radius: 50%;
-    opacity: 1;
-}
-
-.IntegrationIcon4 {
-	height: 150px;
-	width: 150px;
-	background-size: 100%;
-	border-radius: 50%;
-	background: url('/images/icons/shopify.png') center center no-repeat;
-    font-size: 62.5%;
-    font-weight: 400;
-    font-style: normal;
-    -webkit-text-size-adjust: 100%;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-    box-sizing: border-box;
-    border-radius: 50%;
-    opacity: 1;
-}
-
-.IntegrationIcon5 {
-	height: 150px;
-	width: 150px;
-	background-size: 100%;
-	border-radius: 50%;
-	background: url('/images/icons/mailchimp.png') center center no-repeat;
-    font-size: 62.5%;
-    font-weight: 400;
-    font-style: normal;
-    -webkit-text-size-adjust: 100%;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-    box-sizing: border-box;
-    border-radius: 50%;
-    opacity: 1;
 }
 
 a {
@@ -961,140 +845,3 @@ button {
 );
     z-index: 100;
 }
-
-  
-/*
-.portfolio1 {
-background-image: url("/images/cartalk-repair-cover.jpg");
-transition: 0.5s;
-background-repeat: no-repeat;
-background-size: cover;
-}
-
-.portfolio1:hover {
-background-image: url("/images/cartalk-repair-logo.jpg");
-transition: 0.5s;
-}
-
-.portfolio2 {
-background-image: url("/images/carro-cover.jpg");
-transition: 0.5s;
-}
-
-.portfolio2:hover {
-background-image: url("/images/carro-logo.jpg");
-transition: 0.5s;
-}
-
-.portfolio3 {
-background-image: url("/images/magnetite-cover.jpg");
-transition: 0.5s;
-}
-
-.portfolio3:hover {
-background-image: url("/images/magnetite-logo.jpg");
-transition: 0.5s;
-}
- */
-
-
-/* duration-500 ease-in-out bg-white hover:bg-alkaligrey-700 transform hover:-translate-y-1 hover:scale-110*/
-
-/*
-
-.slideshow-container {
-max-width: 1000px;
-position: relative;
-margin: auto;
-}
-
-.mySlides {
-display: none;
-}
-
-.prev, .next {
-cursor: pointer;
-position: absolute;
-top: 50%;
-width: auto;
-margin-top: -22px;
-padding: 16px;
-color: white;
-font-weight: bold;
-font-size: 18px;
-transition: 0.6s ease;
-border-radius: 0 3px 3px 0;
-user-select: none;
-}
-
-.next {
-right: 0;
-border-radius: 3px 0 0 3px;
-}
-
-.prev:hover, .next:hover {
-background-color: rgba(0,0,0,0.8);
-}
-
-.text {
-color: #f2f2f2;
-font-size: 15px;
-padding: 8px 12px;
-position: absolute;
-bottom: 8px;
-width: 100%;
-text-align: center;
-}
-
-.numbertext {
-	color: #f2f2f2;
-	font-size: 12px;
-	padding: 8px 12px;
-	position: absolute;
-	top: 0;
-}
-
-.dot {
-	cursor: pointer;
-	height: 15px;
-	width: 15px;
-	margin: 0 2px;
-	background-color: #bbb;
-	border-radius: 50%;
-	display: inline-block;
-	transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-	background-color: #717171;
-}
-
-.fade {
-	-webkit-animation-name: fade;
-	-webkit-animation-duration: 1.5s;
-	animation-name: fade;
-	animation-duration: 1.5s;
-}
-
-*/
-
-/*
-
-.grow2 {
-padding: 5px 5px 5px 5px;
-border-radius: 10px;
-height: 49px;
-width: 22%;
-margin: 5px 1% 5px 1%;
-float: left;
-position: relative;
-transition: height 0.5s;
--webkit-transition: height 0.5s;
-text-align: center;
-overflow: hidden;
-}
-.grow2:hover {
-height: 145px;
-}
-
- */

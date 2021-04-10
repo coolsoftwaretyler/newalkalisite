@@ -27,7 +27,7 @@ const LogoContainer = props => {
 				{
 					icons.map((icon, index) =>
 						<div className={"Icon Icon-" + icon.speed + " Icon-" + icon.fileName} key={index} style={{ "transform": "translate(" + icon.translateX + "px, " + icon.translateY + "px) scale(" + icon.scale + ") !important" }}>
-							<span>{icon.name}</span>
+							<span className="shadow-2xl">{icon.name}</span>
 						</div>
 						
 					)

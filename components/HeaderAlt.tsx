@@ -49,9 +49,13 @@ const HeaderAlt = props => {
                                     <div className="text-white font-bold uppercase text-lg pt-6">
                                         Web Development
                                     </div>
-                                    <div className="text-alkaligrey-400 text-lg pt-6">
-                                        WordPress Websites
-                                    </div>
+                                    <Link href="/services/web-development/wordpress-website-development">
+                                        <a>
+                                            <div className="text-alkaligrey-400 text-lg pt-6">
+                                                WordPress Websites
+                                            </div>
+                                        </a>
+                                    </Link>
                                     <div className="text-alkaligrey-400 text-lg pt-6">
                                         E-commerce Websites
                                     </div>

@@ -1,18 +1,19 @@
 import HeaderAlt from '../../../components/HeaderAlt'
 import Modal from '../../../components/Modal'
-import ResponsiveScreens from '../../../components/ResponsiveScreens'
-import SimpleSlider from '../../../components/SimpleSlider'
-import ServiceBreakdown from '../../../components/ServiceBreakdown'
-import SplitTextImage from '../../../components/SplitTextImage'
-import SplitTextImageAlt from '../../../components/SplitTextImageAlt'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
-import { faCaretUp, faCheck } from "@fortawesome/free-solid-svg-icons"; // import the icons you need
+import { faCaretUp } from "@fortawesome/free-solid-svg-icons"; // import the icons you need
 import ServiceSplitSection from '../../../components/ServiceSplitSection'
 import ServiceSplitSectionAlt from '../../../components/ServiceSplitSectionAlt'
 import ServiceLeadSection from '../../../components/ServiceLeadSection'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import LogoContainer from '../../../components/LogoContainer'
+import TestimonialSlider from '../../../components/TestimonialSlider'
+import TestimonialSlide from '../../../components/TestimonialSlide'
+import Testimonials from '../../../content/testimonials'
+import TwoColumnLayout from '../../../components/TwoColumnLayout'
+import Wordpress from '../../../content/servicePages/wordpress'
+import Integration from '../../../components/Integration'
 
 const info = [
     { "company": "CarTalkRepair", "background": "CarTalk-Testimonial-Image.jpg", "backgroundOverlay": "bg-alkali-600", "logo": "CarTalk-Repair.png", "name": "Cody Lintz, Owner", "quote": "Starting off as a new business we realized the importance of having a sound online presence early on. We are extremely grateful we found Alkali we did. They have provided us the tools we need to adequately serve our customers." },
@@ -70,12 +71,15 @@ function WordPressWebsiteDevelopment() {
                 </div>
             </div>
         </div>
-        <ServiceSplitSection
-            style="bg-alkaligrey-300 p-4 py-24 px-0 lg:px-14"
-            title="Custom-Built WordPress vs. Templated WordPress"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus turpis diam, scelerisque at porta a, vulputate a purus. Fusce ipsum diam, pellentesque a scelerisque sollicitudin, cursus nec tellus. In sit amet laoreet quam. Proin euismod metus ut consectetur ultrices. Suspendisse ac est eget augue venenatis congue ac a odio. Sed feugiat elementum malesuada. Phasellus augue dolor, accumsan quis ante in, eleifend placerat metus."
-            image="../../images/wordpress-versus.svg"
-        />
+        {Wordpress.customBuilt.map(wordpress =>
+            <TwoColumnLayout
+                title={wordpress.title}
+                text={wordpress.text}
+                image={wordpress.image}
+                altText={wordpress.altText}
+                layoutType="regular"
+            />
+        )}
         <div className="bg-alkaligrey-300 p-4 pt-0 pb-24 px-0 lg:px-14">
             <div className="p-4 flex flex-col lg:flex-row space-x-24 justify-between max-w-7xl m-auto">
                 <div className="w-full lg:w-1/2">
@@ -115,83 +119,94 @@ function WordPressWebsiteDevelopment() {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo, urna ut ultrices maximus, felis libero ultricies justo, quis bibendum ante felis dictum augue. Etiam efficitur odio non tortor finibus feugiat mollis quis ex. Mauris porta tellus a dignissim vestibulum. Praesent sagittis sodales ex, nec.
             </p>
         </div>
-        <ServiceSplitSection
-            style="bg-white p-4 py-24 px-0 lg:px-14"
-            title="Headline for Responsive Design"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus turpis diam, scelerisque at porta a, vulputate a purus. Fusce ipsum diam, pellentesque a scelerisque sollicitudin, cursus nec tellus. In sit amet laoreet quam. Proin euismod metus ut consectetur ultrices. Suspendisse ac est eget augue venenatis congue ac a odio. Sed feugiat elementum malesuada. Phasellus augue dolor, accumsan quis ante in, eleifend placerat metus."
-            image="../../images/user-experience.png"
-        />
-        <ServiceSplitSectionAlt
-            style="bg-alkaligrey-300 p-4 py-24 px-0 lg:px-14 pb-96 mb-6"
-            title="Headline for SEO"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus turpis diam, scelerisque at porta a, vulputate a purus. Fusce ipsum diam, pellentesque a scelerisque sollicitudin, cursus nec tellus. In sit amet laoreet quam. Proin euismod metus ut consectetur ultrices. Suspendisse ac est eget augue venenatis congue ac a odio. Sed feugiat elementum malesuada. Phasellus augue dolor, accumsan quis ante in, eleifend placerat metus."
-            image="../../images/carro-before.png"
-        />
+        {Wordpress.responsiveDesign.map(wordpress =>
+            <TwoColumnLayout
+                style="bg-white"
+                title={wordpress.title}
+                text={wordpress.text}
+                image={wordpress.image}
+                altText={wordpress.altText}
+                layoutType="regular"
+            />
+        )}
+        {Wordpress.seo.map(wordpress =>
+            <TwoColumnLayout
+                style="bg-alkaligrey-300 pb-96 mb-6"
+                title={wordpress.title}
+                text={wordpress.text}
+                image={wordpress.image}
+                altText={wordpress.altText}
+                layoutType=""
+            />
+        )}
         <div className="-mt-72">
             <h3 className="text-4xl text-center font-play font-bold m-auto leading-tight pb-10">Hear It Straight From Our Clients</h3>
-            {/* <SimpleSlider
-            /> */}
         </div>
-        <ServiceSplitSection
-            style="bg-white mt-20 p-4 py-24 px-0 lg:px-14"
-            title="Headline for User Experience"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus turpis diam, scelerisque at porta a, vulputate a purus. Fusce ipsum diam, pellentesque a scelerisque sollicitudin, cursus nec tellus. In sit amet laoreet quam. Proin euismod metus ut consectetur ultrices. Suspendisse ac est eget augue venenatis congue ac a odio. Sed feugiat elementum malesuada. Phasellus augue dolor, accumsan quis ante in, eleifend placerat metus."
-            image="../../images/carro-before.png"
-        />
-        <ServiceSplitSectionAlt
-            style="bg-alkaligrey-300 p-4 py-24 px-0 lg:px-14"
-            title="Headline for Performance"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus turpis diam, scelerisque at porta a, vulputate a purus. Fusce ipsum diam, pellentesque a scelerisque sollicitudin, cursus nec tellus. In sit amet laoreet quam. Proin euismod metus ut consectetur ultrices. Suspendisse ac est eget augue venenatis congue ac a odio. Sed feugiat elementum malesuada. Phasellus augue dolor, accumsan quis ante in, eleifend placerat metus."
-            image="../../images/carro-before.png"
-        />
-        <ServiceSplitSection
-            style="bg-white p-4 py-24 px-0 lg:px-14"
-            title="Headline for Conversion"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus turpis diam, scelerisque at porta a, vulputate a purus. Fusce ipsum diam, pellentesque a scelerisque sollicitudin, cursus nec tellus. In sit amet laoreet quam. Proin euismod metus ut consectetur ultrices. Suspendisse ac est eget augue venenatis congue ac a odio. Sed feugiat elementum malesuada. Phasellus augue dolor, accumsan quis ante in, eleifend placerat metus."
-            image="../../images/responsive.svg"
-        />
-        <div className="py-24 bg-alkaligrey-300">
+        <div className="relative z-20">
+        <TestimonialSlider>
+            {Testimonials.wordpress.map(testimonial =>
+                <TestimonialSlide
+                    background={testimonial.background}
+                    backgroundOverlay={testimonial.backgroundOverlay}
+                    company={testimonial.company}
+                    key={`designTestimonialFor${testimonial.company}`}
+                    logo={testimonial.logo}
+                    altText={testimonial.altText}
+                    name={testimonial.name}
+                    quote={testimonial.quote}
+                />
+            )}
+        </TestimonialSlider>
+        </div>
+        {Wordpress.userExperience.map(wordpress =>
+            <TwoColumnLayout
+                style="bg-white relative z-0"
+                title={wordpress.title}
+                text={wordpress.text}
+                image={wordpress.image}
+                altText={wordpress.altText}
+                layoutType="regular"
+            />
+        )}
+        {Wordpress.performance.map(wordpress =>
+            <TwoColumnLayout
+                style="bg-alkaligrey-300"
+                title={wordpress.title}
+                text={wordpress.text}
+                image={wordpress.image}
+                altText={wordpress.altText}
+                layoutType=""
+            />
+        )}
+        {Wordpress.conversion.map(wordpress =>
+            <TwoColumnLayout
+                style="bg-white"
+                title={wordpress.title}
+                text={wordpress.text}
+                image={wordpress.image}
+                altText={wordpress.altText}
+                layoutType="regular"
+            />
+        )}
+        {Wordpress.conversion.map(wordpress =>
+            <TwoColumnLayout
+                style="bg-alkaligrey-300"
+                title={wordpress.title}
+                text={wordpress.text}
+                image={wordpress.image}
+                altText={wordpress.altText}
+                layoutType=""
+            />
+        )}
+        <div className="py-24 bg-white">
             <h6 className="text-4xl pb-7 text-center font-play font-bold m-auto leading-tight">Endless Integrations</h6>
             <p className="font-open text-center max-w-4xl m-auto text-lg font-normal pt-4">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo, urna ut ultrices maximus, felis libero ultricies justo, quis bibendum ante felis dictum augue. Etiam efficitur odio non tortor finibus feugiat mollis quis ex. Mauris porta tellus a dignissim vestibulum. Praesent sagittis sodales ex, nec.
             </p>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-y-10 max-w-7xl m-auto">
-            <div className="IntegrationIcon text-center bg-alkaligrey-300 py-14 m-auto shadow-2xl">
-                <span className="IconSpan">Test Hover</span>
-            </div>
-            <div className="IntegrationIcon2 text-center bg-alkaligrey-300 py-14 m-auto shadow-2xl">
-                <span className="IconSpan">Test Hover</span>
-            </div>
-            <div className="IntegrationIcon3 text-center bg-alkaligrey-300 py-14 m-auto shadow-2xl">
-                <span className="IconSpan">Test Hover</span>
-            </div>
-            <div className="IntegrationIcon4 text-center bg-alkaligrey-300 py-14 m-auto">
-                <span className="IconSpan">Test Hover</span>
-            </div>
-            <div className="IntegrationIcon5 text-center bg-alkaligrey-300 py-14 m-auto">
-                <span className="IconSpan">Test Hover</span>
-            </div>
-            <div className="IntegrationIcon text-center bg-alkaligrey-300 py-14 m-auto">
-                <span className="IconSpan">Test Hover</span>
-            </div>
-            <div className="IntegrationIcon text-center bg-alkaligrey-300 py-14 m-auto">
-                <span className="IconSpan">Test Hover</span>
-            </div>
-            <div className="IntegrationIcon text-center bg-alkaligrey-300 py-14 m-auto">
-                <span className="IconSpan">Test Hover</span>
-            </div>
-            <div className="IntegrationIcon text-center bg-alkaligrey-300 py-14 m-auto">
-                <span className="IconSpan">Test Hover</span>
-            </div>
-            <div className="IntegrationIcon text-center bg-alkaligrey-300 py-14 m-auto">
-                <span className="IconSpan">Test Hover</span>
-            </div>
-
-        </div>
-        <div className="py-24 bg-alkaligrey-300">
-            <LogoContainer />
-        </div>
+        <Integration 
+            style="bg-white pb-24 py-14"
+        />
         <div className="py-24">
             <h6 className="text-4xl pb-7 text-center font-play font-bold m-auto leading-tight">How Our Process Works</h6>
             <p className="font-open text-center max-w-4xl m-auto text-lg font-normal pt-4">

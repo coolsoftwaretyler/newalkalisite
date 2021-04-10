@@ -1,17 +1,17 @@
 import Header from '../../components/Header'
 import Modal from '../../components/Modal'
 import ResponsiveScreens from '../../components/ResponsiveScreens'
-import SectionIntro from '../../components/SectionIntro'
 import AngledSplitTextImage from '../../components/AngledSplitTextImage'
 import SplitTextImageAlt from '../../components/SplitTextImageAlt'
-import PageHero from '../../components/PageHero'
-import StaticTestimonial from '../../components/StaticTestimonial'
-import SimpleSlider from '../../components/SimpleSlider'
-import ClientContainer from '../../components/ClientContainer'
-import Link from 'next/link'
 import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons"; // import the icons you need
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
-import ClientsSummary from "../../components/ClientsSummary"
+import ClientsSummary from '../../components/ClientsSummary'
+import TestimonialSlide from '../../components/TestimonialSlide'
+import Testimonials from '../../content/testimonials'
+import TwoColumnLayoutTwo from '../../components/TwoColumnLayoutTwo'
+import Wordpress from '../../content/servicePages/wordpress'
+import AngledImage from '../../components/AngledImage'
+import StandardTextBlock from '../../components/StandardTextBlock'
 
 function Carro2() {
   return <div className="m-auto">
@@ -48,17 +48,15 @@ function Carro2() {
         </div>
       </div>
     </div>
-
-    <style jsx>{`
-    <div id="arrow-container-container2">
-    <div id="arrow-container">
-      <div className="screenshot-container2">
-        <img className="screenshot-d2" src="../images/carro-devices.png"></img>
-      </div>
-    </div>
-  </div>
-`}</style>
-
+    <TwoColumnLayoutTwo>
+      <AngledImage 
+      image="/images/carro-before.png"
+      />
+      <StandardTextBlock 
+      title="Test"
+      text="Test"
+      />
+    </TwoColumnLayoutTwo>
     <SplitTextImageAlt
       style="bg-alkaligrey-300 pt-36 pb-72 overflow-hidden"
       sub="The Goal"
@@ -66,16 +64,25 @@ function Carro2() {
       image="../images/carro-before.png"
       text="Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website."
     />
-    <div className="pb-24 -mt-36">
-      <StaticTestimonial
-        style="max-w-7xl m-auto shadow-2xl rounded-md overflow-hidden mx-7 xl:mx-auto"
-        quote="Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial.Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial."
-        name="-Eric Sanchez, Operations Manager"
-        background="../images/carro-testimonial-bg.jpg"
-        backgroundOverlay="absolute inset-0 bg-pink-300 opacity-75"
-        logo="../images/carro-logo-white.png"
-      />
+
+    <div className="mx-14">
+      <div className="pb-24 -mt-36">
+          {Testimonials.wordpress.slice(1).map(testimonial =>
+            <TestimonialSlide
+              style="max-w-7xl m-auto shadow-2xl rounded-md"
+              background={testimonial.background}
+              backgroundOverlay={testimonial.backgroundOverlay}
+              company={testimonial.company}
+              key={`designTestimonialFor${testimonial.company}`}
+              logo={testimonial.logo}
+              altText={testimonial.altText}
+              name={testimonial.name}
+              quote={testimonial.quote}
+            />
+          )}
+      </div>
     </div>
+
     <AngledSplitTextImage
       style="pb-24 overflow-hidden"
       sub="The Goal"
@@ -83,6 +90,7 @@ function Carro2() {
       image="../images/carro-desktop.png"
       text="Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website."
     />
+
     <div className="p-4 py-24 bg-alkali-500">
       <div className="flex flex-col lg:flex-row justify-between items-center max-w-7xl m-auto mx-3 xl:mx-auto">
         <div><h3 className="text-4xl font-play font-bold max-w-7xl m-auto text-white leading-tight text-center mb-14 lg:mb-0">We're here to realize your vision.</h3></div>
