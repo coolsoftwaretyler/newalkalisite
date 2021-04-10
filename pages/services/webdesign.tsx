@@ -102,8 +102,6 @@ function Webdesign() {
         </div>
 
         <div className="pb-36 -mt-96">
-            <SimpleSlider
-            />
         </div>
         <AngledSplitTextImageAlt
             style="pb-36"

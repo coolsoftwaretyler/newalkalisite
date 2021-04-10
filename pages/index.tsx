@@ -50,8 +50,6 @@ export default function Home() {
       />
       <div className="pt-24 -mt-96">
         <h3 className="text-4xl pt-2 pb-16 font-play font-bold text-center">What Our Clients Say</h3>
-        <SimpleSlider
-        />
       </div>
       <div className="pt-48">
         <h3 id="services" className="text-4xl font-play font-bold text-center">Our Services</h3>
