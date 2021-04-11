@@ -22,7 +22,7 @@ const DemoSlide = (props) => {
                                 {`- ${props.name}`}
                             </p>
                             <p className="mt-6">
-                                <a href={`/clients/${props.company.toLowerCase()}`} className="font-medium font-open duration-500 text-black hover:text-alkali-500">{`Learn more about ${props.company}'s project `}&rarr;</a>
+                                <a href={`/clients/`} className="font-medium font-open duration-500 text-black hover:text-alkali-500">{`Learn more about ${props.company}'s project `}&rarr;</a>
                             </p>
                         </div>
                     </div>
