@@ -1,7 +1,6 @@
 import HeaderAlt from '../../components/HeaderAlt'
 import Modal from '../../components/Modal'
 import ResponsiveScreens from '../../components/ResponsiveScreens'
-import SimpleSlider from '../../components/SimpleSlider'
 import ServiceBreakdown from '../../components/ServiceBreakdown'
 import AngledSplitTextImageAlt from '../../components/AngledSplitTextImageAlt'
 
