@@ -45,16 +45,6 @@ function CarTalkRepair() {
     <div className="max-w-7xl m-auto">
     </div>
 
-    <style jsx>{`
-    <div id="arrow-container-container2">
-    <div id="arrow-container">
-      <div className="screenshot-container2">
-        <img className="screenshot-d2" src="../images/carro-devices.png"></img>
-      </div>
-    </div>
-  </div>
-`}</style>
-
     <SplitTextImageAlt
       style="bg-alkaligrey-300 pt-36 pb-80 overflow-hidden"
       sub="The Goal"

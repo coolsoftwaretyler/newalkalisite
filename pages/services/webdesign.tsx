@@ -38,27 +38,6 @@ function Webdesign() {
             </div>
         </div>
         <div className="py-14">
-            <style jsx>{`
-<div className="">
-<p className="text-alkaligrey-400 uppercase font-open text-xl text-center font-bold">Website Design & Development</p>
-<h1 className="text-center text-7xl font-play font-bold max-w-4xl m-auto leading-tight pt-4">Take You Online Presence to the Next Level</h1>
-<p className="text-center text-alkaligrey-400 font-open font-bold text-2xl font-normal max-w-5xl m-auto py-12">We translate your vision and story into an easily digestable website that fits your needs.</p>
-</div>
-<div className="max-w-6xl m-auto mt-7 py-7">
-<img className="z-0" src="../images/webdesign-hero.png"></img>
-</div>
-<div className="p-4 pt-36 flex justify-between items-center max-w-7xl m-auto">
-<div className="w-3/6 mr-14 z-10">
-    <div className="portfolio-title font-open text-alkaligrey-400 text-lg font-medium uppercase">Tailed to you</div>
-    <h3 className="font-play font-bold text-4xl pt-5 pb-14 max-w-2xl leading-tight">Each Business is Unique</h3>
-    <p className="text-lg font-open font-normal pb-7">Talk about how we tailor plans for each company, there is no true one size fits all approach. Talk about how we tailor plans for each company, there is no true one size fits all approach. Talk about how we tailor plans for each company, there is no true one size fits all approach. Talk about how we tailor plans for each company, there is no true one size fits all approach. Talk about how we tailor plans for each company, there is no true one size fits all approach. Talk about how we tailor plans for each company, there is no true one size fits all approach.</p>
-    <Modal />
-</div>
-<div className="w-3/6 z-10">
-    <div className="portfolio-image-container"><img className="portfolio-image rounded-md shadow-2xl" src="../images/carro-desktop.png"></img></div>
-</div>
-</div>
-`}</style>
             <svg id="section-divider" className="-mt-36 z-0" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 66"><polygon className="cls-1" points="0 0 500 43 500 66 0 66 0 0" /></svg>
             <div className="pb-80 -mb-11 bg-alkaligrey-300">
                 <div className="max-w-7xl m-auto">
