@@ -1,17 +1,16 @@
 import Header from '../../components/Header'
 import Modal from '../../components/Modal'
 import ResponsiveScreens from '../../components/ResponsiveScreens'
-import SectionIntro from '../../components/SectionIntro'
 import AngledSplitTextImage from '../../components/AngledSplitTextImage'
 import SplitTextImageAlt from '../../components/SplitTextImageAlt'
 import PageHero from '../../components/PageHero'
-import StaticTestimonial from '../../components/StaticTestimonial'
+import TestimonialSlide from '../../components/TestimonialSlide'
 import ClientContainer from '../../components/ClientContainer'
 import Link from 'next/link'
 import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons"; // import the icons you need
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
 import { url } from 'node:inspector'
-
+import Testimonials from '../../content/testimonials'
 
 function CarTalkRepair() {
   return <div className="m-auto">
@@ -37,7 +36,7 @@ function CarTalkRepair() {
     <div className="py-24 flex flex-col md:flex-row justify-between max-w-7xl items-center justify-center m-auto mx-7 xl:mx-auto">
       <div className="w-full xs:w-1/2 pb-14 lg:pb-0">
         <h3 className="text-4xl alkaligrey-800 font-play font-bold m-auto leading-tight pb-4 lg:pb-7">About CarTalk Repair</h3>
-      <Link href="https://cartalkrepair.com"><a target="_blank" rel="noopener noreferrer" className="uppercase font-open font-bold text-lg text-alkali-500 duration-500 hover:mr-3">Visit Website</a></Link><FontAwesomeIcon className="text-alkali-500 ml-3" icon={faLongArrowAltRight}></FontAwesomeIcon>
+        <Link href="https://cartalkrepair.com"><a target="_blank" rel="noopener noreferrer" className="uppercase font-open font-bold text-lg text-alkali-500 duration-500 hover:mr-3">Visit Website</a></Link><FontAwesomeIcon className="text-alkali-500 ml-3" icon={faLongArrowAltRight}></FontAwesomeIcon>
       </div>
       <div className="w-full xs:w-1/2 ">
         <p className="text-alkaligrey-400 font-open max-w-4xl text-lg font-normal">Carro is the world’s largest collaborative commerce network, with more than 25,000 brands and 6.5 million influencers. The platform seamlessly enables brands to work with influencers and each other so they can sell more, together.</p>
@@ -63,16 +62,22 @@ function CarTalkRepair() {
       image="../images/carro-before.png"
       text="Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website."
     />
-    <div className="pb-24 -mt-40">
-      <StaticTestimonial
-        style="max-w-7xl m-auto shadow-2xl rounded-md overflow-hidden mx-7 xl:mx-auto"
-        quote="Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial.Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial."
-        name="- Cody Lintz, Owner"
-        background="../images/CarTalk-Testimonial-Image.jpg"
-        backgroundOverlay="absolute inset-0 bg-red-400 opacity-75"
-        logo="../images/CarTalk-Repair.png"
-        logoSize="275"
-      />
+    <div className="mx-14">
+      <div className="pb-24 -mt-40">
+          {Testimonials.wordpress.slice(0, 1).map(testimonial =>
+            <TestimonialSlide
+              style="max-w-7xl m-auto shadow-2xl rounded-md"
+              background={testimonial.background}
+              backgroundOverlay={testimonial.backgroundOverlay}
+              company={testimonial.company}
+              key={`designTestimonialFor${testimonial.company}`}
+              logo={testimonial.logo}
+              altText={testimonial.altText}
+              name={testimonial.name}
+              quote={testimonial.quote}
+            />
+          )}
+      </div>
     </div>
     <AngledSplitTextImage
       style="pb-24 overflow-hidden"

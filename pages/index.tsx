@@ -1,15 +1,11 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
 import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons"; // import the icons you need
 import HomeHero from '../components/HomeHero'
-import Partners from '../components/Partners'
-import SimpleSlider from '../components/SimpleSlider'
 import SplitTextImageAlt from '../components/SplitTextImageAlt'
 import SplitTextImage from '../components/SplitTextImage'
-import Link from 'next/link'
 import ResponsiveScreens from '../components/ResponsiveScreens'
 import Modal from '../components/Modal'
 import Footer from '../components/Footer'
-import Parts from '../components/Parts';
 
 export default function Home() {
   return (

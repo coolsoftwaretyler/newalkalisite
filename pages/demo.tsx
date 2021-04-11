@@ -1,13 +1,13 @@
-import DemoSlider from '../components/DemoSlider'
-import DemoSlide from '../components/DemoSlide'
+import TestimonialSlider from '../components/TestimonialSlider'
+import TestimonialSlide from '../components/TestimonialSlide'
 import Testimonials from '../content/testimonials'
 
 const Demo = () => {
     return (
         <main className="flex flex-col justify-center min-h-screen">
-            <DemoSlider>
-                {Testimonials.development.map(testimonial =>
-                    <DemoSlide
+            <TestimonialSlider>
+                {Testimonials.wordpress.map(testimonial =>
+                    <TestimonialSlide
                         background={testimonial.background}
                         backgroundOverlay={testimonial.backgroundOverlay}
                         company={testimonial.company}
@@ -17,11 +17,11 @@ const Demo = () => {
                         quote={testimonial.quote}
                     />
                 )}
-            </DemoSlider>
+            </TestimonialSlider>
             <div className="mb-4"></div>
-            <DemoSlider>
+            <TestimonialSlider>
                 {Testimonials.design.map(testimonial =>
-                    <DemoSlide
+                    <TestimonialSlide
                         background={testimonial.background}
                         backgroundOverlay={testimonial.backgroundOverlay}
                         company={testimonial.company}
@@ -31,7 +31,7 @@ const Demo = () => {
                         quote={testimonial.quote}
                     />
                 )}
-            </DemoSlider>
+            </TestimonialSlider>
         </main>
     )
 }
