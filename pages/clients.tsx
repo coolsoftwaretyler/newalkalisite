@@ -1,7 +1,7 @@
 import ClientContainer from '../components/ClientContainer'
-import Link from 'next/link'
 import HeaderAlt from '../components/HeaderAlt'
-
+import ClientsSummary from '../components/ClientsSummary'
+import ClientMainPage from '../content/clientPages/clientMainPage'
 function Clients() {
   return <div>
     < HeaderAlt />
@@ -22,48 +22,14 @@ function Clients() {
         Social
       </div>
     </div>
-    <ul className="group flex flex-wrap flex-grow max-w-7xl justify-center m-auto transition duration-500">
-    <Link href="/clients/carro">
-        <a>
-          <ClientContainer
-            style={{ backgroundImage: "url(../../images/carro-cover.jpg)", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}
-            title="Carro"
-          />
-        </a>
-      </Link>
-      <Link href="/clients/cartalk-repair">
-        <a>
-          <ClientContainer
-            style={{ backgroundImage: "url(../../images/cartalk-repair-cover.jpg)", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}
-            title="CarTalk Repair"
-          />
-        </a>
-      </Link>
-      <ClientContainer
-        style={{ backgroundImage: "url(../../images/carro-cover.jpg)", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}
-        title="HBP"
-      />
-      <ClientContainer
-        style={{ backgroundImage: "url(../../images/carro-cover.jpg)", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}
-        title="Blueflame Medical"
-      />
-      <ClientContainer
-        style={{ backgroundImage: "url(../../images/carro-cover.jpg)", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}
-        title="CarTalk Repair"
-      />
-      <ClientContainer
-        style={{ backgroundImage: "url(../../images/carro-cover.jpg)", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}
-        title="The HID Factory"
-      />
-      <ClientContainer
-        style={{ backgroundImage: "url(../../images/carro-cover.jpg)", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}
-        title="The HID Factory"
-      />
-      <ClientContainer
-        style={{ backgroundImage: "url(../../images/carro-cover.jpg)", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}
-        title="The HID Factory"
-      />
-    </ul>
+    <ClientsSummary>
+      {ClientMainPage.map(clientMainPage =>
+        <ClientContainer
+          name={clientMainPage.name}
+          backgroundImg={clientMainPage.backgroundImg}
+        />
+      )}
+    </ClientsSummary>
   </div>
 }
 

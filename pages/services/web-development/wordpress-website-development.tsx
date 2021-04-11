@@ -1,7 +1,7 @@
 import HeaderAlt from '../../../components/HeaderAlt'
 import Modal from '../../../components/Modal'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
-import { faCaretUp } from "@fortawesome/free-solid-svg-icons"; // import the icons you need
+import { faCaretUp, faLongArrowAltRight, faPaintBrush, faSearch } from "@fortawesome/free-solid-svg-icons"; // import the icons you need
 import ServiceSplitSection from '../../../components/ServiceSplitSection'
 import ServiceSplitSectionAlt from '../../../components/ServiceSplitSectionAlt'
 import ServiceLeadSection from '../../../components/ServiceLeadSection'
@@ -14,6 +14,8 @@ import Testimonials from '../../../content/testimonials'
 import TwoColumnLayout from '../../../components/TwoColumnLayout'
 import Wordpress from '../../../content/servicePages/wordpress'
 import Integration from '../../../components/Integration'
+import OurProcess from '../../../content/servicePages/ourProcess'
+import OurProcessComp from '../../../components/OurProcess'
 
 const info = [
     { "company": "CarTalkRepair", "background": "CarTalk-Testimonial-Image.jpg", "backgroundOverlay": "bg-alkali-600", "logo": "CarTalk-Repair.png", "name": "Cody Lintz, Owner", "quote": "Starting off as a new business we realized the importance of having a sound online presence early on. We are extremely grateful we found Alkali we did. They have provided us the tools we need to adequately serve our customers." },
@@ -143,20 +145,20 @@ function WordPressWebsiteDevelopment() {
             <h3 className="text-4xl text-center font-play font-bold m-auto leading-tight pb-10">Hear It Straight From Our Clients</h3>
         </div>
         <div className="relative z-20">
-        <TestimonialSlider>
-            {Testimonials.wordpress.map(testimonial =>
-                <TestimonialSlide
-                    background={testimonial.background}
-                    backgroundOverlay={testimonial.backgroundOverlay}
-                    company={testimonial.company}
-                    key={`designTestimonialFor${testimonial.company}`}
-                    logo={testimonial.logo}
-                    altText={testimonial.altText}
-                    name={testimonial.name}
-                    quote={testimonial.quote}
-                />
-            )}
-        </TestimonialSlider>
+            <TestimonialSlider>
+                {Testimonials.wordpress.map(testimonial =>
+                    <TestimonialSlide
+                        background={testimonial.background}
+                        backgroundOverlay={testimonial.backgroundOverlay}
+                        company={testimonial.company}
+                        key={`designTestimonialFor${testimonial.company}`}
+                        logo={testimonial.logo}
+                        altText={testimonial.altText}
+                        name={testimonial.name}
+                        quote={testimonial.quote}
+                    />
+                )}
+            </TestimonialSlider>
         </div>
         {Wordpress.userExperience.map(wordpress =>
             <TwoColumnLayout
@@ -204,7 +206,7 @@ function WordPressWebsiteDevelopment() {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo, urna ut ultrices maximus, felis libero ultricies justo, quis bibendum ante felis dictum augue. Etiam efficitur odio non tortor finibus feugiat mollis quis ex. Mauris porta tellus a dignissim vestibulum. Praesent sagittis sodales ex, nec.
             </p>
         </div>
-        <Integration 
+        <Integration
             style="bg-white pb-24 py-14"
         />
         <div className="py-24">
@@ -213,106 +215,22 @@ function WordPressWebsiteDevelopment() {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo, urna ut ultrices maximus, felis libero ultricies justo, quis bibendum ante felis dictum augue. Etiam efficitur odio non tortor finibus feugiat mollis quis ex. Mauris porta tellus a dignissim vestibulum. Praesent sagittis sodales ex, nec.
             </p>
         </div>
-        <VerticalTimeline
-            animate={false}
-        >
-            <VerticalTimelineElement
-                className="vertical-timeline-element--work"
-                contentStyle={{ background: '#f8f8f8', color: '#949494', borderRadius: '.375rem' }}
-                contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-                date="Project Discovery"
-                iconStyle={{ background: '#00baff', color: '#' }}
-                icon={<FontAwesomeIcon icon={faCaretUp} className="text-4xl"></FontAwesomeIcon>}
-            >
-                <h3 className="vertical-timeline-element-title">Creative Director</h3>
-                <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-                <p>
-                    Creative Direction, User Experience, Visual Design, Project Management, Team Leading
-                </p>
-            </VerticalTimelineElement>
-            <VerticalTimelineElement
-                className="vertical-timeline-element--work"
-                contentStyle={{ background: '#f8f8f8', color: '#949494' }}
-                date="Website Design"
-                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                icon={<FontAwesomeIcon icon={faCaretUp} className="text-4xl"></FontAwesomeIcon>}
-            >
-                <h3 className="vertical-timeline-element-title">Art Director</h3>
-                <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
-                <p>
-                    Creative Direction, User Experience, Visual Design, SEO, Online Marketing
-                </p>
-            </VerticalTimelineElement>
-            <VerticalTimelineElement
-                className="vertical-timeline-element--work"
-                contentStyle={{ background: '#f8f8f8', color: '#949494' }}
-                date="Website Development"
-                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                icon={<FontAwesomeIcon icon={faCaretUp} className="text-4xl"></FontAwesomeIcon>}
-            >
-                <h3 className="vertical-timeline-element-title">Web Designer</h3>
-                <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4>
-                <p>
-                    User Experience, Visual Design
-                </p>
-            </VerticalTimelineElement>
-            <VerticalTimelineElement
-                className="vertical-timeline-element--work"
-                contentStyle={{ background: '#f8f8f8', color: '#949494' }}
-                date="Search Engine Structuring"
-                iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
-                icon={<FontAwesomeIcon icon={faCaretUp} className="text-4xl"></FontAwesomeIcon>}
-            >
-                <h3 className="vertical-timeline-element-title">Web Designer</h3>
-                <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4>
-                <p>
-                    User Experience, Visual Design
-                </p>
-            </VerticalTimelineElement>
-            <VerticalTimelineElement
-                className="vertical-timeline-element--education"
-                contentStyle={{ background: '#f8f8f8', color: '#949494' }}
-                date="Acceptance"
-                iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                icon={<FontAwesomeIcon icon={faCaretUp} className="text-4xl"></FontAwesomeIcon>}
-            >
-                <h3 className="vertical-timeline-element-title">Content Marketing for Web, Mobile and Social Media</h3>
-                <h4 className="vertical-timeline-element-subtitle">Online Course</h4>
-                <p>
-                    Strategy, Social Media
-                </p>
-            </VerticalTimelineElement>
-            <VerticalTimelineElement
-                className="vertical-timeline-element--education"
-                contentStyle={{ background: '#f8f8f8', color: '#949494' }}
-                date="Stakeholder Maintenance"
-                iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                icon={<FontAwesomeIcon icon={faCaretUp} className="text-4xl"></FontAwesomeIcon>}
-            >
-                <h3 className="vertical-timeline-element-title">Agile Development Scrum Master</h3>
-                <h4 className="vertical-timeline-element-subtitle">Certification</h4>
-                <p>
-                    Creative Direction, User Experience, Visual Design
-            </p>
-            </VerticalTimelineElement>
-            <VerticalTimelineElement
-                className="vertical-timeline-element--education"
-                contentStyle={{ background: '#f8f8f8', color: '#949494' }}
-                date="Launch"
-                iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
-                icon={<FontAwesomeIcon icon={faCaretUp} className="text-4xl"></FontAwesomeIcon>}
-            >
-                <h3 className="vertical-timeline-element-title">Bachelor of Science in Interactive Digital Media Visual Imaging</h3>
-                <h4 className="vertical-timeline-element-subtitle">Bachelor Degree</h4>
-                <p>
-                    Creative Direction, Visual Design
-            </p>
-            </VerticalTimelineElement>
-            <VerticalTimelineElement
-                iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
-                icon={<FontAwesomeIcon icon={faCaretUp} className="text-4xl"></FontAwesomeIcon>}
+        {OurProcess.wordpress.map((wordpress, index) =>
+            <OurProcessComp
+                style="bg-alkaligrey-300"
+                title={wordpress.title}
+                step1={wordpress.step1}
+                step2={wordpress.step2}
+                step3={wordpress.step3}
+                step4={wordpress.step4}
+                step5={wordpress.step5}
+                step6={wordpress.step6}
+                step7={wordpress.step7}
+                icon={wordpress.icon}
+                type={index}
             />
-        </VerticalTimeline>
+        )}
+
     </div>
 }
 

@@ -2,6 +2,7 @@ import Header from '../../components/Header'
 import Modal from '../../components/Modal'
 import ResponsiveScreens from '../../components/ResponsiveScreens'
 import AngledSplitTextImage from '../../components/AngledSplitTextImage'
+import AngledSplitTextImageAlt from '../../components/AngledSplitTextImageAlt'
 import SplitTextImageAlt from '../../components/SplitTextImageAlt'
 import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons"; // import the icons you need
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
@@ -12,6 +13,11 @@ import TwoColumnLayoutTwo from '../../components/TwoColumnLayoutTwo'
 import Wordpress from '../../content/servicePages/wordpress'
 import AngledImage from '../../components/AngledImage'
 import StandardTextBlock from '../../components/StandardTextBlock'
+import ArrowImages from '../../content/clientPages/arrowImages'
+import ClientMainPage from '../../content/clientPages/clientMainPage'
+import ClientContainer from '../../components/ClientContainer'
+import ClientBlocks from '../../content/clientPages/clientBlocks'
+
 
 function Carro2() {
   return <div className="m-auto">
@@ -48,15 +54,28 @@ function Carro2() {
         </div>
       </div>
     </div>
-    <TwoColumnLayoutTwo>
-      <AngledImage 
-      image="/images/carro-before.png"
-      />
-      <StandardTextBlock 
-      title="Test"
-      text="Test"
-      />
+
+    <TwoColumnLayoutTwo
+      child1={
+        ClientBlocks.carro.map(carro =>
+          <AngledImage
+            image={carro.image}
+            layout="left"
+          />
+        )
+    }
+      child2={
+          ClientBlocks.carro.map(carro =>
+            <StandardTextBlock
+              sub={carro.sub}
+              title={carro.title}
+              text={carro.text}
+            />
+          )
+      }
+    >
     </TwoColumnLayoutTwo>
+
     <SplitTextImageAlt
       style="bg-alkaligrey-300 pt-36 pb-72 overflow-hidden"
       sub="The Goal"
@@ -67,19 +86,19 @@ function Carro2() {
 
     <div className="mx-14">
       <div className="pb-24 -mt-36">
-          {Testimonials.wordpress.slice(1).map(testimonial =>
-            <TestimonialSlide
-              style="max-w-7xl m-auto shadow-2xl rounded-md"
-              background={testimonial.background}
-              backgroundOverlay={testimonial.backgroundOverlay}
-              company={testimonial.company}
-              key={`designTestimonialFor${testimonial.company}`}
-              logo={testimonial.logo}
-              altText={testimonial.altText}
-              name={testimonial.name}
-              quote={testimonial.quote}
-            />
-          )}
+        {Testimonials.wordpress.slice(1).map(testimonial =>
+          <TestimonialSlide
+            style="max-w-7xl m-auto shadow-2xl rounded-md"
+            background={testimonial.background}
+            backgroundOverlay={testimonial.backgroundOverlay}
+            company={testimonial.company}
+            key={`designTestimonialFor${testimonial.company}`}
+            logo={testimonial.logo}
+            altText={testimonial.altText}
+            name={testimonial.name}
+            quote={testimonial.quote}
+          />
+        )}
       </div>
     </div>
 
@@ -102,32 +121,28 @@ function Carro2() {
         </div>
       </div>
     </div>
-    <div className="">
+    {ArrowImages.carro.map(arrowImages =>
       <ResponsiveScreens
-        style="text-center py-36 overflow-hidden"
+        style="py-36 overflow-hidden"
         link="https://getcarro.com"
-        title="First Impressions Matter Experience Their Website For Yourself"
-        buttonName="Visit Site"
-        desktopImgL="../images/carro-desktop-brand.png"
-        desktopImgR="../images/carro-desktop-score.png"
-        tabletImg="../images/carro-tablet.png"
-        phoneImg="../images/carro-phone.png"
+        desktopLeft={arrowImages.desktopLeft}
+        desktopRight={arrowImages.desktopRight}
+        tablet={arrowImages.tablet}
+        phone={arrowImages.phone}
+        desktopLeftLink={arrowImages.desktopLeftLink}
+        desktopRightLink={arrowImages.desktopRightLink}
+        tabletLink={arrowImages.tabletLink}
+        phoneLink={arrowImages.phoneLink}
       />
-    </div>
-    <ClientsSummary
-      client1Style={{ backgroundImage: "url(../../images/cartalk-repair-cover.jpg)", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}
-      client1Title="CarTalk Repair"
-      client1Link="https://cartalkrepair.com"
-      client2Style={{ backgroundImage: "url(../../images/carro-cover.jpg)", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}
-      client2Title="Carro"
-      client2Link="https://carro.com"
-      client3Style={{ backgroundImage: "url(../../images/carro-cover.jpg)", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}
-      client3Title="Carro"
-      client3Link="https://carro.com"
-      client4Style={{ backgroundImage: "url(../../images/carro-cover.jpg)", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}
-      client4Title="Carro"
-      client4Link="https://carro.com"
-    />
+    )}
+    <ClientsSummary>
+      {ClientMainPage.map(clientMainPage =>
+        <ClientContainer
+          name={clientMainPage.name}
+          backgroundImg={clientMainPage.backgroundImg}
+        />
+      )}
+    </ClientsSummary>
   </div>
 }
 
