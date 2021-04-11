@@ -47,17 +47,11 @@ function Carro2() {
         <p className="text-alkaligrey-400 font-open max-w-4xl text-lg font-normal">Carro is the world’s largest collaborative commerce network, with more than 25,000 brands and 6.5 million influencers. The platform seamlessly enables brands to work with influencers and each other so they can sell more, together.</p>
       </div>
     </div>
-    <div id="arrow-container-container2">
-      <div id="arrow-container2">
-        <div className="screenshot-container2">
-          <img className="screenshot-d2" src="../images/carro-devices.png"></img>
-        </div>
-      </div>
-    </div>
 
     <TwoColumnLayoutTwo
+      style="bg-alkaligrey-300 pt-24 mt-0 pb-80 overflow-hidden"
       child1={
-        ClientBlocks.carro.map(carro =>
+        ClientBlocks.carro.slice(0,1).map(carro =>
           <AngledImage
             image={carro.image}
             layout="left"
@@ -65,7 +59,7 @@ function Carro2() {
         )
     }
       child2={
-          ClientBlocks.carro.map(carro =>
+          ClientBlocks.carro.slice(0,1).map(carro =>
             <StandardTextBlock
               sub={carro.sub}
               title={carro.title}
@@ -76,16 +70,9 @@ function Carro2() {
     >
     </TwoColumnLayoutTwo>
 
-    <SplitTextImageAlt
-      style="bg-alkaligrey-300 pt-36 pb-72 overflow-hidden"
-      sub="The Goal"
-      title="Rebrand Existing Site"
-      image="../images/carro-before.png"
-      text="Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website."
-    />
 
     <div className="mx-14">
-      <div className="pb-24 -mt-36">
+      <div className="pb-24 -mt-72">
         {Testimonials.wordpress.slice(1).map(testimonial =>
           <TestimonialSlide
             style="max-w-7xl m-auto shadow-2xl rounded-md"
@@ -101,14 +88,26 @@ function Carro2() {
         )}
       </div>
     </div>
-
-    <AngledSplitTextImage
-      style="pb-24 overflow-hidden"
-      sub="The Goal"
-      title="Rebrand Existing Site"
-      image="../images/carro-desktop.png"
-      text="Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website."
-    />
+    <TwoColumnLayoutTwo
+      child2={
+        ClientBlocks.carro.slice(1).map(carro =>
+          <AngledImage
+            image={carro.image}
+            layout="right"
+          />
+        )
+    }
+      child1={
+          ClientBlocks.carro.slice(1).map(carro =>
+            <StandardTextBlock
+              sub={carro.sub}
+              title={carro.title}
+              text={carro.text}
+            />
+          )
+      }
+    >
+    </TwoColumnLayoutTwo>
 
     <div className="p-4 py-24 bg-alkali-500">
       <div className="flex flex-col lg:flex-row justify-between items-center max-w-7xl m-auto mx-3 xl:mx-auto">
@@ -123,7 +122,7 @@ function Carro2() {
     </div>
     {ArrowImages.carro.map(arrowImages =>
       <ResponsiveScreens
-        style="py-36 overflow-hidden"
+        style="py-24 overflow-hidden"
         link="https://getcarro.com"
         desktopLeft={arrowImages.desktopLeft}
         desktopRight={arrowImages.desktopRight}
@@ -135,7 +134,9 @@ function Carro2() {
         phoneLink={arrowImages.phoneLink}
       />
     )}
-    <ClientsSummary>
+    <ClientsSummary
+      style="bg-alkaligrey-300"
+    >
       {ClientMainPage.map(clientMainPage =>
         <ClientContainer
           name={clientMainPage.name}

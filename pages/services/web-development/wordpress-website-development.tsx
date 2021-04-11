@@ -51,7 +51,7 @@ function WordPressWebsiteDevelopment() {
                         <p className="text-alkaligrey-400 font-open max-w-4xl text-lg font-normal pt-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis iaculis cursus ex scelerisque pellentesque. Fusce fringilla ex sit amet ante aliquet volutpat. Maecenas laoreet purus in nulla rutrum porta. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse congue erat vitae quam mattis, eu gravida ligula posuere. Phasellus at lectus quam. Nullam orci leo, sodales sit amet varius blandit, pharetra vel quam. Sed fringilla in est eu cursus.</p>
                     </div>
                     <div className="z-0 pointer-events-none">
-                        <div className="rounded-md shadow-2xl">
+                        <div className="angled-mockup rounded-md shadow-2xl">
                             <div className="browser-mockup z-0">
                                 <img className="rounded-b-md" src="../../images/wordpress-stats.png" />
                             </div>

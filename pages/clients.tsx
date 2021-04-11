@@ -2,9 +2,14 @@ import ClientContainer from '../components/ClientContainer'
 import HeaderAlt from '../components/HeaderAlt'
 import ClientsSummary from '../components/ClientsSummary'
 import ClientMainPage from '../content/clientPages/clientMainPage'
+import Card from '../components/CardHover'
+import CardHover from '../components/CardHover'
+import CardElements from '../components/CardHover'
+
 function Clients() {
   return <div>
     < HeaderAlt />
+    <Card />
     <div className="pt-36 pb-24 flex max-w-6xl justify-center m-auto">
       <div className="text-center bg-alkaligrey-500 mx-5 w-36 text-alkaligrey-700 rounded-md p-2 border border-alkaligray-700">
         All
@@ -22,14 +27,13 @@ function Clients() {
         Social
       </div>
     </div>
-    <ClientsSummary>
-      {ClientMainPage.map(clientMainPage =>
-        <ClientContainer
-          name={clientMainPage.name}
-          backgroundImg={clientMainPage.backgroundImg}
+    {ClientMainPage.map(clientMainPage =>
+      <ClientsSummary>
+        <CardHover
+        name={clientMainPage.name}
         />
-      )}
-    </ClientsSummary>
+      </ClientsSummary>
+    )}
   </div>
 }
 
