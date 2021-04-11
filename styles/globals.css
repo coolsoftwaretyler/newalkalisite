@@ -565,7 +565,7 @@ button {
   margin-left: -175px;
 }
 
-.portfolio-image {
+.portfolio-image--right {
   transform: translate3d(15%,0,0) rotate(45deg);
 }
 
@@ -573,7 +573,7 @@ button {
   transform: rotateX(55deg);
 }
 
-.portfolio-image2 {
+.portfolio-image--left {
   transform: translate3d(-20%,0,0) rotate(-45deg);
 }
 
