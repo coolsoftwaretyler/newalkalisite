@@ -21,7 +21,7 @@ import ServiceHeader from '../../../components/ServiceHeader';
 function WordPressWebsiteDevelopment() {
     const wordpressImages = Wordpress.customBuilt.map(wordpress =>
         <div className="m-auto">
-            <img src={wordpress.image} alt={wordpress.altText} />
+            <img src={wordpress.image} alt={wordpress.altText} width="100%" height="auto"/>
         </div>
     )
 
@@ -54,7 +54,7 @@ function WordPressWebsiteDevelopment() {
                     <div className="z-0 pointer-events-none">
                         <div className="angled-mockup rounded-md shadow-2xl">
                             <div className="browser-mockup z-0">
-                                <img className="rounded-b-md" src="../../images/wordpress-stats.webp" />
+                                <img className="rounded-b-md" src="../../images/wordpress-stats.webp" width="100%" height="auto"/>
                             </div>
                             <div className="bg-white stat-container float-right -mr-6 shadow-2xl p-7 rounded-md text-center uppercase font-medium text-sm -mt-14 relative">
                                 <p className="pb-4">Wordpress Statistics</p>
