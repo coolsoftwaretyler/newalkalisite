@@ -2,12 +2,8 @@ import HeaderAlt from '../../../components/HeaderAlt'
 import Modal from '../../../components/Modal'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
 import { faCaretUp, faLongArrowAltRight, faPaintBrush, faSearch } from "@fortawesome/free-solid-svg-icons"; // import the icons you need
-import ServiceSplitSection from '../../../components/ServiceSplitSection'
-import ServiceSplitSectionAlt from '../../../components/ServiceSplitSectionAlt'
 import ServiceLeadSection from '../../../components/ServiceLeadSection'
-import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import LogoContainer from '../../../components/LogoContainer'
 import TestimonialSlider from '../../../components/TestimonialSlider'
 import TestimonialSlide from '../../../components/TestimonialSlide'
 import Testimonials from '../../../content/testimonials'
@@ -16,14 +12,24 @@ import Wordpress from '../../../content/servicePages/wordpress'
 import Integration from '../../../components/Integration'
 import OurProcess from '../../../content/servicePages/ourProcess'
 import OurProcessComp from '../../../components/OurProcess'
+import TwoColumnLayoutTwo from '../../../components/TwoColumnLayoutTwo'
+import AngledImage from '../../../components/AngledImage'
+import StandardTextBlock from '../../../components/StandardTextBlock'
 
-const info = [
-    { "company": "CarTalkRepair", "background": "CarTalk-Testimonial-Image.jpg", "backgroundOverlay": "bg-alkali-600", "logo": "CarTalk-Repair.png", "name": "Cody Lintz, Owner", "quote": "Starting off as a new business we realized the importance of having a sound online presence early on. We are extremely grateful we found Alkali we did. They have provided us the tools we need to adequately serve our customers." },
-    { "company": "Carro", "background": "carro-testimonial-bg.jpg", "backgroundOverlay": "bg-pink-300", "logo": "carro-logo-white.png", "name": "Eric Sanchez, Operations Manager", "quote": "Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial.Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial." },
-
-];
 
 function WordPressWebsiteDevelopment() {
+    const wordpressImages = Wordpress.customBuilt.map(wordpress =>
+       <div>
+           <img src={wordpress.image} alt={wordpress.altText}/>
+       </div>
+    )
+
+    const wordpressText = Wordpress.customBuilt.map(wordpress =>
+        <StandardTextBlock
+            title={wordpress.title}
+            text={wordpress.text}
+        />
+    )
     return <div className="m-auto">
         <div>
             <HeaderAlt
@@ -51,7 +57,7 @@ function WordPressWebsiteDevelopment() {
                         <p className="text-alkaligrey-400 font-open max-w-4xl text-lg font-normal pt-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis iaculis cursus ex scelerisque pellentesque. Fusce fringilla ex sit amet ante aliquet volutpat. Maecenas laoreet purus in nulla rutrum porta. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse congue erat vitae quam mattis, eu gravida ligula posuere. Phasellus at lectus quam. Nullam orci leo, sodales sit amet varius blandit, pharetra vel quam. Sed fringilla in est eu cursus.</p>
                     </div>
                     <div className="z-0 pointer-events-none">
-                        <div className="rounded-md shadow-2xl">
+                        <div className="angled-mockup rounded-md shadow-2xl">
                             <div className="browser-mockup z-0">
                                 <img className="rounded-b-md" src="../../images/wordpress-stats.png" />
                             </div>
@@ -73,6 +79,10 @@ function WordPressWebsiteDevelopment() {
                 </div>
             </div>
         </div>
+        <TwoColumnLayoutTwo 
+            child1={wordpressImages}
+            child2={wordpressText}
+        />
         {Wordpress.customBuilt.map(wordpress =>
             <TwoColumnLayout
                 title={wordpress.title}
