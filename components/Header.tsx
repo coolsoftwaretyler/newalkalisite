@@ -20,7 +20,7 @@ const Header = props => {
         <div className={props.style}>
             <div className="flex justify-between max-w-7xl justify-center m-auto py-7">
                 <div className="flex items-center">
-                    <Link href="/"><a><img className="w-40" src={headerLogoColor()}></img></a></Link>
+                    <a><img className="w-40" src={headerLogoColor()}></img></a>
                 </div>
                 <div>
                     <div className="dropdown">
@@ -28,13 +28,13 @@ const Header = props => {
                         <div className="dropdown-content justify-between bg-black bg-opacity-80 rounded-md shadow-2xl">
                             <div className="p-8 flex justify-between max-w-7xl justify-center m-auto text-white">
                                 <div>
-                                    <Link href="/services/digital-marketing">
+                                    
                                         <a>
                                             <div className="font-bold uppercase text-lg">
                                                 Digital Marketing
                                             </div>
                                         </a>
-                                    </Link>
+                                    
                                     {SiteMap.digitalMarketing.map(digitalMarketing =>
                                         <SiteMapContainer
                                             name={digitalMarketing.name}
@@ -43,26 +43,26 @@ const Header = props => {
                                     )}
                                 </div>
                                 <div>
-                                    <Link href="/services/digital-marketing">
+                                    
                                         <a>
                                             <div className="font-bold uppercase text-lg">
                                                 Web Design
                                             </div>
                                         </a>
-                                    </Link>
+                                   
                                     {SiteMap.webDesign.map(webDesign =>
                                         <SiteMapContainer
                                             name={webDesign.name}
                                             slug={webDesign.slug}
                                         />
                                     )}
-                                    <Link href="/services/digital-marketing">
+                                    
                                         <a>
                                             <div className="font-bold uppercase text-lg pt-10">
                                                 Web Development
                                             </div>
                                         </a>
-                                    </Link>
+                                    
                                     {SiteMap.webDevelopment.map(webDevelopment =>
                                         <SiteMapContainer
                                             name={webDevelopment.name}
