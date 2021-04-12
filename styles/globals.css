@@ -217,8 +217,7 @@ a {
 
   .dropdown:hover .dropdown-content {display: block; transition-duration: 1000ms;}
   .dropdown-content a:hover {transition-duration: 1000ms;}
-  
-  .dropdown:hover .dropbtn {transition-duration: 1000ms;}
+
 
 .browser-mockup {
 	border-top-left-radius: 0.375rem;

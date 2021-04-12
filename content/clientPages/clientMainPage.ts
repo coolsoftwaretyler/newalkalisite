@@ -5,9 +5,9 @@ const clientMainPage = [
         slug: 'carro',
     },
     {
-        name: "CarTalk",
+        name: "CarTalk Repair",
         backgroundImg: "carro-cover.jpg",
-        slug: 'car-talk',
+        slug: 'cartalk-repair',
     },
     {
         name: "Carro",
