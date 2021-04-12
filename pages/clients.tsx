@@ -27,10 +27,15 @@ function Clients() {
         Social
       </div>
     </div>
-    {ClientMainPage.map(clientMainPage =>
-      <ClientsSummary>
-      </ClientsSummary>
-    )}
+    <ClientsSummary>
+      {ClientMainPage.map(clientMainPage =>
+        <ClientContainer
+          name={clientMainPage.name}
+          backgroundImg={clientMainPage.backgroundImg}
+          slug={clientMainPage.slug}
+        />
+      )}
+    </ClientsSummary>
   </div>
 }
 
