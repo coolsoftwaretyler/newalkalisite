@@ -27,6 +27,7 @@ function Clients() {
         <ClientContainer
           name={clientMainPage.name}
           backgroundImg={clientMainPage.backgroundImg}
+          slug={clientMainPage.slug}
         />
       )}
     </ClientsSummary>
