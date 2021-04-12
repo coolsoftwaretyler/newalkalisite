@@ -14,7 +14,7 @@ function CardHover() {
       onMouseLeave={() => set({ xys: [0, 0, 1] })}
       style={{ transform: props.xys.to(trans), backgroundImage: `url("/images/carro-cover.jpg")`, backgroundRepeat: "no-repeat", backgroundSize: "cover"}}
     >
-    <h3 className="font-open rounded-md text-3xl text-white pl-2 pt-80 pl-5 pb-4">{props.name}</h3>
+    <h3 className="font-open rounded-md text-3xl text-white pl-2 pt-80 pl-5 pb-4">TEST</h3>
     </animated.div>
   )
 }
