@@ -19,7 +19,7 @@ const TwoColumnLayout = props => {
         <div className={`${props.style} p-4 py-24 px-0 lg:px-14`}>
             <div className="flex flex-col-reverse space-x-0 lg:space-x-14 lg:flex-row m-auto justify-between items-center max-w-7xl">
                 <div className="w-5/6 lg:w-1/2">
-                    <div className=""><img className="rounded-md w-full" src={props.image}></img></div>
+                    <div className=""><img className="rounded-md w-full" width="100%" height="100%" src={props.image}></img></div>
                 </div>
                 <div className="w-5/6 lg:w-1/2 pb-20 lg:pb-0">
                     <h3 className="text-4xl font-play font-bold m-auto leading-tight">{props.title}</h3>
