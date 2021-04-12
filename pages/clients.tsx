@@ -29,9 +29,6 @@ function Clients() {
     </div>
     {ClientMainPage.map(clientMainPage =>
       <ClientsSummary>
-        <CardHover
-        name={clientMainPage.name}
-        />
       </ClientsSummary>
     )}
   </div>
