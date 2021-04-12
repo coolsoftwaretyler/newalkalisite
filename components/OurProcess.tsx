@@ -20,14 +20,10 @@ const OurProcess = props => {
                     <div className="relative self-center text-center px-4 pb-7 md:pb-0">{props.title}</div>
                 </div>
                 <div className="bg-white p-4 shadow-2xl w-full md:w-8/12 rounded-l-md rounded-b-md md: md:rounded-r-none ">
-                    <div className="text-center sm:text-left ml-none sm:ml-7 lg:ml-14">
-                        {props.step1}<br />
-                        {props.step2}<br />
-                        {props.step3}<br />
-                        {props.step4}<br />
-                        {props.step5}<br />
-                        {props.step6}<br />
-                        {props.step7}
+                    <div 
+                    className="text-center sm:text-left ml-none sm:ml-7 lg:ml-14"
+                    dangerouslySetInnerHTML={{__html: props.step1}}
+                    >
                     </div>
                 </div>
             </div>
