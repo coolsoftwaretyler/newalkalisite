@@ -19,7 +19,22 @@ import ClientContainer from '../../components/ClientContainer'
 import ClientBlocks from '../../content/clientPages/clientBlocks'
 
 
-function Carro2() {
+function Carro() {
+  const carroImages = ClientBlocks.carro.map(carro =>
+    <AngledImage
+      image={carro.image}
+      layout="left"
+    />
+  )
+
+  const carroText = ClientBlocks.carro.map(carro =>
+    <StandardTextBlock
+      sub={carro.sub}
+      title={carro.title}
+      text={carro.text}
+    />
+  )
+
   return <div className="m-auto">
     <div className="carro-bg">
       <Header />
@@ -49,24 +64,8 @@ function Carro2() {
     </div>
 
     <TwoColumnLayoutTwo
-      style="bg-alkaligrey-300 pt-24 mt-0 pb-80 overflow-hidden"
-      child1={
-        ClientBlocks.carro.slice(0,1).map(carro =>
-          <AngledImage
-            image={carro.image}
-            layout="left"
-          />
-        )
-    }
-      child2={
-          ClientBlocks.carro.slice(0,1).map(carro =>
-            <StandardTextBlock
-              sub={carro.sub}
-              title={carro.title}
-              text={carro.text}
-            />
-          )
-      }
+      child1={carroImages}
+      child2={carroText}
     >
     </TwoColumnLayoutTwo>
 
@@ -147,4 +146,4 @@ function Carro2() {
   </div>
 }
 
-export default Carro2
+export default Carro
