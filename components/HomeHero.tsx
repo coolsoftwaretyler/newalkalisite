@@ -1,10 +1,12 @@
 import Modal from '../components/Modal'
-import HeaderAlt from '../components/HeaderAlt'
+import Header from '../components/Header'
 import Link from 'next/link'
 
 function HomeHero() {
   return <div className="bg-alkaligrey-200">
-    <HeaderAlt />
+    <Header 
+    headerColor="blue"
+    />
     <div className="pt-20 flex justify-between max-w-7xl justify-center m-auto z-20">
       <div className="relative z-20">
         <p className="text-alkaligrey-800 uppercase font-medium text-lg">Our Mission</p>

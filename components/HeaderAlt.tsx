@@ -15,11 +15,15 @@ const HeaderAlt = props => {
                             <div className="p-8 duration-500 flex justify-between max-w-7xl justify-center m-auto">
                                 <div>
                                     <div className="text-white font-bold uppercase text-lg">
-                                        Solutions
+                                        Digital Marketing
                                     </div>
-                                    <div className="text-alkaligrey-400 text-lg pt-6">
-                                        SEO
-                                    </div>
+                                    <Link href="/services/digital-marketing/search-engine-optimization">
+                                        <a>
+                                            <div className="text-alkaligrey-400 text-lg pt-6">
+                                                SEO
+                                            </div>
+                                        </a>
+                                    </Link>
                                     <div className="text-alkaligrey-400 text-lg pt-6">
                                         Local SEO
                                     </div>

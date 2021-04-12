@@ -1,4 +1,4 @@
-import HeaderAlt from '../../../components/HeaderAlt'
+import Header from '../../../components/Header'
 import Modal from '../../../components/Modal'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
 import { faCaretUp, faLongArrowAltRight, faPaintBrush, faSearch } from "@fortawesome/free-solid-svg-icons"; // import the icons you need
@@ -15,13 +15,14 @@ import OurProcessComp from '../../../components/OurProcess'
 import TwoColumnLayoutTwo from '../../../components/TwoColumnLayoutTwo'
 import AngledImage from '../../../components/AngledImage'
 import StandardTextBlock from '../../../components/StandardTextBlock'
-
+import ServiceHeroContent from '../../../content/servicePages/serviceHeroContent'
+import ServiceHeader from '../../../components/ServiceHeader';
 
 function WordPressWebsiteDevelopment() {
     const wordpressImages = Wordpress.customBuilt.map(wordpress =>
-       <div>
-           <img src={wordpress.image} alt={wordpress.altText}/>
-       </div>
+        <div className="m-auto">
+            <img src={wordpress.image} alt={wordpress.altText} />
+        </div>
     )
 
     const wordpressText = Wordpress.customBuilt.map(wordpress =>
@@ -32,22 +33,16 @@ function WordPressWebsiteDevelopment() {
     )
     return <div className="m-auto">
         <div>
-            <HeaderAlt
-                style="py-8"
-                logo="../../images/alkali-logo-blue.png"
+            <Header
+                headerColor="blue"
             />
-            <div className="client-hero" style={{ backgroundImage: "url(../../images/cartalk-hero.jpg)", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}>
-                <div className="max-w-7xl flex justify-between items-center m-auto pt-56 pb-20">
-                    <div className="ml-7 2xl:mx-0">
-                        <h1 className="portfolio-title font-open text-white uppercase font-open text-md font-bold">WordPress Website Development in Houston</h1>
-                        <h2 className="text-6xl text-white font-play font-bold pt-3 py-10 max-w-4xl">Customizing and developing high-performance WordPress websites is what we do</h2>
-                        <Modal
-                            style="p-4 px-6 font-semibold text-white shadow-2xl rounded-md transition duration-500 ease-in-out bg-alkali-500 hover:bg-alkali-700"
-                            text="Schedule a Discovery Call"
-                        />
-                    </div>
-                </div>
-            </div>
+            {ServiceHeroContent.wordpress.map(wordpress =>
+                <ServiceHeader
+                    sub={wordpress.sub}
+                    title={wordpress.title}
+                    backgroundImg={wordpress.backgroundImg}
+                />
+            )}
         </div>
         <div className="">
             <div className="p-4 py-24 px-0 lg:px-14">
@@ -79,7 +74,7 @@ function WordPressWebsiteDevelopment() {
                 </div>
             </div>
         </div>
-        <TwoColumnLayoutTwo 
+        <TwoColumnLayoutTwo
             child1={wordpressImages}
             child2={wordpressText}
         />
@@ -92,6 +87,7 @@ function WordPressWebsiteDevelopment() {
                 layoutType="regular"
             />
         )}
+
         <div className="bg-alkaligrey-300 p-4 pt-0 pb-24 px-0 lg:px-14">
             <div className="p-4 flex flex-col lg:flex-row space-x-24 justify-between max-w-7xl m-auto">
                 <div className="w-full lg:w-1/2">
@@ -229,13 +225,7 @@ function WordPressWebsiteDevelopment() {
             <OurProcessComp
                 style="bg-alkaligrey-300"
                 title={wordpress.title}
-                step1={wordpress.step1}
-                step2={wordpress.step2}
-                step3={wordpress.step3}
-                step4={wordpress.step4}
-                step5={wordpress.step5}
-                step6={wordpress.step6}
-                step7={wordpress.step7}
+                step={wordpress.step}
                 icon={wordpress.icon}
                 type={index}
             />

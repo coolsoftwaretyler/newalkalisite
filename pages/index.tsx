@@ -10,11 +10,6 @@ import Footer from '../components/Footer'
 export default function Home() {
   return (
     <div className="">
-      <style jsx>{`
-      <div className="particle-header">
-      <Parts />
-      </div>
-`}</style>
       <HomeHero />
       <div className="">
         <SplitTextImageAlt

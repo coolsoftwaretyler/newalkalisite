@@ -37,7 +37,9 @@ function Carro() {
 
   return <div className="m-auto">
     <div className="carro-bg">
-      <Header />
+      <Header 
+        headerColor="white"
+      />
       <div className="max-w-7xl flex justify-between items-center m-auto py-14">
         <div className="ml-7 2xl:mx-0">
           <p className="uppercase text-white font-open font-medium">Technology</p>
