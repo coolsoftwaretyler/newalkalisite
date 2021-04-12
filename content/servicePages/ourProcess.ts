@@ -7,7 +7,7 @@ const OurProcess = {
         },
         {
             title: "Web Design",
-            icon: "faSearch",
+            icon: "faCoffee",
             step1: "Identify your objectives and your website's functionality requirements",
             step2: "Identify your objectives and your website's functionality requirements",
             step3: "Identify your objectives and your website's functionality requirements",

@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
-import { faSearch } from "@fortawesome/free-solid-svg-icons"; // import the icons you need
+import { faCoffee, faSearch } from "@fortawesome/free-solid-svg-icons"; // import the icons you need
 
 const OurProcess = props => {
     const eventDotWrapperClass = () => {
@@ -10,11 +10,16 @@ const OurProcess = props => {
         return `${props.type % 2 === 0 ? 'event-dotR ml-0 md:ml-7' : 'event-dotL ml-0 md:mr-7'}  bg-alkali-500 text-center rounded-none md:rounded-full w-auto h-auto md:w-20 md:h-20 self-stretch md:self-center p-6 shadow-2xl rounded-t-md md:rounded-none`
     }
 
+    const icons = {
+        'faCoffee': faCoffee,
+        'faSearch': faSearch
+    }
+
     return (
         <div className="mb-16 md:mb-36">
             <div className={eventDotWrapperClass()}>
                 <div className={eventDotClass()}>
-                    <FontAwesomeIcon className="text-3xl text-white" icon={faSearch}></FontAwesomeIcon>
+                    <FontAwesomeIcon className="text-3xl text-white" icon={icons[props.icon]}></FontAwesomeIcon>
                 </div>
                 <div className="bg-alkali-500 relative shadow-2xl text-white font-open text-xl flex align-center justify-center w-full md:w-3/12 rounded-non md:rounded-r-md">
                     <div className="relative self-center text-center px-4 pb-7 md:pb-0">{props.title}</div>
