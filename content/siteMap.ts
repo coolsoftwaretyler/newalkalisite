@@ -39,7 +39,7 @@ const SiteMap = {
     webDevelopment: [
         {
             name: 'WordPress Websites',
-            slug: "website-development/wordpress-website-development",
+            slug: "web-development/wordpress-website-development",
         },
         {
             name: "E-commerce Websites",

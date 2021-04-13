@@ -59,7 +59,7 @@ function Carro() {
           </div>
         </div>
         <div>
-          <img src="../images/carro-header-image.png"></img>
+          <img src="../images/carro-header-image.png"/>
         </div>
       </div>
     </div>

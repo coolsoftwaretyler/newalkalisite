@@ -19,31 +19,89 @@ import ServiceHeroContent from '../../../content/servicePages/serviceHeroContent
 import ServiceHeader from '../../../components/ServiceHeader';
 
 function WordPressWebsiteDevelopment() {
-    const wordpressImages = Wordpress.customBuilt.map(wordpress =>
-        <div className="m-auto">
-            <img src={wordpress.image} alt={wordpress.altText} width="100%" height="auto"/>
-        </div>
-    )
-
-    const wordpressText = Wordpress.customBuilt.map(wordpress =>
-        <StandardTextBlock
-            title={wordpress.title}
-            text={wordpress.text}
-        />
-    )
-
-    const wordpressCustomBuiltImage = Wordpress.customBuilt.map(customBuilt =>
+    const customBuiltImage = Wordpress.customBuilt.map(customBuilt =>
         <StandardImage
-          image={customBuilt.image}
-          imageAngle="none"
+            image={customBuilt.image}
+            imageAngle="none"
         />
-      )
-      const wordpressCustomBuiltText = Wordpress.customBuilt.map(customBuilt =>
+    )
+
+    const customBuiltText = Wordpress.customBuilt.map(customBuilt =>
         <StandardTextBlock
-        title={customBuilt.title}
-        text={customBuilt.text}
+            title={customBuilt.title}
+            text={customBuilt.text}
         />
-      )
+    )
+
+    const responsiveDesignImage = Wordpress.customBuilt.map(responsiveDesign =>
+        <StandardImage
+            image={responsiveDesign.image}
+            imageAngle="none"
+        />
+    )
+
+    const responsiveDesignText = Wordpress.responsiveDesign.map(responsiveDesign =>
+        <StandardTextBlock
+            title={responsiveDesign.title}
+            text={responsiveDesign.text}
+        />
+    )
+
+    const seoImage = Wordpress.seo.map(seo =>
+        <StandardImage
+            image={seo.image}
+            imageAngle="none"
+        />
+    )
+
+    const seoText = Wordpress.seo.map(seo =>
+        <StandardTextBlock
+            title={seo.title}
+            text={seo.text}
+        />
+    )
+
+    const userExperienceImage = Wordpress.userExperience.map(userExperience =>
+        <StandardImage
+            image={userExperience.image}
+            imageAngle="none"
+        />
+    )
+
+    const userExperienceText = Wordpress.userExperience.map(userExperience =>
+        <StandardTextBlock
+            title={userExperience.title}
+            text={userExperience.text}
+        />
+    )
+
+    const performanceImage = Wordpress.performance.map(performance =>
+        <StandardImage
+            image={performance.image}
+            imageAngle="none"
+        />
+    )
+
+    const performanceText = Wordpress.performance.map(performance =>
+        <StandardTextBlock
+            title={performance.title}
+            text={performance.text}
+        />
+    )
+
+    const conversionImage = Wordpress.conversion.map(conversion =>
+        <StandardImage
+            image={conversion.image}
+            imageAngle="none"
+        />
+    )
+
+    const conversionText = Wordpress.conversion.map(conversion =>
+        <StandardTextBlock
+            title={conversion.title}
+            text={conversion.text}
+        />
+    )
 
     return <div className="m-auto">
         <div>
@@ -68,7 +126,7 @@ function WordPressWebsiteDevelopment() {
                     <div className="z-0 pointer-events-none">
                         <div className="angled-mockup rounded-md shadow-2xl">
                             <div className="browser-mockup z-0">
-                                <img className="rounded-b-md" src="../../images/wordpress-stats.webp" width="100%" height="auto"/>
+                                <img className="rounded-b-md" src="../../images/wordpress-stats.webp" width="100%" height="auto" />
                             </div>
                             <div className="bg-white stat-container float-right -mr-6 shadow-2xl p-7 rounded-md text-center uppercase font-medium text-sm -mt-14 relative">
                                 <p className="pb-4">Wordpress Statistics</p>
@@ -88,23 +146,12 @@ function WordPressWebsiteDevelopment() {
                 </div>
             </div>
         </div>
+
         <TwoColumnLayoutTwo
-            child1={wordpressCustomBuiltText}
-            child2={wordpressCustomBuiltImage}
+            style="bg-alkaligrey-300"
+            child1={customBuiltText}
+            child2={customBuiltImage}
         />
-        <TwoColumnLayoutTwo
-            child1={wordpressImages}
-            child2={wordpressText}
-        />
-        {Wordpress.customBuilt.map(wordpress =>
-            <TwoColumnLayout
-                title={wordpress.title}
-                text={wordpress.text}
-                image={wordpress.image}
-                altText={wordpress.altText}
-                layoutType="regular"
-            />
-        )}
 
         <div className="bg-alkaligrey-300 p-4 pt-0 pb-24 px-0 lg:px-14">
             <div className="p-4 flex flex-col lg:flex-row space-x-24 justify-between max-w-7xl m-auto">
@@ -145,26 +192,17 @@ function WordPressWebsiteDevelopment() {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo, urna ut ultrices maximus, felis libero ultricies justo, quis bibendum ante felis dictum augue. Etiam efficitur odio non tortor finibus feugiat mollis quis ex. Mauris porta tellus a dignissim vestibulum. Praesent sagittis sodales ex, nec.
             </p>
         </div>
-        {Wordpress.responsiveDesign.map(wordpress =>
-            <TwoColumnLayout
-                style="bg-white"
-                title={wordpress.title}
-                text={wordpress.text}
-                image={wordpress.image}
-                altText={wordpress.altText}
-                layoutType="regular"
-            />
-        )}
-        {Wordpress.seo.map(wordpress =>
-            <TwoColumnLayout
-                style="bg-alkaligrey-300 pb-96 mb-6"
-                title={wordpress.title}
-                text={wordpress.text}
-                image={wordpress.image}
-                altText={wordpress.altText}
-                layoutType=""
-            />
-        )}
+        <TwoColumnLayoutTwo
+            child1={responsiveDesignImage}
+            child2={responsiveDesignText}
+        />
+
+        <TwoColumnLayoutTwo
+            style="bg-alkaligrey-300 pb-96 mb-6"
+            child1={seoText}
+            child2={seoImage}
+        />
+
         <div className="-mt-72">
             <h3 className="text-4xl text-center font-play font-bold m-auto leading-tight pb-10">Hear It Straight From Our Clients</h3>
         </div>
@@ -184,46 +222,22 @@ function WordPressWebsiteDevelopment() {
                 )}
             </TestimonialSlider>
         </div>
-        {Wordpress.userExperience.map(wordpress =>
-            <TwoColumnLayout
-                style="bg-white relative z-0"
-                title={wordpress.title}
-                text={wordpress.text}
-                image={wordpress.image}
-                altText={wordpress.altText}
-                layoutType="regular"
-            />
-        )}
-        {Wordpress.performance.map(wordpress =>
-            <TwoColumnLayout
-                style="bg-alkaligrey-300"
-                title={wordpress.title}
-                text={wordpress.text}
-                image={wordpress.image}
-                altText={wordpress.altText}
-                layoutType=""
-            />
-        )}
-        {Wordpress.conversion.map(wordpress =>
-            <TwoColumnLayout
-                style="bg-white"
-                title={wordpress.title}
-                text={wordpress.text}
-                image={wordpress.image}
-                altText={wordpress.altText}
-                layoutType="regular"
-            />
-        )}
-        {Wordpress.conversion.map(wordpress =>
-            <TwoColumnLayout
-                style="bg-alkaligrey-300"
-                title={wordpress.title}
-                text={wordpress.text}
-                image={wordpress.image}
-                altText={wordpress.altText}
-                layoutType=""
-            />
-        )}
+        <TwoColumnLayoutTwo
+            child1={userExperienceText}
+            child2={userExperienceImage}
+        />
+ 
+        <TwoColumnLayoutTwo
+            style="bg-alkaligrey-300"
+            child1={performanceImage}
+            child2={performanceText}
+        />
+
+        <TwoColumnLayoutTwo
+            child1={conversionText}
+            child2={conversionImage}
+        />
+
         <div className="py-24 bg-white">
             <h6 className="text-4xl pb-7 text-center font-play font-bold m-auto leading-tight">Endless Integrations</h6>
             <p className="font-open text-center max-w-4xl m-auto text-lg font-normal pt-4">

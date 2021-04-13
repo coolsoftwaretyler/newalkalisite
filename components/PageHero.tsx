@@ -26,7 +26,7 @@ const PageHero = props => {
             </div>
             <div className="w-2/5 z-10">
                 <div className="">
-                    <img src={props.image}></img>
+                    <img src={props.image}/>
                 </div>
             </div>
         </div>
