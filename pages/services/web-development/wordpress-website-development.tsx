@@ -7,12 +7,11 @@ import 'react-vertical-timeline-component/style.min.css';
 import TestimonialSlider from '../../../components/TestimonialSlider'
 import TestimonialSlide from '../../../components/TestimonialSlide'
 import Testimonials from '../../../content/testimonials'
-import TwoColumnLayout from '../../../components/TwoColumnLayout'
 import Wordpress from '../../../content/servicePages/wordpress'
 import Integration from '../../../components/Integration'
 import OurProcess from '../../../content/servicePages/ourProcess'
 import OurProcessComp from '../../../components/OurProcess'
-import TwoColumnLayoutTwo from '../../../components/TwoColumnLayoutTwo'
+import TwoColumnLayout from '../../../components/TwoColumnLayout'
 import StandardImage from '../../../components/StandardImage'
 import StandardTextBlock from '../../../components/StandardTextBlock'
 import ServiceHeroContent from '../../../content/servicePages/serviceHeroContent'
@@ -147,7 +146,7 @@ function WordPressWebsiteDevelopment() {
             </div>
         </div>
 
-        <TwoColumnLayoutTwo
+        <TwoColumnLayout
             style="bg-alkaligrey-300"
             child1={customBuiltText}
             child2={customBuiltImage}
@@ -192,12 +191,12 @@ function WordPressWebsiteDevelopment() {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo, urna ut ultrices maximus, felis libero ultricies justo, quis bibendum ante felis dictum augue. Etiam efficitur odio non tortor finibus feugiat mollis quis ex. Mauris porta tellus a dignissim vestibulum. Praesent sagittis sodales ex, nec.
             </p>
         </div>
-        <TwoColumnLayoutTwo
+        <TwoColumnLayout
             child1={responsiveDesignImage}
             child2={responsiveDesignText}
         />
 
-        <TwoColumnLayoutTwo
+        <TwoColumnLayout
             style="bg-alkaligrey-300 pb-96 mb-6"
             child1={seoText}
             child2={seoImage}
@@ -222,18 +221,18 @@ function WordPressWebsiteDevelopment() {
                 )}
             </TestimonialSlider>
         </div>
-        <TwoColumnLayoutTwo
+        <TwoColumnLayout
             child1={userExperienceText}
             child2={userExperienceImage}
         />
  
-        <TwoColumnLayoutTwo
+        <TwoColumnLayout
             style="bg-alkaligrey-300"
             child1={performanceImage}
             child2={performanceText}
         />
 
-        <TwoColumnLayoutTwo
+        <TwoColumnLayout
             child1={conversionText}
             child2={conversionImage}
         />

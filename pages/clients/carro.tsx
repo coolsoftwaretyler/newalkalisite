@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the 
 import ClientCardContainer from '../../components/ClientCardContainer'
 import TestimonialSlide from '../../components/TestimonialSlide'
 import Testimonials from '../../content/testimonials'
-import TwoColumnLayoutTwo from '../../components/TwoColumnLayoutTwo'
+import TwoColumnLayout from '../../components/TwoColumnLayout'
 import StandardImage from '../../components/StandardImage'
 import StandardTextBlock from '../../components/StandardTextBlock'
 import ArrowImages from '../../content/clientPages/arrowImages'
@@ -73,12 +73,12 @@ function Carro() {
       </div>
     </div>
 
-    <TwoColumnLayoutTwo
+    <TwoColumnLayout
       style="bg-alkaligrey-300 py-24 pb-80 mb-6"
       child1={carroGoalImage}
       child2={carroGoalText}
     >
-    </TwoColumnLayoutTwo>
+    </TwoColumnLayout>
 
 
     <div className="mx-14">
@@ -98,12 +98,12 @@ function Carro() {
         )}
       </div>
     </div>
-    <TwoColumnLayoutTwo
+    <TwoColumnLayout
       style="bg-white py-24 pb-80 mb-6"
       child1={carroResultText}
       child2={carroResultImage}
     >
-    </TwoColumnLayoutTwo>
+    </TwoColumnLayout>
 
     <div className="p-4 py-24 bg-alkali-500">
       <div className="flex flex-col lg:flex-row justify-between items-center max-w-7xl m-auto mx-3 xl:mx-auto">
