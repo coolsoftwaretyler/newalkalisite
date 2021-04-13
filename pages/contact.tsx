@@ -1,11 +1,13 @@
-import HeaderAlt from "../components/HeaderAlt"
+import Header from "../components/Header"
 import Modal from "../components/Modal"
 
 function Contact() {
     return (
         <div>
             <div className="bg-alkaligrey-200">
-                <HeaderAlt />
+                <Header 
+                headerColor="blue"
+                />
                 <div className="mx-7 xl:mx-auto max-w-7xl m-auto py-44 pb-80">
                     <h1 className="text-6xl font-open font-bold">Contact</h1>
                     <p className="text-xl pt-7 font-opens">Get in touch and let us know how we can help.</p>

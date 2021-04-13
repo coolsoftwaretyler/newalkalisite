@@ -13,7 +13,7 @@ import Integration from '../../../components/Integration'
 import OurProcess from '../../../content/servicePages/ourProcess'
 import OurProcessComp from '../../../components/OurProcess'
 import TwoColumnLayoutTwo from '../../../components/TwoColumnLayoutTwo'
-import AngledImage from '../../../components/AngledImage'
+import StandardImage from '../../../components/StandardImage'
 import StandardTextBlock from '../../../components/StandardTextBlock'
 import ServiceHeroContent from '../../../content/servicePages/serviceHeroContent'
 import ServiceHeader from '../../../components/ServiceHeader';
@@ -31,6 +31,20 @@ function WordPressWebsiteDevelopment() {
             text={wordpress.text}
         />
     )
+
+    const wordpressCustomBuiltImage = Wordpress.customBuilt.map(customBuilt =>
+        <StandardImage
+          image={customBuilt.image}
+          imageAngle="none"
+        />
+      )
+      const wordpressCustomBuiltText = Wordpress.customBuilt.map(customBuilt =>
+        <StandardTextBlock
+        title={customBuilt.title}
+        text={customBuilt.text}
+        />
+      )
+
     return <div className="m-auto">
         <div>
             <Header
@@ -74,6 +88,10 @@ function WordPressWebsiteDevelopment() {
                 </div>
             </div>
         </div>
+        <TwoColumnLayoutTwo
+            child1={wordpressCustomBuiltText}
+            child2={wordpressCustomBuiltImage}
+        />
         <TwoColumnLayoutTwo
             child1={wordpressImages}
             child2={wordpressText}

@@ -1,33 +1,41 @@
 import Header from '../../components/Header'
 import Modal from '../../components/Modal'
 import ResponsiveScreens from '../../components/ResponsiveScreens'
-import AngledSplitTextImage from '../../components/AngledSplitTextImage'
-import AngledSplitTextImageAlt from '../../components/AngledSplitTextImageAlt'
-import SplitTextImageAlt from '../../components/SplitTextImageAlt'
 import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons"; // import the icons you need
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
-import ClientsSummary from '../../components/ClientsSummary'
+import ClientCardContainer from '../../components/ClientCardContainer'
 import TestimonialSlide from '../../components/TestimonialSlide'
 import Testimonials from '../../content/testimonials'
 import TwoColumnLayoutTwo from '../../components/TwoColumnLayoutTwo'
-import Wordpress from '../../content/servicePages/wordpress'
-import AngledImage from '../../components/AngledImage'
+import StandardImage from '../../components/StandardImage'
 import StandardTextBlock from '../../components/StandardTextBlock'
 import ArrowImages from '../../content/clientPages/arrowImages'
 import ClientMainPage from '../../content/clientPages/clientMainPage'
-import ClientContainer from '../../components/ClientContainer'
+import ClientCard from '../../components/ClientCard'
 import ClientBlocks from '../../content/clientPages/clientBlocks'
 
 
 function Carro() {
-  const carroImages = ClientBlocks.carro.map(carro =>
-    <AngledImage
+  const carroGoalImage = ClientBlocks.carro.splice(1, 1).map(carro =>
+    <StandardImage
       image={carro.image}
       layout="left"
     />
   )
-
-  const carroText = ClientBlocks.carro.map(carro =>
+  const carroGoalText = ClientBlocks.carro.map(carro =>
+    <StandardTextBlock
+      sub={carro.sub}
+      title={carro.title}
+      text={carro.text}
+    />
+  )
+  const carroResultImage = ClientBlocks.carro.map(carro =>
+    <StandardImage
+      image={carro.image}
+      layout="right"
+    />
+  )
+  const carroResultText = ClientBlocks.carro.map(carro =>
     <StandardTextBlock
       sub={carro.sub}
       title={carro.title}
@@ -37,7 +45,7 @@ function Carro() {
 
   return <div className="m-auto">
     <div className="carro-bg">
-      <Header 
+      <Header
         headerColor="white"
       />
       <div className="max-w-7xl flex justify-between items-center m-auto py-14">
@@ -66,14 +74,15 @@ function Carro() {
     </div>
 
     <TwoColumnLayoutTwo
-      child1={carroImages}
-      child2={carroText}
+      style="bg-alkaligrey-300 py-24 pb-80 mb-6"
+      child1={carroGoalImage}
+      child2={carroGoalText}
     >
     </TwoColumnLayoutTwo>
 
 
     <div className="mx-14">
-      <div className="pb-24 -mt-72">
+      <div className="pb-24 -mt-56">
         {Testimonials.wordpress.slice(1).map(testimonial =>
           <TestimonialSlide
             style="max-w-7xl m-auto shadow-2xl rounded-md"
@@ -90,23 +99,9 @@ function Carro() {
       </div>
     </div>
     <TwoColumnLayoutTwo
-      child2={
-        ClientBlocks.carro.slice(1).map(carro =>
-          <AngledImage
-            image={carro.image}
-            layout="right"
-          />
-        )
-    }
-      child1={
-          ClientBlocks.carro.slice(1).map(carro =>
-            <StandardTextBlock
-              sub={carro.sub}
-              title={carro.title}
-              text={carro.text}
-            />
-          )
-      }
+      style="bg-white py-24 pb-80 mb-6"
+      child1={carroResultText}
+      child2={carroResultImage}
     >
     </TwoColumnLayoutTwo>
 
@@ -135,16 +130,15 @@ function Carro() {
         phoneLink={arrowImages.phoneLink}
       />
     )}
-    <ClientsSummary
-      style="bg-alkaligrey-300"
-    >
+    <ClientCardContainer>
       {ClientMainPage.map(clientMainPage =>
-        <ClientContainer
+        <ClientCard
           name={clientMainPage.name}
           backgroundImg={clientMainPage.backgroundImg}
+          slug={clientMainPage.slug}
         />
       )}
-    </ClientsSummary>
+    </ClientCardContainer>
   </div>
 }
 

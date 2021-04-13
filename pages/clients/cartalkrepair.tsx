@@ -5,12 +5,16 @@ import AngledSplitTextImage from '../../components/AngledSplitTextImage'
 import SplitTextImageAlt from '../../components/SplitTextImageAlt'
 import PageHero from '../../components/PageHero'
 import TestimonialSlide from '../../components/TestimonialSlide'
-import ClientContainer from '../../components/ClientContainer'
+import ClientCardContainer from '../../components/ClientCardContainer'
 import Link from 'next/link'
 import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons"; // import the icons you need
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
 import { url } from 'node:inspector'
 import Testimonials from '../../content/testimonials'
+import React from 'react'
+import ClientsSummary from '../../components/ClientCardContainer'
+import ClientMainPage from '../../content/clientPages/clientMainPage'
+import ClientCard from '../../components/ClientCard'
 
 function CarTalkRepair() {
   return <div className="m-auto">
@@ -99,45 +103,15 @@ function CarTalkRepair() {
         phoneImg="../images/carro-phone.png"
       />
     </div>
-    <div className="bg-alkaligrey-300">
-      <div className="max-w-7xl m-auto py-36 pt-72 -mt-72">
-        <h3 className="text-4xl font-play font-bold m-auto leading-tight pt-7 pb-5">Other Projects</h3>
-        <ul className="group flex flex-wrap max-w-7xl transition duration-500 m-auto">
-          <Link href="/clients/carro">
-            <a>
-              <ClientContainer
-                style={{ backgroundImage: "url(../../images/carro-cover.jpg)", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}
-                title="Carro"
-              />
-            </a>
-          </Link>
-          <Link href="/clients/carro">
-            <a>
-              <ClientContainer
-                style={{ backgroundImage: "url(../../images/carro-cover.jpg)", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}
-                title="Carro"
-              />
-            </a>
-          </Link>
-          <Link href="/clients/carro">
-            <a>
-              <ClientContainer
-                style={{ backgroundImage: "url(../../images/carro-cover.jpg)", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}
-                title="Carro"
-              />
-            </a>
-          </Link>
-          <Link href="/clients/carro">
-            <a>
-              <ClientContainer
-                style={{ backgroundImage: "url(../../images/carro-cover.jpg)", backgroundRepeat: "no-repeat", backgroundSize: "cover" }}
-                title="Carro"
-              />
-            </a>
-          </Link>
-        </ul>
-      </div>
-    </div>
+    <ClientsSummary>
+      {ClientMainPage.map(clientMainPage =>
+        <ClientCard
+          name={clientMainPage.name}
+          backgroundImg={clientMainPage.backgroundImg}
+          slug={clientMainPage.slug}
+        />
+      )}
+    </ClientsSummary>
   </div>
 }
 

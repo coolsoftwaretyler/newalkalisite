@@ -1,16 +1,13 @@
-import ClientContainer from '../components/ClientContainer'
-import HeaderAlt from '../components/HeaderAlt'
-import ClientsSummary from '../components/ClientsSummary'
+import ClientCardContainer from '../components/ClientCardContainer'
+import Header from '../components/Header'
 import ClientMainPage from '../content/clientPages/clientMainPage'
-import CardHover from '../components/CardHover'
+import ClientCard from '../components/ClientCard'
 
 function Clients() {
   const testClient = ClientMainPage[0];
   return <div>
-    < HeaderAlt />
-    <CardHover
-      backgroundImage={testClient.backgroundImg}
-      title={testClient.name}
+    < Header
+    headerColor="blue"
     />
     <div className="pt-36 pb-24 flex max-w-6xl justify-center m-auto">
       <div className="text-center bg-alkaligrey-500 mx-5 w-36 text-alkaligrey-700 rounded-md p-2 border border-alkaligray-700">
@@ -29,15 +26,15 @@ function Clients() {
         Social
       </div>
     </div>
-    <ClientsSummary>
+    <ClientCardContainer>
       {ClientMainPage.map(clientMainPage =>
-        <ClientContainer
+        <ClientCard
           name={clientMainPage.name}
           backgroundImg={clientMainPage.backgroundImg}
           slug={clientMainPage.slug}
         />
       )}
-    </ClientsSummary>
+    </ClientCardContainer>
   </div>
 }
 

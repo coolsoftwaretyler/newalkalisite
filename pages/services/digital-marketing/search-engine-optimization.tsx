@@ -1,13 +1,12 @@
 import ServiceHeader from '../../../components/ServiceHeader';
 import ServiceHeroContent from '../../../content/servicePages/serviceHeroContent'
-import HeaderAlt from '../../../components/HeaderAlt'
+import Header from '../../../components/Header'
 
 function SearchEngineOptimization() {
     return (
         <div>
-            <HeaderAlt
-                style="py-8"
-                logo="../../images/alkali-logo-blue.png"
+            <Header
+                headerColor="blue"
             />
             {ServiceHeroContent.searchEngineOptimization.map(searchEngineOptimization =>
                 <ServiceHeader

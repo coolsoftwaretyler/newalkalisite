@@ -1,4 +1,4 @@
-import HeaderAlt from '../../components/HeaderAlt'
+import Header from '../../components/Header'
 import Modal from '../../components/Modal'
 import ResponsiveScreens from '../../components/ResponsiveScreens'
 import ServiceBreakdown from '../../components/ServiceBreakdown'
@@ -7,7 +7,9 @@ import AngledSplitTextImageAlt from '../../components/AngledSplitTextImageAlt'
 function Webdesign() {
     return <div className="m-auto">
         <div>
-            <HeaderAlt />
+            <Header 
+            headerColor="blue"
+            />
         </div>
         <div className="flex justify-between items-center max-w-7xl m-auto pt-12">
             <div className="w-3/5 z-10">
