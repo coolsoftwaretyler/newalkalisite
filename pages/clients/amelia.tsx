@@ -13,64 +13,64 @@ import ArrowImages from '../../content/clientPages/arrowImages'
 import ClientMainPage from '../../content/clientPages/clientMainPage'
 import ClientCard from '../../components/ClientCard'
 import ClientBlocks from '../../content/clientPages/clientBlocks'
-
+import ClientHeader from '../../components/ClientHeader'
+import ClientHeroContents from '../../content/clientPages/clientHeroContent'
 
 function Amelia() {
-  const carroGoalImage = ClientBlocks.carro.splice(1, 1).map(carro =>
+  const carroGoalImage = ClientBlocks.amelia.splice(1, 1).map(amelia =>
     <StandardImage
       imageAngle="left"
-      image={carro.image}
-      key={`carroGoalImageClientBlocksFor${carro.image}`}
+      image={amelia.image}
+      key={`carroGoalImageClientBlocksFor${amelia.image}`}
     />
   )
-  const carroGoalText = ClientBlocks.carro.map(carro =>
+  const carroGoalText = ClientBlocks.amelia.map(amelia =>
     <StandardTextBlock
-      sub={carro.sub}
-      title={carro.title}
-      text={carro.text}
-      key={`carroGoalTextClientBlocksFor${carro.title}`}
+      sub={amelia.sub}
+      title={amelia.title}
+      text={amelia.text}
+      key={`carroGoalTextClientBlocksFor${amelia.title}`}
     />
   )
-  const carroResultImage = ClientBlocks.carro.map(carro =>
+  const carroResultImage = ClientBlocks.amelia.map(amelia =>
     <StandardImage
       imageAngle="right"
-      image={carro.image}
-      key={`carroResultImageClientBlocksFor${carro.image}`}
+      image={amelia.image}
+      key={`carroResultImageClientBlocksFor${amelia.image}`}
     />
   )
-  const carroResultText = ClientBlocks.carro.map(carro =>
+  const carroResultText = ClientBlocks.amelia.map(amelia =>
     <StandardTextBlock
-      sub={carro.sub}
-      title={carro.title}
-      text={carro.text}
-      key={`carroResultTextClientBlocksFor${carro.title}`}
+      sub={amelia.sub}
+      title={amelia.title}
+      text={amelia.text}
+      key={`carroResultTextClientBlocksFor${amelia.title}`}
+    />
+  )
+
+  const servicesPerformed = ClientBlocks.amelia.map(amelia =>
+    <StandardTextBlock
+      service={amelia.sub.split(",")}
+      key={`servicesPerformedFor${amelia.title}`}
     />
   )
 
   return <div className="m-auto">
-    <div className="carro-bg">
-      <Header
-        headerColor="white"
-      />
-      <div className="max-w-7xl flex justify-between items-center m-auto py-14">
-        <div className="ml-7 2xl:mx-0">
-          <p className="uppercase text-white font-open font-medium">Technology</p>
-          <h1 className="text-6xl text-white font-play font-bold pt-3 pb-10">Carro</h1>
-          <div className="max-w-7xl m-auto">
-            <div className="border border-white p-2 rounded-md text-xs text-center text-white uppercase font-open font-bold hover:bg-white hover:text-alkaligrey-800">
-              Web Development
-          </div>
-          </div>
-        </div>
-        <div>
-          <img src="../images/carro-header-image.png" />
-        </div>
-      </div>
+    <div className="">
+      {ClientHeroContents.amelia.map(amelia =>
+        <ClientHeader
+          sub={amelia.sub}
+          title={amelia.title}
+          backgroundImg={amelia.backgroundImg}
+          service={amelia.service}
+        />
+      )}
+
     </div>
     <div className="py-24 flex flex-col md:flex-row justify-between max-w-7xl items-center justify-center m-auto mx-7 xl:mx-auto">
       <div className="w-full xs:w-1/2 pb-14 lg:pb-0">
-        <h3 className="text-4xl alkaligrey-800 font-play font-bold m-auto leading-tight pb-4 lg:pb-7">About Carro</h3>
-        <a href="" className="uppercase font-open font-bold text-lg text-alkali-500 duration-500 hover:mr-3">Visit Website</a><FontAwesomeIcon className="text-alkali-500 ml-3" icon={faLongArrowAltRight}></FontAwesomeIcon>
+        <h3 className="text-4xl alkaligrey-800 font-play font-bold m-auto leading-tight pb-4 lg:pb-7">About Homewatch Amelia</h3>
+        <a href="https://homewatchamelia.com" className="uppercase font-open font-bold text-lg text-alkali-500 duration-500 hover:mr-3">Visit Website</a><FontAwesomeIcon className="text-alkali-500 ml-3" icon={faLongArrowAltRight}></FontAwesomeIcon>
       </div>
       <div className="w-full xs:w-1/2 ">
         <p className="text-alkaligrey-400 font-open max-w-4xl text-lg font-normal">Carro is the world’s largest collaborative commerce network, with more than 25,000 brands and 6.5 million influencers. The platform seamlessly enables brands to work with influencers and each other so they can sell more, together.</p>
@@ -88,17 +88,16 @@ function Amelia() {
 
     <div className="mx-14">
       <div className="pb-24 -mt-56">
-        {Testimonials.wordpress.slice(1).map(testimonial =>
+        {Testimonials.amelia.map(amelia =>
           <TestimonialSlide
             style="max-w-7xl m-auto shadow-2xl rounded-md"
-            background={testimonial.background}
-            backgroundOverlay={testimonial.backgroundOverlay}
-            company={testimonial.company}
-            key={`designTestimonialFor${testimonial.company}`}
-            logo={testimonial.logo}
-            altText={testimonial.altText}
-            name={testimonial.name}
-            quote={testimonial.quote}
+            background={amelia.background}
+            backgroundOverlay={amelia.backgroundOverlay}
+            company={amelia.company}
+            key={`designTestimonialFor${amelia.company}`}
+            logo={amelia.logo}
+            name={amelia.name}
+            quote={amelia.quote}
           />
         )}
       </div>
@@ -121,18 +120,18 @@ function Amelia() {
         </div>
       </div>
     </div>
-    {ArrowImages.carro.map(arrowImages =>
+    {ArrowImages.amelia.map(amelia =>
       <ResponsiveScreens
         style="py-24 overflow-hidden"
         link="https://getcarro.com"
-        desktopLeft={arrowImages.desktopLeft}
-        desktopRight={arrowImages.desktopRight}
-        tablet={arrowImages.tablet}
-        phone={arrowImages.phone}
-        desktopLeftLink={arrowImages.desktopLeftLink}
-        desktopRightLink={arrowImages.desktopRightLink}
-        tabletLink={arrowImages.tabletLink}
-        phoneLink={arrowImages.phoneLink}
+        desktopLeft={amelia.desktopLeft}
+        desktopRight={amelia.desktopRight}
+        tablet={amelia.tablet}
+        phone={amelia.phone}
+        desktopLeftLink={amelia.desktopLeftLink}
+        desktopRightLink={amelia.desktopRightLink}
+        tabletLink={amelia.tabletLink}
+        phoneLink={amelia.phoneLink}
       />
     )}
     <ClientCardContainer>

@@ -16,6 +16,8 @@ import StandardImage from '../../../components/StandardImage'
 import StandardTextBlock from '../../../components/StandardTextBlock'
 import ServiceHeroContent from '../../../content/servicePages/serviceHeroContent'
 import ServiceHeader from '../../../components/ServiceHeader';
+import ArrowImages from '../../../content/clientPages/arrowImages'
+import ResponsiveScreens from '../../../components/ResponsiveScreens'
 
 function WordPressWebsiteDevelopment() {
     const customBuiltImage = Wordpress.customBuilt.map(customBuilt =>
@@ -145,16 +147,14 @@ function WordPressWebsiteDevelopment() {
                 </div>
             </div>
         </div>
-
         <TwoColumnLayout
             style="bg-alkaligrey-300"
             child1={customBuiltText}
             child2={customBuiltImage}
         />
-
-        <div className="bg-alkaligrey-300 p-4 pt-0 pb-24 px-0 lg:px-14">
-            <div className="p-4 flex flex-col lg:flex-row space-x-24 justify-between max-w-7xl m-auto">
-                <div className="w-full lg:w-1/2">
+        <div className="py-24 pt-0 bg-alkaligrey-300">
+            <div className="flex flex-col space-x-0 lg:space-x-14 lg:flex-row m-auto justify-between max-w-7xl">
+                <div className="w-full lg:w-3/6 px-14 2xl:px-0">
                     <h4 className="text-4xl font-play font-bold m-auto leading-tight pt-7">Advantages:</h4>
                     <div className="difference-listG">
                         <ul>
@@ -167,7 +167,7 @@ function WordPressWebsiteDevelopment() {
                         </ul>
                     </div>
                 </div>
-                <div className="w-1/2">
+                <div className="w-full lg:w-3/6 px-14 2xl:px-0">
                     <h4 className="text-4xl font-play font-bold m-auto leading-tight pt-7">Disadvantages:</h4>
                     <div className="difference-listR">
                         <ul>
@@ -185,25 +185,26 @@ function WordPressWebsiteDevelopment() {
             buttonText="Schedule a Discovery Call"
 
         />
-        <div className="py-24">
+        <div className="py-24 px-14 2xl:px-0">
             <h6 className="text-4xl pb-7 text-center font-play font-bold m-auto leading-tight">Components of Custom WordPress Website Development</h6>
             <p className="font-open text-center max-w-4xl m-auto text-lg font-normal pt-4">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo, urna ut ultrices maximus, felis libero ultricies justo, quis bibendum ante felis dictum augue. Etiam efficitur odio non tortor finibus feugiat mollis quis ex. Mauris porta tellus a dignissim vestibulum. Praesent sagittis sodales ex, nec.
             </p>
         </div>
         <TwoColumnLayout
+            flexType="reverse"
             child1={responsiveDesignImage}
             child2={responsiveDesignText}
         />
 
         <TwoColumnLayout
-            style="bg-alkaligrey-300 pb-96 mb-6"
+            style="bg-alkaligrey-300 pb-100 mb-2"
             child1={seoText}
             child2={seoImage}
         />
 
         <div className="-mt-72">
-            <h3 className="text-4xl text-center font-play font-bold m-auto leading-tight pb-10">Hear It Straight From Our Clients</h3>
+            <h3 className="text-4xl text-center font-play font-bold m-auto leading-tight pb-14">Hear It Straight From Our Clients</h3>
         </div>
         <div className="relative z-20">
             <TestimonialSlider>
@@ -225,28 +226,43 @@ function WordPressWebsiteDevelopment() {
             child1={userExperienceText}
             child2={userExperienceImage}
         />
- 
+
         <TwoColumnLayout
             style="bg-alkaligrey-300"
+            flexType="reverse"
             child1={performanceImage}
             child2={performanceText}
         />
-
+        {ArrowImages.carro.map(arrowImages =>
+            <ResponsiveScreens
+                style="py-36 pb-12 overflow-hidden z-30 relative"
+                link="https://getcarro.com"
+                desktopLeft={arrowImages.desktopLeft}
+                desktopRight={arrowImages.desktopRight}
+                tablet={arrowImages.tablet}
+                phone={arrowImages.phone}
+                desktopLeftLink={arrowImages.desktopLeftLink}
+                desktopRightLink={arrowImages.desktopRightLink}
+                tabletLink={arrowImages.tabletLink}
+                phoneLink={arrowImages.phoneLink}
+            />
+        )}
         <TwoColumnLayout
+            style="bg-alkaligrey-300 z-10 relative -mt-48 pt-72"
             child1={conversionText}
             child2={conversionImage}
         />
 
-        <div className="py-24 bg-white">
+        <div className="py-24 px-14 2xl:px-0 bg-white">
             <h6 className="text-4xl pb-7 text-center font-play font-bold m-auto leading-tight">Endless Integrations</h6>
             <p className="font-open text-center max-w-4xl m-auto text-lg font-normal pt-4">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo, urna ut ultrices maximus, felis libero ultricies justo, quis bibendum ante felis dictum augue. Etiam efficitur odio non tortor finibus feugiat mollis quis ex. Mauris porta tellus a dignissim vestibulum. Praesent sagittis sodales ex, nec.
             </p>
         </div>
         <Integration
-            style="bg-white pb-24 py-14"
+            style="pb-24 bg-white py-14 px-14 2xl:px-0"
         />
-        <div className="py-24">
+        <div className="py-24 px-14 2xl:px-0">
             <h6 className="text-4xl pb-7 text-center font-play font-bold m-auto leading-tight">How Our Process Works</h6>
             <p className="font-open text-center max-w-4xl m-auto text-lg font-normal pt-4">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo, urna ut ultrices maximus, felis libero ultricies justo, quis bibendum ante felis dictum augue. Etiam efficitur odio non tortor finibus feugiat mollis quis ex. Mauris porta tellus a dignissim vestibulum. Praesent sagittis sodales ex, nec.
@@ -254,14 +270,13 @@ function WordPressWebsiteDevelopment() {
         </div>
         {OurProcess.wordpress.map((wordpress, index) =>
             <OurProcessComp
-                style="bg-alkaligrey-300"
+                style=""
                 title={wordpress.title}
                 step={wordpress.step}
                 icon={wordpress.icon}
                 type={index}
             />
         )}
-
     </div>
 }
 

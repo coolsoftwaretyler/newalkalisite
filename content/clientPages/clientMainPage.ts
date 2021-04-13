@@ -6,13 +6,13 @@ const clientMainPage = [
     },
     {
         name: "CarTalk Repair",
-        backgroundImg: "/images/carro-cover.jpg",
+        backgroundImg: "/images/cartalk-repair-cover.jpg",
         slug: 'cartalk-repair',
     },
     {
-        name: "Carro",
-        backgroundImg: "/images/carro-cover.jpg",
-        slug: 'carro',
+        name: "Amelia",
+        backgroundImg: "/images/amelia-cover.jpg",
+        slug: 'amelia',
     },
     {
         name: "Carro",
