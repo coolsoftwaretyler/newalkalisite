@@ -20,7 +20,7 @@ const Header = props => {
         <div className={props.style}>
             <div className="flex justify-between max-w-7xl justify-center m-auto py-7">
                 <div className="flex items-center">
-                    <a><img className="w-40" src={headerLogoColor()} width="100%" height="auto"></img></a>
+                    <a><img className="" src={headerLogoColor()} width="160px" height="auto"/></a>
                 </div>
                 <div>
                     <div className="dropdown">

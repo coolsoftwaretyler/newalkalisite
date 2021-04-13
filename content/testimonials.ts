@@ -36,6 +36,16 @@ const Testimonials = {
             name: "Eric Sanchez, Operations Manager",
             quote: 'This is a different testimonial, about design work instead of development.'
         },
+    ],
+    amelia: [
+        {
+            background: "/images/amelia-slide-bg.jpg",
+            backgroundOverlay: "bg-gray-50",
+            company: "Homewatch Amelia",
+            logo: "/images/amelia-logo.png",
+            name: "Ann Wood, Owner",
+            quote: "Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial.Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial."
+        }
     ]
 }
 

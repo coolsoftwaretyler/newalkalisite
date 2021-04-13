@@ -47,7 +47,7 @@ export default function Home() {
       </div>
       <div className="services-home py-36 flex max-w-7xl justify-center m-auto">
         <div className="w-1/3 group shadow-2xl rounded-md p-10 hover:bg-alkali-500 hover:text-white transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
-          <img className="service-icon w-72 -mt-32 pb-4" src="/images/home-website.png"></img>
+          <img className="service-icon w-72 -mt-32 pb-4" src="/images/home-website.png"/>
           <h3 className="font-play group-hover:text-white text-3xl font-bold pb-5 text-alkali-500">Web Design</h3>
           <p className="group-hover:text-white max-w-sm">
             Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum
@@ -57,7 +57,7 @@ export default function Home() {
           </div>
         </div>
         <div className="w-1/3 group shadow-2xl mx-10 rounded-md p-10 hover:bg-alkali-500 hover:text-white transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
-          <img className="service-icon w-72 -mt-32 pb-4" src="/images/home-seo.png"></img>
+          <img className="service-icon w-72 -mt-32 pb-4" src="/images/home-seo.png"/>
           <h3 className="font-play group-hover:text-white text-3xl font-bold pb-5 text-alkali-500">SEO</h3>
           <p className="group-hover:text-white max-w-sm">
             Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum
@@ -67,7 +67,7 @@ export default function Home() {
           </div>
         </div>
         <div className="w-1/3 group shadow-2xl rounded-md p-10 hover:bg-alkali-500 hover:text-white transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
-          <img className="service-icon w-72 -mt-32 pb-4" src="/images/home-hosting.png"></img>
+          <img className="service-icon w-72 -mt-32 pb-4" src="/images/home-hosting.png"/>
           <h3 className="font-play group-hover:text-white text-3xl font-bold pb-5 text-alkali-500">Website Hosting</h3>
           <p className="group-hover:text-white max-w-sm">
             Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum
@@ -79,7 +79,7 @@ export default function Home() {
       </div>
       <div className="services-home pb-36 flex max-w-7xl justify-center m-auto">
         <div className="w-1/3 group shadow-2xl rounded-md p-10 hover:bg-alkali-500 hover:text-white transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
-          <img className="service-icon w-72 -mt-32 pb-4" src="/images/home-website.png"></img>
+          <img className="service-icon w-72 -mt-32 pb-4" src="/images/home-website.png"/>
           <h3 className="font-play group-hover:text-white text-3xl font-bold pb-5 text-alkali-500">Web Design</h3>
           <p className="group-hover:text-white max-w-sm">
             Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum
@@ -89,7 +89,7 @@ export default function Home() {
           </div>
         </div>
         <div className="w-1/3 group shadow-2xl mx-10 rounded-md p-10 hover:bg-alkali-500 hover:text-white transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
-          <img className="service-icon w-72 -mt-32 pb-4" src="/images/home-seo.png"></img>
+          <img className="service-icon w-72 -mt-32 pb-4" src="/images/home-seo.png"/>
           <h3 className="font-play group-hover:text-white text-3xl font-bold pb-5 text-alkali-500">SEO</h3>
           <p className="group-hover:text-white max-w-sm">
             Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum
@@ -99,7 +99,7 @@ export default function Home() {
           </div>
         </div>
         <div className="w-1/3 group shadow-2xl rounded-md p-10 hover:bg-alkali-500 hover:text-white transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
-          <img className="service-icon w-72 -mt-32 pb-4" src="/images/home-hosting.png"></img>
+          <img className="service-icon w-72 -mt-32 pb-4" src="/images/home-hosting.png"/>
           <h3 className="font-play group-hover:text-white text-3xl font-bold pb-5 text-alkali-500">Website Hosting</h3>
           <p className="group-hover:text-white max-w-sm">
             Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum Lorem ipsum

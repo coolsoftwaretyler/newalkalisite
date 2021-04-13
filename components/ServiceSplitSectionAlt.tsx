@@ -3,7 +3,7 @@ const ServiceSplitSectionAlt = props => {
         <div className={props.style}>
             <div className="flex flex-col-reverse space-x-0 lg:space-x-14 lg:flex-row m-auto justify-between items-center max-w-7xl">
                 <div className="w-5/6 lg:w-1/2">
-                    <div className=""><img className="rounded-md" src={props.image}></img></div>
+                    <div className=""><img className="rounded-md" src={props.image}/></div>
                 </div>
                 <div className="w-5/6 lg:w-1/2 pb-20 lg:pb-0">
                     <h3 className="text-4xl font-play font-bold m-auto leading-tight">{props.title}</h3>

@@ -14,6 +14,14 @@ const ArrowImages = {
             image: "/images/wordpress-versus.svg",
             altText: ""
         },
+    ],
+    amelia: [
+        {
+            desktopLeft: "/images/amelia-desktop.png", desktopLeftLink: "",
+            desktopRight: "/images/amelia-desktop2.png", desktopRightLink: "",
+            tablet: "/images/amelia-tablet.png", tabletLink: "",
+            phone: "/images/amelia-phone.png", phoneLink: ""
+        }
     ]
 }
 export default ArrowImages;

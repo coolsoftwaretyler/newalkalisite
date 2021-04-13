@@ -29,6 +29,12 @@ module.exports = {
           '700': '#bcbcbc',
           '800': '#272e35',
         }
+      },
+      margin : {
+        '100': '30rem',
+      },
+      padding : {
+        '100': '30rem',
       }
     }
   },

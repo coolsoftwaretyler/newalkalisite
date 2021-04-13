@@ -7,7 +7,7 @@ const ServiceSplitSection = props => {
                     <p className="text-alkaligrey-400 font-open max-w-4xl text-lg font-normal pt-7">{props.text}</p>
                 </div>
                 <div className="w-5/6 lg:w-1/2">
-                    <div className=""><img className="rounded-md" src={props.image}></img></div>
+                    <div className=""><img className="rounded-md" src={props.image}/></div>
                 </div>
             </div>
         </div>
