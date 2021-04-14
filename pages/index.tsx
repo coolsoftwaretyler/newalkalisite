@@ -6,10 +6,12 @@ import SplitTextImage from '../components/SplitTextImage'
 import ResponsiveScreens from '../components/ResponsiveScreens'
 import Modal from '../components/Modal'
 import Footer from '../components/Footer'
+import NavigationRound2 from '../components/Navigation/NavigationRound2'
 
 export default function Home() {
   return (
     <div className="">
+      <NavigationRound2 />
       <HomeHero />
       <div className="">
         <SplitTextImageAlt
