@@ -2,7 +2,7 @@ import MobileNavigation from '../components/Navigation/MobileNavigation'
 
 const Demo = () => {
     return (
-        <Navigation />
+        <div></div>
     )
 }
 
