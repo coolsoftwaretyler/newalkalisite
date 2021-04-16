@@ -296,7 +296,7 @@ a {
 }
 
 .client-hero {
-	background:url(/images/cartalk-hero.jpg) rgba(0, 0, 0, 0.4);
+	background: rgba(0, 0, 0, 0.4);
 	background-size:cover;
 	background-blend-mode: multiply;
 }

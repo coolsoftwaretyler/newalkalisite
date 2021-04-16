@@ -1,9 +1,6 @@
-import Header from '../../../components/Header'
-import Modal from '../../../components/Modal'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
-import { faCaretUp, faLongArrowAltRight, faPaintBrush, faSearch } from "@fortawesome/free-solid-svg-icons"; // import the icons you need
+import { faCaretUp } from "@fortawesome/free-solid-svg-icons"; // import the icons you need
 import ServiceLeadSection from '../../../components/ServiceLeadSection'
-import 'react-vertical-timeline-component/style.min.css';
 import TestimonialSlider from '../../../components/TestimonialSlider'
 import TestimonialSlide from '../../../components/TestimonialSlide'
 import Testimonials from '../../../content/testimonials'
