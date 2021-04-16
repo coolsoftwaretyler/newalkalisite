@@ -16,8 +16,8 @@ const TestimonialSlide = (props) => {
                             className="relativer"
                             src={props.logo}
                             alt={props.altText}
-                            width={275}
-                            height={120}
+                            width={300}
+                            height={150}
                         />
                     </div>
                     <div className="relative lg:w-7/12 bg-white">

@@ -38,9 +38,9 @@ const ResponsiveScreens = props => {
                     <div className="p-4 flex justify-between items-center max-w-7xl m-auto">
                         <div className="screenshot-container w-2/3 mx-3">
                             <a href={props.tabletLink}>
-                                <div className="rounded-md screenshot-t w-96 shadow-2xl duration-500 transform -rotate-45 -translate-x-21 hover:-translate-y-1 hover:scale-110">
+                                <div className="screenshot-t w-96 shadow-2xl duration-500 transform -rotate-45 -translate-x-21 hover:-translate-y-1 hover:scale-110">
                                     <Image
-                                        className="rounded-md"
+                                        className=""
                                         src={props.tablet}
                                         alt=""
                                         width={384}

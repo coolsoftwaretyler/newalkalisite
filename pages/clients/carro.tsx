@@ -1,8 +1,5 @@
-import Header from '../../components/Header'
 import Modal from '../../components/Modal'
 import ResponsiveScreens from '../../components/ResponsiveScreens'
-import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons"; // import the icons you need
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
 import ClientCardContainer from '../../components/Clients/ClientCardContainer'
 import TestimonialSlide from '../../components/TestimonialSlide'
 import Testimonials from '../../content/testimonials'
