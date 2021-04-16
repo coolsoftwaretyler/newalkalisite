@@ -3,6 +3,10 @@
 @import "~slick-carousel/slick/slick.css"; 
 @import "~slick-carousel/slick/slick-theme.css";
 
+#menu-toggle:checked+#menu {
+	display: block;
+ }
+
 html,
 body {
   padding: 0;

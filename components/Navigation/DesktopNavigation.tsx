@@ -1,9 +1,9 @@
-import Modal from '../components/Modal'
+import Modal from '../../components/Modal'
 import Link from 'next/link'
-import SiteMap from '../content/siteMap'
-import SiteMapContainer from '../components/SiteMapContainer'
+import SiteMap from '../../content/siteMap'
+import SiteMapContainer from '../../components/SiteMapContainer'
 
-const Header = props => {
+const DesktopNavigation = props => {
     const headerDropDownColor = () => {
         return `${props.headerColor === "white" ? 'text-white hover:text-alkaligrey-700' : 'hover:text-alkali-500'} dropbtn font-play duration-500 font-bold uppercase inline-block p-5`
     }
@@ -81,4 +81,4 @@ const Header = props => {
         </div>
     )
 }
-export default Header
+export default DesktopNavigation

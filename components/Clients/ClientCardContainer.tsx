@@ -1,4 +1,4 @@
-const ClientSummary = props => {
+const ClientCardContainer = props => {
     return (
         <div className={props}>
             <div className="max-w-7xl m-auto py-36 pt-72 -mt-72">
@@ -10,4 +10,4 @@ const ClientSummary = props => {
         </div>
     )
 }
-export default ClientSummary
+export default ClientCardContainer

@@ -1,6 +1,6 @@
-import Modal from '../components/Modal'
+import Modal from '../Modal'
 
-const ServiceHeader = props => {
+const ServiceHero = props => {
     return (
         <div className="client-hero px-14" style={{ backgroundImage: `url(/images/${props.backgroundImg})`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}>
             <div className="max-w-7xl flex justify-between items-center m-auto pt-56 pb-20">
@@ -17,4 +17,4 @@ const ServiceHeader = props => {
     )
 }
 
-export default ServiceHeader
+export default ServiceHero

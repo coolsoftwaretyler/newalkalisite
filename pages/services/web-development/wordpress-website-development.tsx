@@ -10,13 +10,13 @@ import Testimonials from '../../../content/testimonials'
 import Wordpress from '../../../content/servicePages/wordpress'
 import Integration from '../../../components/Integration'
 import OurProcess from '../../../content/servicePages/ourProcess'
-import OurProcessComp from '../../../components/OurProcess'
+import OurProcessComp from '../../../components/Services/OurProcess'
 import TwoColumnLayout from '../../../components/TwoColumnLayout'
 import StandardImage from '../../../components/StandardImage'
 import StandardTextBlock from '../../../components/StandardTextBlock'
 import ServiceHeroContent from '../../../content/servicePages/serviceHeroContent'
-import ServiceHeader from '../../../components/ServiceHeader';
-import ArrowImages from '../../../content/clientPages/arrowImages'
+import ServiceHero from '../../../components/Services/ServiceHero';
+import CarroScreenImages from '../../../content/clientPages/screenImages'
 import ResponsiveScreens from '../../../components/ResponsiveScreens'
 
 function WordPressWebsiteDevelopment() {
@@ -110,7 +110,7 @@ function WordPressWebsiteDevelopment() {
                 headerColor="blue"
             />
             {ServiceHeroContent.wordpress.map(wordpress =>
-                <ServiceHeader
+                <ServiceHero
                     sub={wordpress.sub}
                     title={wordpress.title}
                     backgroundImg={wordpress.backgroundImg}
@@ -183,7 +183,6 @@ function WordPressWebsiteDevelopment() {
             title="We're Here to Realize Your Vision"
             text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel malesuada tellus. Quisque id arcu tincidunt, congue leo vitae, vehicula justo. Vestibulum turpis lectus, tincidunt quis massa nec, elementum gravida ligula. Integer elementum viverra ipsum in malesuada. Donec semper est egestas placerat pretium. Cras tincidunt vel odio in."
             buttonText="Schedule a Discovery Call"
-
         />
         <div className="py-24 px-14 2xl:px-0">
             <h6 className="text-4xl pb-7 text-center font-play font-bold m-auto leading-tight">Components of Custom WordPress Website Development</h6>
@@ -233,18 +232,18 @@ function WordPressWebsiteDevelopment() {
             child1={performanceImage}
             child2={performanceText}
         />
-        {ArrowImages.carro.map(arrowImages =>
+        {CarroScreenImages.carro.map(carro =>
             <ResponsiveScreens
                 style="py-36 pb-12 overflow-hidden z-30 relative"
                 link="https://getcarro.com"
-                desktopLeft={arrowImages.desktopLeft}
-                desktopRight={arrowImages.desktopRight}
-                tablet={arrowImages.tablet}
-                phone={arrowImages.phone}
-                desktopLeftLink={arrowImages.desktopLeftLink}
-                desktopRightLink={arrowImages.desktopRightLink}
-                tabletLink={arrowImages.tabletLink}
-                phoneLink={arrowImages.phoneLink}
+                desktopLeft={carro.desktopLeft}
+                desktopRight={carro.desktopRight}
+                tablet={carro.tablet}
+                phone={carro.phone}
+                desktopLeftLink={carro.desktopLeftLink}
+                desktopRightLink={carro.desktopRightLink}
+                tabletLink={carro.tabletLink}
+                phoneLink={carro.phoneLink}
             />
         )}
         <TwoColumnLayout

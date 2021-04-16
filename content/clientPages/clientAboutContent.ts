@@ -1,18 +1,26 @@
-const ClientBlocks = {
-    carro: [
-        {
-            image: "/images/carro-before.png",
-            sub: "The Goal",
-            title: "Rebrand Existing Site",
-            text: "Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website."
-        },
-        {
-            image: "/images/carro-before.png",
-            sub: "The Goal 2",
-            title: "Rebrand Existing Site 2",
-            text: "Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website. Talk about rebranding and transitioning old website."
-        }
-    ],
+const ClientAboutContent = {
+
+    carro: {
+        goal:
+            [
+                {
+                    image: "/images/carro-before.png",
+                    sub: "The Goal",
+                    title: "Test Title",
+                    text: "Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation."
+                },
+            ],
+        result:
+            [
+                {
+                    image: "/images/carro-desktop.png",
+                    sub: "The Result",
+                    title: "Test Title",
+                    text: "Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation."
+                },
+            ],
+    },
+
     amelia: [
         {
             image: "/images/amelia-desktop2.png",
@@ -36,4 +44,8 @@ const ClientBlocks = {
         },
     ]
 }
-export default ClientBlocks;
+
+const CarroAboutContent = ClientAboutContent.carro.goal
+
+export { CarroAboutContent }
+export default ClientAboutContent

@@ -5,16 +5,16 @@ import AngledSplitTextImage from '../../components/AngledSplitTextImage'
 import SplitTextImageAlt from '../../components/SplitTextImageAlt'
 import PageHero from '../../components/PageHero'
 import TestimonialSlide from '../../components/TestimonialSlide'
-import ClientCardContainer from '../../components/ClientCardContainer'
+import ClientCardContainer from '../../components/Clients/ClientCardContainer'
 import Link from 'next/link'
 import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons"; // import the icons you need
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
 import { url } from 'node:inspector'
 import Testimonials from '../../content/testimonials'
 import React from 'react'
-import ClientsSummary from '../../components/ClientCardContainer'
+import ClientsSummary from '../../components/Clients/ClientCardContainer'
 import ClientMainPage from '../../content/clientPages/clientMainPage'
-import ClientCard from '../../components/ClientCard'
+import ClientCard from '../../components/Clients/ClientCard'
 
 function CarTalkRepair() {
   return <div className="m-auto">
@@ -103,7 +103,7 @@ function CarTalkRepair() {
         phoneImg="../images/carro-phone.png"
       />
     </div>
-    <ClientsSummary>
+    <ClientCardContainer>
       {ClientMainPage.map(clientMainPage =>
         <ClientCard
           name={clientMainPage.name}
@@ -111,7 +111,7 @@ function CarTalkRepair() {
           slug={clientMainPage.slug}
         />
       )}
-    </ClientsSummary>
+    </ClientCardContainer>
   </div>
 }
 
