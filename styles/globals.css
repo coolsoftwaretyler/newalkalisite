@@ -24,6 +24,10 @@ a {
 	box-sizing: border-box;
   }
   
+.IntegrationIconContainer {
+	margin-top: -9.4rem;
+}
+
 @media only screen and (max-width: 768px) {
 	.event-dotR::before {
 		display: none;
