@@ -1,7 +1,7 @@
-import ClientCardContainer from '../components/ClientCardContainer'
+import ClientCardContainer from '../components/Clients/ClientCardContainer'
 import Header from '../components/Header'
 import ClientMainPage from '../content/clientPages/clientMainPage'
-import ClientCard from '../components/ClientCard'
+import ClientCard from '../components/Clients/ClientCard'
 
 function Clients() {
   const testClient = ClientMainPage[0];

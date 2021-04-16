@@ -1,4 +1,4 @@
-const ArrowImages = {
+const ScreenImages = {
     carro: [
         {
             desktopLeft: "/images/carro-desktop-brand.png", desktopLeftLink: "https://google.com",
@@ -24,4 +24,11 @@ const ArrowImages = {
         }
     ]
 }
-export default ArrowImages;
+
+
+const CarroScreenImages = ScreenImages.carro
+const AmeliaScreenImages = ScreenImages.amelia
+
+export {CarroScreenImages, AmeliaScreenImages}
+
+export default ScreenImages;

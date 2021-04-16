@@ -3,42 +3,47 @@ import Modal from '../../components/Modal'
 import ResponsiveScreens from '../../components/ResponsiveScreens'
 import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons"; // import the icons you need
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
-import ClientCardContainer from '../../components/ClientCardContainer'
+import ClientCardContainer from '../../components/Clients/ClientCardContainer'
 import TestimonialSlide from '../../components/TestimonialSlide'
 import Testimonials from '../../content/testimonials'
 import TwoColumnLayout from '../../components/TwoColumnLayout'
 import StandardImage from '../../components/StandardImage'
 import StandardTextBlock from '../../components/StandardTextBlock'
-import ArrowImages from '../../content/clientPages/arrowImages'
 import ClientMainPage from '../../content/clientPages/clientMainPage'
-import ClientCard from '../../components/ClientCard'
-import ClientBlocks from '../../content/clientPages/clientBlocks'
-
+import ClientCard from '../../components/Clients/ClientCard'
+import CarroContent from '../../content/clientPages/clientContentBlocks'
+import CarroScreenImages from '../../content/clientPages/screenImages'
+import CarroHeroContent from '../../content/clientPages/clientHeroContent'
+import ClientHeader from '../../components/Clients/ClientHeader'
+import ClientAbout from '../../components/Clients/ClientAbout'
 
 function Amelia() {
-  const carroGoalImage = ClientBlocks.carro.splice(1, 1).map(carro =>
+  const carroGoalImage = CarroContent.carro.goal.map(Carro =>
     <StandardImage
       imageAngle="left"
-      image={carro.image}
-      key={`carroGoalImageClientBlocksFor${carro.image}`}
+      image={Carro.image}
+      key={`carroGoalImageClientBlocksFor${Carro.image}`}
     />
   )
-  const carroGoalText = ClientBlocks.carro.map(carro =>
+
+  const carroGoalText = CarroContent.carro.goal.map(Carro =>
     <StandardTextBlock
-      sub={carro.sub}
-      title={carro.title}
-      text={carro.text}
-      key={`carroGoalTextClientBlocksFor${carro.title}`}
+      sub={Carro.sub}
+      title={Carro.title}
+      text={Carro.text}
+      key={`carroGoalTextClientBlocksFor${Carro.title}`}
     />
   )
-  const carroResultImage = ClientBlocks.carro.map(carro =>
+
+  const carroResultImage = CarroContent.carro.result.map(carro =>
     <StandardImage
       imageAngle="right"
       image={carro.image}
       key={`carroResultImageClientBlocksFor${carro.image}`}
     />
   )
-  const carroResultText = ClientBlocks.carro.map(carro =>
+
+  const carroResultText = CarroContent.carro.result.map(carro =>
     <StandardTextBlock
       sub={carro.sub}
       title={carro.title}
@@ -49,33 +54,26 @@ function Amelia() {
 
   return <div className="m-auto">
     <div className="carro-bg">
-      <Header
-        headerColor="white"
-      />
-      <div className="max-w-7xl flex justify-between items-center m-auto py-14">
-        <div className="ml-7 2xl:mx-0">
-          <p className="uppercase text-white font-open font-medium">Technology</p>
-          <h1 className="text-6xl text-white font-play font-bold pt-3 pb-10">Carro</h1>
-          <div className="max-w-7xl m-auto">
-            <div className="border border-white p-2 rounded-md text-xs text-center text-white uppercase font-open font-bold hover:bg-white hover:text-alkaligrey-800">
-              Web Development
-          </div>
-          </div>
-        </div>
-        <div>
-          <img src="../images/carro-header-image.png" />
-        </div>
-      </div>
+      {CarroHeroContent.carro.map(carro =>
+        <ClientHeader
+          sub={carro.sub}
+          title={carro.title}
+          backgroundImg={carro.backgroundImg}
+          service={carro.service}
+          heroImage={carro.heroImage}
+          serviceSlug={carro.serviceSlug}
+          style="py-24"
+        />
+      )}
     </div>
-    <div className="py-24 flex flex-col md:flex-row justify-between max-w-7xl items-center justify-center m-auto mx-7 xl:mx-auto">
-      <div className="w-full xs:w-1/2 pb-14 lg:pb-0">
-        <h3 className="text-4xl alkaligrey-800 font-play font-bold m-auto leading-tight pb-4 lg:pb-7">About Carro</h3>
-        <a href="" className="uppercase font-open font-bold text-lg text-alkali-500 duration-500 hover:mr-3">Visit Website</a><FontAwesomeIcon className="text-alkali-500 ml-3" icon={faLongArrowAltRight}></FontAwesomeIcon>
-      </div>
-      <div className="w-full xs:w-1/2 ">
-        <p className="text-alkaligrey-400 font-open max-w-4xl text-lg font-normal">Carro is the world’s largest collaborative commerce network, with more than 25,000 brands and 6.5 million influencers. The platform seamlessly enables brands to work with influencers and each other so they can sell more, together.</p>
-      </div>
-    </div>
+
+    {CarroHeroContent.carro.map(carro =>
+        <ClientAbout
+          name={carro.name}
+          about={carro.about}
+          slug={carro.title}
+        />
+      )}
 
     <TwoColumnLayout
       flexType="reverse"
@@ -84,7 +82,6 @@ function Amelia() {
       child2={carroGoalText}
     >
     </TwoColumnLayout>
-
 
     <div className="mx-14">
       <div className="pb-24 -mt-56">
@@ -103,12 +100,12 @@ function Amelia() {
         )}
       </div>
     </div>
+
     <TwoColumnLayout
       style="bg-white py-24 mb-6"
       child1={carroResultText}
       child2={carroResultImage}
-    >
-    </TwoColumnLayout>
+    />
 
     <div className="p-4 py-24 bg-alkali-500">
       <div className="flex flex-col lg:flex-row justify-between items-center max-w-7xl m-auto mx-3 xl:mx-auto">
@@ -121,18 +118,19 @@ function Amelia() {
         </div>
       </div>
     </div>
-    {ArrowImages.carro.map(arrowImages =>
+    
+    {CarroScreenImages.carro.map(carro =>
       <ResponsiveScreens
         style="py-24 overflow-hidden"
         link="https://getcarro.com"
-        desktopLeft={arrowImages.desktopLeft}
-        desktopRight={arrowImages.desktopRight}
-        tablet={arrowImages.tablet}
-        phone={arrowImages.phone}
-        desktopLeftLink={arrowImages.desktopLeftLink}
-        desktopRightLink={arrowImages.desktopRightLink}
-        tabletLink={arrowImages.tabletLink}
-        phoneLink={arrowImages.phoneLink}
+        desktopLeft={carro.desktopLeft}
+        desktopRight={carro.desktopRight}
+        tablet={carro.tablet}
+        phone={carro.phone}
+        desktopLeftLink={carro.desktopLeftLink}
+        desktopRightLink={carro.desktopRightLink}
+        tabletLink={carro.tabletLink}
+        phoneLink={carro.phoneLink}
       />
     )}
     <ClientCardContainer>

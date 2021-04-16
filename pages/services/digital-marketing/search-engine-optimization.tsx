@@ -1,4 +1,4 @@
-import ServiceHeader from '../../../components/ServiceHeader';
+import ServiceHero from '../../../components/Services/ServiceHero';
 import ServiceHeroContent from '../../../content/servicePages/serviceHeroContent'
 import Header from '../../../components/Header'
 
@@ -9,7 +9,7 @@ function SearchEngineOptimization() {
                 headerColor="blue"
             />
             {ServiceHeroContent.searchEngineOptimization.map(searchEngineOptimization =>
-                <ServiceHeader
+                <ServiceHero
                     sub={searchEngineOptimization.sub}
                     title={searchEngineOptimization.title}
                     backgroundImg={searchEngineOptimization.backgroundImg}

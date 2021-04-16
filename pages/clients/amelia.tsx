@@ -1,45 +1,44 @@
-import Header from '../../components/Header'
 import Modal from '../../components/Modal'
 import ResponsiveScreens from '../../components/ResponsiveScreens'
 import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons"; // import the icons you need
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
-import ClientCardContainer from '../../components/ClientCardContainer'
+import ClientCardContainer from '../../components/Clients/ClientCardContainer'
 import TestimonialSlide from '../../components/TestimonialSlide'
 import Testimonials from '../../content/testimonials'
 import TwoColumnLayout from '../../components/TwoColumnLayout'
 import StandardImage from '../../components/StandardImage'
 import StandardTextBlock from '../../components/StandardTextBlock'
-import ArrowImages from '../../content/clientPages/arrowImages'
+import AmeliaScreenImages from '../../content/clientPages/screenImages' 
 import ClientMainPage from '../../content/clientPages/clientMainPage'
-import ClientCard from '../../components/ClientCard'
-import ClientBlocks from '../../content/clientPages/clientBlocks'
-import ClientHeader from '../../components/ClientHeader'
+import ClientCard from '../../components/Clients/ClientCard'
+import ClientContentBlocks from '../../content/clientPages/clientContentBlocks'
+import ClientHeader from '../../components/Clients/ClientHeader'
 import ClientHeroContents from '../../content/clientPages/clientHeroContent'
 
 function Amelia() {
-  const carroGoalImage = ClientBlocks.amelia.splice(1, 1).map(amelia =>
+  const carroGoalImage = ClientContentBlocks.amelia.splice(1, 1).map(amelia =>
     <StandardImage
       imageAngle="left"
       image={amelia.image}
       key={`carroGoalImageClientBlocksFor${amelia.image}`}
     />
   )
-  const carroGoalText = ClientBlocks.amelia.map(amelia =>
+  const carroGoalText = ClientContentBlocks.amelia.map(amelia =>
     <StandardTextBlock
       sub={amelia.sub}
       title={amelia.title}
       text={amelia.text}
-      key={`carroGoalTextClientBlocksFor${amelia.title}`}
+      key={`ClientContentBlocks${amelia.title}`}
     />
   )
-  const carroResultImage = ClientBlocks.amelia.map(amelia =>
+  const carroResultImage = ClientContentBlocks.amelia.map(amelia =>
     <StandardImage
       imageAngle="right"
       image={amelia.image}
       key={`carroResultImageClientBlocksFor${amelia.image}`}
     />
   )
-  const carroResultText = ClientBlocks.amelia.map(amelia =>
+  const carroResultText = ClientContentBlocks.amelia.map(amelia =>
     <StandardTextBlock
       sub={amelia.sub}
       title={amelia.title}
@@ -48,7 +47,7 @@ function Amelia() {
     />
   )
 
-  const servicesPerformed = ClientBlocks.amelia.map(amelia =>
+  const servicesPerformed = ClientContentBlocks.amelia.map(amelia =>
     <StandardTextBlock
       service={amelia.sub.split(",")}
       key={`servicesPerformedFor${amelia.title}`}
@@ -59,13 +58,14 @@ function Amelia() {
     <div className="">
       {ClientHeroContents.amelia.map(amelia =>
         <ClientHeader
+          backgroundOverlay={amelia.backgroundOverlay}
+          style="py-48"
           sub={amelia.sub}
           title={amelia.title}
           backgroundImg={amelia.backgroundImg}
           service={amelia.service}
         />
       )}
-
     </div>
     <div className="py-24 flex flex-col md:flex-row justify-between max-w-7xl items-center justify-center m-auto mx-7 xl:mx-auto">
       <div className="w-full xs:w-1/2 pb-14 lg:pb-0">
@@ -120,7 +120,7 @@ function Amelia() {
         </div>
       </div>
     </div>
-    {ArrowImages.amelia.map(amelia =>
+    {AmeliaScreenImages.amelia.map(amelia =>
       <ResponsiveScreens
         style="py-24 overflow-hidden"
         link="https://getcarro.com"
