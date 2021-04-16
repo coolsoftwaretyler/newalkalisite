@@ -1,6 +1,4 @@
-import React from 'react';
-
-const DemoSlide = (props) => {
+const TestimonialSlide = (props) => {
     return (
         <div className={props.style}>
             <div className="relative">
@@ -36,4 +34,4 @@ const DemoSlide = (props) => {
     )
 }
 
-export default DemoSlide
+export default TestimonialSlide

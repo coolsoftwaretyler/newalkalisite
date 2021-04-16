@@ -5,7 +5,7 @@ const Testimonials = {
             backgroundOverlay: "bg-alkali-600",
             company: "CarTalkRepair",
             logo: "/images/CarTalk-Repair.png",
-            altText : " ",
+            altText: " ",
             name: "Cody Lintz, Owner",
             quote: "Starting off as a new business we realized the importance of having a sound online presence early on. We are extremely grateful we found Alkali we did. They have provided us the tools we need to adequately serve our customers."
         },
@@ -14,7 +14,7 @@ const Testimonials = {
             backgroundOverlay: "bg-pink-300",
             company: "Carro",
             logo: "/images/carro-logo-white.png",
-            altText : " ",
+            altText: " ",
             name: "Eric Sanchez, Operations Manager",
             quote: "Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial.Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial."
         }
@@ -37,6 +37,17 @@ const Testimonials = {
             quote: 'This is a different testimonial, about design work instead of development.'
         },
     ],
+    carro: [
+        {
+            background: "/images/carro-testimonial-bg.jpg",
+            backgroundOverlay: "bg-pink-300",
+            company: "Carro",
+            logo: "/images/carro-logo-white.png",
+            altText: " ",
+            name: "Eric Sanchez, Operations Manager",
+            quote: "Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial.Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial."
+        },
+    ],
     amelia: [
         {
             background: "/images/amelia-slide-bg.jpg",
@@ -48,5 +59,9 @@ const Testimonials = {
         }
     ]
 }
+
+const CarroSlide = Testimonials.carro
+
+export { CarroSlide }
 
 export default Testimonials;

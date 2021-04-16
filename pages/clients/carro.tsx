@@ -85,17 +85,17 @@ function Amelia() {
 
     <div className="mx-14">
       <div className="pb-24 -mt-56">
-        {Testimonials.wordpress.slice(1).map(testimonial =>
+        {Testimonials.carro.map(carro =>
           <TestimonialSlide
             style="max-w-7xl m-auto shadow-2xl rounded-md"
-            background={testimonial.background}
-            backgroundOverlay={testimonial.backgroundOverlay}
-            company={testimonial.company}
-            key={`designTestimonialFor${testimonial.company}`}
-            logo={testimonial.logo}
-            altText={testimonial.altText}
-            name={testimonial.name}
-            quote={testimonial.quote}
+            background={carro.background}
+            backgroundOverlay={carro.backgroundOverlay}
+            company={carro.company}
+            key={`designTestimonialFor${carro.company}`}
+            logo={carro.logo}
+            altText={carro.altText}
+            name={carro.name}
+            quote={carro.quote}
           />
         )}
       </div>
