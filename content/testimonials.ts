@@ -11,7 +11,7 @@ const Testimonials = {
         },
         {
             background: "/images/carro-testimonial-bg.jpg",
-            backgroundOverlay: "bg-pink-300",
+            backgroundOverlay: 'bg-pink-300',
             company: "Carro",
             logo: "/images/carro-logo-white.png",
             altText: " ",
