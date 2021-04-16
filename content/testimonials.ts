@@ -4,17 +4,17 @@ const Testimonials = {
             background: "/images/CarTalk-Testimonial-Image.jpg",
             backgroundOverlay: "bg-alkali-600",
             company: "CarTalkRepair",
-            logo: "/images/CarTalk-Repair.png",
-            altText : " ",
+            logo: "/images/cartalk-logo.png",
+            altText: " ",
             name: "Cody Lintz, Owner",
             quote: "Starting off as a new business we realized the importance of having a sound online presence early on. We are extremely grateful we found Alkali we did. They have provided us the tools we need to adequately serve our customers."
         },
         {
             background: "/images/carro-testimonial-bg.jpg",
-            backgroundOverlay: "bg-pink-300",
+            backgroundOverlay: 'bg-pink-300',
             company: "Carro",
-            logo: "/images/carro-logo-white.png",
-            altText : " ",
+            logo: "/images/carro-logo.png",
+            altText: " ",
             name: "Eric Sanchez, Operations Manager",
             quote: "Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial.Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial."
         }
@@ -32,9 +32,20 @@ const Testimonials = {
             background: "/images/carro-testimonial-bg.jpg",
             backgroundOverlay: "bg-pink-300",
             company: "Carro - Design",
-            logo: "/images/carro-logo-white.png",
+            logo: "/images/carro-logo.png",
             name: "Eric Sanchez, Operations Manager",
             quote: 'This is a different testimonial, about design work instead of development.'
+        },
+    ],
+    carro: [
+        {
+            background: "/images/carro-testimonial-bg.jpg",
+            backgroundOverlay: "bg-pink-300",
+            company: "Carro",
+            logo: "/images/carro-logo.png",
+            altText: " ",
+            name: "Eric Sanchez, Operations Manager",
+            quote: "Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial.Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial."
         },
     ],
     amelia: [
@@ -48,5 +59,9 @@ const Testimonials = {
         }
     ]
 }
+
+const CarroSlide = Testimonials.carro
+
+export { CarroSlide }
 
 export default Testimonials;

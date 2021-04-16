@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 const StandardImage = (props) => {
 
     const imageAngle2 = () => {
@@ -25,10 +27,13 @@ const StandardImage = (props) => {
     return (
         <div>
             <div className={imageContainerAngle()}>
-                <img
-                    className={imageAngle()}
-                    src={props.image}
-                />
+            <Image 
+            className={imageAngle()}
+            src={props.image}
+            alt={props.altText}
+            width={600}
+            height={450}
+            />
             </div>
         </div>
     )

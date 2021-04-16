@@ -2,6 +2,7 @@ import Modal from '../../components/Modal'
 import Link from 'next/link'
 import SiteMap from '../../content/siteMap'
 import SiteMapContainer from '../../components/SiteMapContainer'
+import Image from 'next/image'
 
 const DesktopNavigation = props => {
     const headerDropDownColor = () => {
@@ -20,7 +21,14 @@ const DesktopNavigation = props => {
         <div className={props.style}>
             <div className="flex justify-between max-w-7xl justify-center m-auto py-7">
                 <div className="flex items-center">
-                    <a><img className="" src={headerLogoColor()} width="160px" height="auto" /></a>
+                    <a>
+                        <Image
+                            src="/images/alkali-logo-blue.png"
+                            width={160}
+                            height={34}
+                            alt=""
+                        />
+                    </a>
                 </div>
                 <div>
                     <div className="dropdown">

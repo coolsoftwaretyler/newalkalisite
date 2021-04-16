@@ -1,9 +1,6 @@
-import Header from '../../../components/Header'
-import Modal from '../../../components/Modal'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
-import { faCaretUp, faLongArrowAltRight, faPaintBrush, faSearch } from "@fortawesome/free-solid-svg-icons"; // import the icons you need
+import { faCaretUp } from "@fortawesome/free-solid-svg-icons"; // import the icons you need
 import ServiceLeadSection from '../../../components/ServiceLeadSection'
-import 'react-vertical-timeline-component/style.min.css';
 import TestimonialSlider from '../../../components/TestimonialSlider'
 import TestimonialSlide from '../../../components/TestimonialSlide'
 import Testimonials from '../../../content/testimonials'
@@ -18,6 +15,8 @@ import ServiceHeroContent from '../../../content/servicePages/serviceHeroContent
 import ServiceHero from '../../../components/Services/ServiceHero';
 import CarroScreenImages from '../../../content/clientPages/screenImages'
 import ResponsiveScreens from '../../../components/ResponsiveScreens'
+import Image from 'next/image'
+import CombinedNavigation from '../../../components/Navigation/CombinedNavigation';
 
 function WordPressWebsiteDevelopment() {
     const customBuiltImage = Wordpress.customBuilt.map(customBuilt =>
@@ -104,11 +103,9 @@ function WordPressWebsiteDevelopment() {
         />
     )
 
-    return <div className="m-auto">
+    return <div className="m-auto overflow-hidden">
         <div>
-            <Header
-                headerColor="blue"
-            />
+            <CombinedNavigation />
             {ServiceHeroContent.wordpress.map(wordpress =>
                 <ServiceHero
                     sub={wordpress.sub}
@@ -125,9 +122,15 @@ function WordPressWebsiteDevelopment() {
                         <p className="text-alkaligrey-400 font-open max-w-4xl text-lg font-normal pt-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis iaculis cursus ex scelerisque pellentesque. Fusce fringilla ex sit amet ante aliquet volutpat. Maecenas laoreet purus in nulla rutrum porta. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse congue erat vitae quam mattis, eu gravida ligula posuere. Phasellus at lectus quam. Nullam orci leo, sodales sit amet varius blandit, pharetra vel quam. Sed fringilla in est eu cursus.</p>
                     </div>
                     <div className="z-0 pointer-events-none">
-                        <div className="angled-mockup rounded-md shadow-2xl">
+                        <div className="angled-mockup rounded-md shadow-2xl mx-14">
                             <div className="browser-mockup z-0">
-                                <img className="rounded-b-md" src="../../images/wordpress-stats.webp" width="100%" height="auto" />
+                                <Image
+                                src="/images/wordpress-stats.png"
+                                alt=""
+                                className="rounded-b-md"
+                                width={588}
+                                height={410}
+                                />
                             </div>
                             <div className="bg-white stat-container float-right -mr-6 shadow-2xl p-7 rounded-md text-center uppercase font-medium text-sm -mt-14 relative">
                                 <p className="pb-4">Wordpress Statistics</p>
