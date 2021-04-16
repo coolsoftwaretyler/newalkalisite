@@ -1,9 +1,7 @@
 /*  ./components/Navbar.jsx     */
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
-import { faChevronRight } from "@fortawesome/free-solid-svg-icons"; // import the icons you need
-import Link from 'next/link';
 import { useState } from 'react';
 import SiteMap from '../../content/siteMap'
+import Image from 'next/image'
 
 const Group = (props) => {
     return (
@@ -55,7 +53,12 @@ export const NavigationRound2 = () => {
             <div className="bg-alkaligrey-200">
                 <nav className='flex items-center flex-wrap p-3 max-w-7xl m-auto'>
                     <a className='inline-flex items-center p-2 mr-4 '>
-                        <img className="w-40" src="/images/alkali-logo-blue.png" />
+                        <Image 
+                        src="/images/alkali-logo-blue.png"
+                        width={160}
+                        height={34}
+                        alt=""
+                        />
                     </a>
                     <button
                         className=' inline-flex p-3 hover:bg-green-600 rounded lg:hidden text-white ml-auto hover:text-white outline-none'

@@ -19,6 +19,7 @@ import ServiceHero from '../../../components/Services/ServiceHero';
 import CarroScreenImages from '../../../content/clientPages/screenImages'
 import ResponsiveScreens from '../../../components/ResponsiveScreens'
 import Image from 'next/image'
+import CombinedNavigation from '../../../components/Navigation/CombinedNavigation';
 
 function WordPressWebsiteDevelopment() {
     const customBuiltImage = Wordpress.customBuilt.map(customBuilt =>
@@ -107,9 +108,7 @@ function WordPressWebsiteDevelopment() {
 
     return <div className="m-auto">
         <div>
-            <Header
-                headerColor="blue"
-            />
+            <CombinedNavigation />
             {ServiceHeroContent.wordpress.map(wordpress =>
                 <ServiceHero
                     sub={wordpress.sub}

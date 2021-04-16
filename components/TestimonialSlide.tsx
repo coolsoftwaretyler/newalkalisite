@@ -1,12 +1,24 @@
+import Image from 'next/image'
+
 const TestimonialSlide = (props) => {
     return (
         <div className={props.style}>
             <div className="relative">
                 <div className="relative lg:flex overflow-hidden rounded-md">
                     <div className="h-56 lg:h-auto lg:w-5/12 relative flex items-center justify-center">
-                        <img className="absolute h-full w-full object-cover" src={props.background}/>
+                        <Image 
+                            className="absolute object-cover"
+                            src={props.background}
+                            layout="fill"
+                        />
                         <div className={`absolute inset-0 opacity-75 ${props.backgroundOverlay}`}></div>
-                        <img className="relative" width="275" height="120" src={props.logo} alt={props.altText}/>
+                        <Image 
+                            className="relativer"
+                            src={props.logo}
+                            alt={props.altText}
+                            width={275}
+                            height={120}
+                        />
                     </div>
                     <div className="relative lg:w-7/12 bg-white">
                         <svg className="absolute h-full text-white w-24 -ml-12" fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none">
