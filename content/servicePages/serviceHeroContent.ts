@@ -13,7 +13,15 @@ const ServiceHeroContent = {
             title: "Insert Title About SEO Here",
             backgroundImg: "cartalk-hero.jpg"
         }
-    ]
+    ],
+
+    ecommerce: [
+        {
+            sub: "E-commerce Website Development",
+            title: "Sell more products. Build repeat customers",
+            backgroundImg: "cartalk-hero.jpg"
+        }
+    ],
 }
 
 export default ServiceHeroContent;
