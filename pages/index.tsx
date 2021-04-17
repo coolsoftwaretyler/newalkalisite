@@ -125,16 +125,6 @@ export default function Home() {
         </div>
       </div>
       <div>
-        <ResponsiveScreens
-          style="text-center pt-14"
-          link="https://getcarro.com"
-          title="First Impressions Matter Experience Their Website For Yourself"
-          buttonName="Our Clients"
-          desktopImgL="../images/carro-desktop-brand.png"
-          desktopImgR="../images/carro-desktop-score.png"
-          tabletImg="../images/carro-tablet.png"
-          phoneImg="../images/carro-phone.png"
-        />
       </div>
       <SplitTextImage
         style="bg-alkaligrey-300 py-24"
