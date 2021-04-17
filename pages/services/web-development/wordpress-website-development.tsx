@@ -123,7 +123,7 @@ function WordPressWebsiteDevelopment() {
                     </div>
                     <div className="z-0 pointer-events-none">
                         <div className="angled-mockup rounded-md shadow-2xl mx-14">
-                            <div className="browser-mockup z-0">
+                            <div className="browser-mockup z-0" style={{fontSize: '0'}}>
                                 <Image
                                 src="/images/wordpress-stats.png"
                                 alt=""

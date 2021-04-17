@@ -25,7 +25,7 @@ const Integrations = props => {
             <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-5 gap-y-10 max-w-7xl m-auto">
                 {
                     integration.map((integration) =>
-                        <div className="relative m-auto">
+                        <div className="relative m-auto" style={{fontSize: '0'}}>
                             <Image
                                 height={144}
                                 width={144}

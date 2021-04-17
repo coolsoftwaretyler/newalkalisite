@@ -52,7 +52,7 @@ export const NavigationRound2 = () => {
         <>
             <div className="bg-alkaligrey-200">
                 <nav className='flex items-center flex-wrap p-3 max-w-7xl m-auto'>
-                    <a className='inline-flex items-center p-2 mr-4 '>
+                    <a className='inline-flex items-center p-2 mr-4 ' style={{fontSize: '0'}}>
                         <Image 
                         src="/images/alkali-logo-blue.png"
                         width={160}
