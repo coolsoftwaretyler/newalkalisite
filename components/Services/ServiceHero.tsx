@@ -4,7 +4,7 @@ import Image from 'next/image'
 const ServiceHero = props => {
     return (
         <div>
-            <div className="relative">
+            <div className="relative" style={{fontSize: '0'}}>
                 <Image
                     layout="fill"
                     className="object-center object-cover pointer-events-none"

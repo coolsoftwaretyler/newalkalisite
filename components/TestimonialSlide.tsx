@@ -5,7 +5,7 @@ const TestimonialSlide = (props) => {
         <div className={props.style}>
             <div className="relative">
                 <div className="relative lg:flex overflow-hidden rounded-md">
-                    <div className="h-56 lg:h-auto lg:w-5/12 relative flex items-center justify-center">
+                    <div className="h-56 lg:h-auto lg:w-5/12 relative flex items-center justify-center" style={{fontSize: '0'}}>
                         <Image 
                             className="absolute object-cover"
                             src={props.background}

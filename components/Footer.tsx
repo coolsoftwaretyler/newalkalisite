@@ -4,7 +4,7 @@ function Footer() {
     return (
         <div className="bg-black">
             <div className="flex py-10 flex flex-col space-x-0 md:space-x-14 md:flex-row justify-between max-w-7xl justify-center m-auto mx-14 xl:mx-auto">
-                <div className="w-full md:w-2/5 m-auto">
+                <div className="w-full md:w-2/5 m-auto" style={{fontSize: '0'}}>
                     <Image
                         src="/images/alkalismall.png"
                         width={64}
