@@ -1,4 +1,6 @@
 import Header from '../../components/Header'
+import Image from 'next/image'
+
 const ClientHeader = props => {
     const headerBackgroundType = () => {
         return `${props.backgroundOverlay == 'true' ? 'client-hero' : ''}`
@@ -26,7 +28,12 @@ const ClientHeader = props => {
                     </div>
                 </div>
                 <div className="">
-                    <img src={props.heroImage} />
+                    <Image 
+                        src={props.heroImage}
+                        width={725}
+                        height={500}
+                        priority={true}
+                    />
                 </div>
             </div>
         </div>
