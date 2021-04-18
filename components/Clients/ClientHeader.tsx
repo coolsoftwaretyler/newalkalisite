@@ -1,5 +1,5 @@
-import Header from '../../components/Header'
 import Image from 'next/image'
+import CombinedNavigation from '../Navigation/CombinedNavigation'
 
 const ClientHeader = props => {
     const headerBackgroundType = () => {
@@ -8,9 +8,7 @@ const ClientHeader = props => {
 
     return (
         <div className={headerBackgroundType()} style={{ backgroundImage: `url(${props.backgroundImg})`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}>
-            <Header
-                headerColor="white"
-            />
+            <CombinedNavigation />
             <div className={`max-w-7xl flex justify-between items-center m-auto ${props.style}`}>
                 <div className="ml-7 2xl:mx-0">
                     <p className="uppercase text-white font-open font-medium">{props.sub}</p>
