@@ -119,11 +119,14 @@ function WordPressWebsiteDevelopment() {
                 <div className="flex flex-col space-x-0 lg:space-x-14 lg:flex-row m-auto justify-between items-center max-w-7xl">
                     <div className="w-5/6 lg:w-1/2 pb-20 lg:pb-0">
                         <h3 className="text-3xl md:text-4xl font-play font-bold m-auto leading-tight">WordPress Website Development</h3>
-                        <p className="text-alkaligrey-400 font-open max-w-4xl text-lg font-normal pt-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis iaculis cursus ex scelerisque pellentesque. Fusce fringilla ex sit amet ante aliquet volutpat. Maecenas laoreet purus in nulla rutrum porta. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse congue erat vitae quam mattis, eu gravida ligula posuere. Phasellus at lectus quam. Nullam orci leo, sodales sit amet varius blandit, pharetra vel quam. Sed fringilla in est eu cursus.</p>
+                        <p className="text-alkaligrey-400 font-open max-w-4xl text-lg font-normal pt-7">
+                        Standing out in a crowded marketplace can be difficult. Our specialty is not only driving interested users to your site and catching their attention once there but enticing them to engage and come back for more. Whether your site is orientated toward Sales, Information, Charity, or something else, we’ve seen it all, so we do it all. Let our team of talented, inspired professionals give your website the attention it deserves, leaving you free to devote your attention to what matters to you!    
+                        </p>
                     </div>
                     <div className="z-0 pointer-events-none">
                         <div className="angled-mockup rounded-md shadow-2xl mx-14">
-                            <div className="browser-mockup z-0" style={{fontSize: '0'}}>
+                            <div className="browser-mockup z-0">
+                                <div style={{fontSize: '0'}}>
                                 <Image
                                 src="/images/wordpress-stats.png"
                                 alt=""
@@ -131,6 +134,7 @@ function WordPressWebsiteDevelopment() {
                                 width={588}
                                 height={410}
                                 />
+                                </div>
                             </div>
                             <div className="bg-white stat-container float-right -mr-6 shadow-2xl p-7 rounded-md text-center uppercase font-medium text-sm -mt-14 relative">
                                 <p className="pb-4">Wordpress Statistics</p>
@@ -190,7 +194,7 @@ function WordPressWebsiteDevelopment() {
         <div className="py-24 px-14 2xl:px-0">
             <h6 className="text-3xl md:text-4xl pb-7 text-center font-play font-bold m-auto leading-tight">Components of Custom WordPress Website Development</h6>
             <p className="font-open text-center max-w-4xl m-auto text-lg font-normal pt-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo, urna ut ultrices maximus, felis libero ultricies justo, quis bibendum ante felis dictum augue. Etiam efficitur odio non tortor finibus feugiat mollis quis ex. Mauris porta tellus a dignissim vestibulum. Praesent sagittis sodales ex, nec.
+            Modern websites can take payments, edit pictures, track customer actions, and so much more. Don't get caught behind the technology curve; let us dance on the razor's edge of innovation for you. You want an expert to worry about updates, patches, and adjustments for you. Don't risk error pages, 404 alerts, and broken links- put those issues in the hands of a professional.
             </p>
         </div>
         <TwoColumnLayout
@@ -256,7 +260,7 @@ function WordPressWebsiteDevelopment() {
         />
 
         <div className="py-24 px-14 2xl:px-0 bg-white">
-            <h6 className="text-3xl md:text-4xl pb-7 text-center font-play font-bold m-auto leading-tight">Endless Integrations</h6>
+            <h6 className="text-3xl md:text-4xl pb-7 text-center font-play font-bold m-auto leading-tight">Integration Is the Name of the Game</h6>
             <p className="font-open text-center max-w-4xl m-auto text-lg font-normal pt-4">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo, urna ut ultrices maximus, felis libero ultricies justo, quis bibendum ante felis dictum augue. Etiam efficitur odio non tortor finibus feugiat mollis quis ex. Mauris porta tellus a dignissim vestibulum. Praesent sagittis sodales ex, nec.
             </p>

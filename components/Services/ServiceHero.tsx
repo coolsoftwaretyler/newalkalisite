@@ -10,6 +10,7 @@ const ServiceHero = props => {
                     className="object-center object-cover pointer-events-none"
                     src={`/images/${props.backgroundImg}`}
                     alt=""
+                    priority={true}
                 />
                 <div className="relative z-1">
             <div className="client-hero px-14" >

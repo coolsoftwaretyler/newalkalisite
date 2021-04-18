@@ -30,7 +30,7 @@ a {
   }
   
 .IntegrationIconContainer {
-	margin-top: -9.4rem;
+	margin-top: -9rem;
 }
 
 @media only screen and (max-width: 768px) {
@@ -64,6 +64,7 @@ a {
 		height: 350px !important;
 	}
 }
+
 
 .event-dotR::before {
 	content: "";
