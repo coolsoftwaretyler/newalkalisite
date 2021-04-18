@@ -25,7 +25,7 @@ const ClientHeader = props => {
                         </div>
                     </div>
                 </div>
-                <div className="">
+                <div className="invisible md:visible">
                     <Image 
                         src={props.heroImage}
                         width={725}
