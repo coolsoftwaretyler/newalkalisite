@@ -140,11 +140,11 @@ function WordPressWebsiteDevelopment() {
                                 <p className="pb-4">Wordpress Statistics</p>
                                 <div className="flex justify-between items-center max-w-7xl m-auto">
                                     <div className="w-1/2 m-auto -ml-3 border-r">
-                                        <p className="font-bold text-5xl pb-4"><FontAwesomeIcon className="text-sm mb-5 mr-3" icon={faCaretUp}></FontAwesomeIcon>40%</p>
+                                        <p className="font-bold text-5xl pb-4"><FontAwesomeIcon className="w-3 relative top-10 ml-3" icon={faCaretUp}></FontAwesomeIcon>40%</p>
                                         <p className="text-xs ml-4">Sites Use WordPress</p>
                                     </div>
                                     <div className="w-1/2 m-auto">
-                                        <p className="font-bold text-5xl pb-4"><FontAwesomeIcon className="text-sm mb-5 mr-3" icon={faCaretUp}></FontAwesomeIcon>150%</p>
+                                        <p className="font-bold text-5xl pb-4"><FontAwesomeIcon className="w-3 relative top-10 ml-3" icon={faCaretUp}></FontAwesomeIcon>150%</p>
                                         <p className="text-xs ml-4">Monthly Leads Request</p>
                                     </div>
                                 </div>
