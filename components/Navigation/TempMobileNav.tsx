@@ -51,7 +51,7 @@ export const TempMobileNav = () => {
 
     return (
         <>
-            <div className="bg-white">
+            <div className="h-screen">
                 <nav className='flex items-center flex-wrap p-7 max-w-7xl m-auto'>
                     <a className='inline-flex items-center p-2 mr-4 ' style={{ fontSize: '0' }}>
                         <Image
@@ -62,7 +62,7 @@ export const TempMobileNav = () => {
                         />
                     </a>
                     <button
-                        className='group inline-flex p-3 hover:bg-alkali-500 rounded lg:hidden text-white ml-auto hover:text-white outline-none'
+                        className='group inline-flex p-3 hover:bg-alkali-500 lg:hidden text-white ml-auto hover:text-white outline-none'
                         onClick={handleClick}
                     >
                         <svg
@@ -81,7 +81,7 @@ export const TempMobileNav = () => {
                         </svg>
                     </button>
 
-                    <div className={`${active ? '' : 'hidden'} mt-3 justif-center w-full lg:inline-flex lg:flex-grow lg:w-auto bg-white rounded-md shadow-2xl`}>
+                    <div className={`${active ? '' : 'hidden'} mt-3 justif-center w-full lg:inline-flex lg:flex-grow lg:w-auto bg-white`}>
                         <div className='pl-3 py-10 lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto'>
                             <ul className="">
                                 <li>
@@ -91,7 +91,7 @@ export const TempMobileNav = () => {
                                 </li>
                                 <li className="pt-5">
                                     <button
-                                        className='lg:inline-flex rounded font-bold uppercase text-xl items-center justify-center pl-4 hover:text-alkali-500'
+                                        className='lg:inline-flex rounded font-bold uppercase text-lg items-center justify-center pl-4 hover:text-alkali-500'
                                         onClick={handleSubDigitalMarketing}
                                     >
                                         Digital Marketing
@@ -102,7 +102,7 @@ export const TempMobileNav = () => {
                                 </li>
                                 <li className="py-3">
                                     <button
-                                        className='lg:inline-flex rounded font-bold uppercase text-xl items-center justify-center pl-4 hover:text-alkali-500'
+                                        className='lg:inline-flex rounded font-bold uppercase text-lg items-center justify-center pl-4 hover:text-alkali-500'
                                         onClick={handleSubWebDevelopment}
                                     >
                                         Web Development
@@ -113,7 +113,7 @@ export const TempMobileNav = () => {
                                 </li>
                                 <li className="pb-4">
                                     <button
-                                        className='lg:inline-flex rounded font-bold uppercase text-xl items-center justify-center pl-4 hover:text-alkali-500'
+                                        className='lg:inline-flex rounded font-bold uppercase text-lg items-center justify-center pl-4 hover:text-alkali-500'
                                         onClick={handleSubWebDesign}
                                     >
                                         Web Design
@@ -140,7 +140,7 @@ export const TempMobileNav = () => {
                             </ul>
 
                         </div>
-                        <div className="max-w-full bg-alkali-500 rounded-b-md relative text-center py-2">
+                        <div className="max-w-full relative text-center py-2">
                             <Modal
                                 style="text-center p-4 px-6 font-semibold text-white shadow-2xl rounded-md transition duration-500 ease-in-out bg-alkali-500 hover:bg-alkali-700"
                                 text="Schedule a Discovery Call"

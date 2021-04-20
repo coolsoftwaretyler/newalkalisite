@@ -3,7 +3,7 @@ import { faCode, faCubes, faPaintBrush, faRocket, faSearch } from "@fortawesome/
 
 const OurProcess = props => {
     const eventDotWrapperClass = () => {
-        return `flex flex-col ${props.type % 2 === 0 ? 'md:flex-row-reverse' : 'md:flex-row'} rounded-b-md relative self-center max-w-5xl mx-14 lg:m-auto shadow-2xl md:shadow-none`
+        return `flex flex-col ${props.type % 2 === 0 ? 'md:flex-row-reverse' : 'md:flex-row'} rounded-b-md relative self-center max-w-5xl mx-14 lg:m-auto shadow-2xl md:shadow-none z-10`
     }
 
     const eventDotClass = () => {

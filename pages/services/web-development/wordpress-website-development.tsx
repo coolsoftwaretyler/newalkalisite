@@ -17,6 +17,9 @@ import CarroScreenImages from '../../../content/clientPages/screenImages'
 import ResponsiveScreens from '../../../components/ResponsiveScreens'
 import Image from 'next/image'
 import CombinedNavigation from '../../../components/Navigation/CombinedNavigation';
+import FAQDropdown from '../../../components/Services/FAQDropdown'
+import WordpressFAQ from '../../../content/servicePages/faq'
+
 
 function WordPressWebsiteDevelopment() {
     const customBuiltImage = Wordpress.customBuilt.map(customBuilt =>
@@ -103,6 +106,14 @@ function WordPressWebsiteDevelopment() {
         />
     )
 
+    const faqItems = WordpressFAQ.wordpress.map((wordpress) =>
+        <FAQDropdown
+            question={wordpress.question}
+            answer={wordpress.answer}
+        />
+    )
+
+
     return <div className="m-auto overflow-hidden">
         <div>
             <CombinedNavigation />
@@ -120,20 +131,20 @@ function WordPressWebsiteDevelopment() {
                     <div className="w-5/6 lg:w-1/2 pb-20 lg:pb-0">
                         <h3 className="text-3xl md:text-4xl font-play font-bold m-auto leading-tight">WordPress Website Development</h3>
                         <p className="text-alkaligrey-400 font-open max-w-4xl text-lg font-normal pt-7">
-                        Standing out in a crowded marketplace can be difficult. Our specialty is not only driving interested users to your site and catching their attention once there but enticing them to engage and come back for more. Whether your site is orientated toward Sales, Information, Charity, or something else, we’ve seen it all, so we do it all. Let our team of talented, inspired professionals give your website the attention it deserves, leaving you free to devote your attention to what matters to you!    
+                            Standing out in a crowded marketplace can be difficult. Our specialty is not only driving interested users to your site and catching their attention once there but enticing them to engage and come back for more. Whether your site is orientated toward Sales, Information, Charity, or something else, we’ve seen it all, so we do it all. Let our team of talented, inspired professionals give your website the attention it deserves, leaving you free to devote your attention to what matters to you!
                         </p>
                     </div>
                     <div className="z-0 pointer-events-none">
                         <div className="angled-mockup rounded-md shadow-2xl mx-14">
                             <div className="browser-mockup z-0">
-                                <div style={{fontSize: '0'}}>
-                                <Image
-                                src="/images/wordpress-stats.png"
-                                alt=""
-                                className="rounded-b-md"
-                                width={588}
-                                height={410}
-                                />
+                                <div style={{ fontSize: '0' }}>
+                                    <Image
+                                        src="/images/wordpress-stats.png"
+                                        alt=""
+                                        className="rounded-b-md"
+                                        width={588}
+                                        height={410}
+                                    />
                                 </div>
                             </div>
                             <div className="bg-white stat-container float-right -mr-6 shadow-2xl p-7 rounded-md text-center uppercase font-medium text-sm -mt-14 relative">
@@ -194,7 +205,7 @@ function WordPressWebsiteDevelopment() {
         <div className="py-24 px-14 2xl:px-0">
             <h6 className="text-3xl md:text-4xl pb-7 text-center font-play font-bold m-auto leading-tight">Not All Websites Are Created Equal</h6>
             <p className="font-open text-center max-w-4xl m-auto text-lg font-normal pt-4">
-            An unfortunate reality of WordPress websites, particularly template based build are the overeliance on plugins, lack of customization
+                An unfortunate reality of WordPress websites, particularly template based build are the overeliance on plugins, lack of customization
             </p>
         </div>
         <TwoColumnLayout
@@ -268,21 +279,30 @@ function WordPressWebsiteDevelopment() {
         <Integration
             style="pb-24 bg-white py-14 px-14 2xl:px-0"
         />
-        <div className="py-24 px-14 2xl:px-0">
-            <h6 className="text-3xl md:text-4xl pb-7 text-center font-play font-bold m-auto leading-tight">How Our Process Works</h6>
-            <p className="font-open text-center max-w-4xl m-auto text-lg font-normal pt-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo, urna ut ultrices maximus, felis libero ultricies justo, quis bibendum ante felis dictum augue. Etiam efficitur odio non tortor finibus feugiat mollis quis ex. Mauris porta tellus a dignissim vestibulum. Praesent sagittis sodales ex, nec.
+        <div className="bg-alkaligrey-300 pb-24">
+            <div className="py-24 px-14 2xl:px-0">
+                <h6 className="text-3xl md:text-4xl pb-7 text-center font-play font-bold m-auto leading-tight">How Our Process Works</h6>
+                <p className="font-open text-center max-w-4xl m-auto text-lg font-normal pt-4">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo, urna ut ultrices maximus, felis libero ultricies justo, quis bibendum ante felis dictum augue. Etiam efficitur odio non tortor finibus feugiat mollis quis ex. Mauris porta tellus a dignissim vestibulum. Praesent sagittis sodales ex, nec.
             </p>
+            </div>
+            {OurProcess.wordpress.map((wordpress, index) =>
+                <OurProcessComp
+                    style=""
+                    title={wordpress.title}
+                    step={wordpress.step}
+                    icon={wordpress.icon}
+                    type={index}
+                />
+            )}
+            <div className="max-w-5xl bg-white py-20 m-auto rounded-md shadow-2xl text-alkali-500 text-center text-white text-3xl z-20 relative">
+                Start Seeing Results
+            </div>
         </div>
-        {OurProcess.wordpress.map((wordpress, index) =>
-            <OurProcessComp
-                style=""
-                title={wordpress.title}
-                step={wordpress.step}
-                icon={wordpress.icon}
-                type={index}
-            />
-        )}
+        <div className="py-24">
+            <h6 className="text-3xl md:text-4xl pb-7 text-center font-play font-bold m-auto leading-tight">Frequently Asked Questions About Our WordPress Development</h6>
+            {faqItems}
+        </div>
     </div>
 }
 
