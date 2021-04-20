@@ -33,7 +33,7 @@ function WordPressWebsiteDevelopment() {
         />
     )
 
-    const responsiveDesignImage = Wordpress.customBuilt.map(responsiveDesign =>
+    const responsiveDesignImage = Wordpress.responsiveDesign.map(responsiveDesign =>
         <StandardImage
             image={responsiveDesign.image}
             imageAngle="none"
@@ -188,13 +188,13 @@ function WordPressWebsiteDevelopment() {
         <ServiceLeadSection
             style="bg-alkali-500 py-24"
             title="We're Here to Realize Your Vision"
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel malesuada tellus. Quisque id arcu tincidunt, congue leo vitae, vehicula justo. Vestibulum turpis lectus, tincidunt quis massa nec, elementum gravida ligula. Integer elementum viverra ipsum in malesuada. Donec semper est egestas placerat pretium. Cras tincidunt vel odio in."
+            text="Do you have an idea and vision for your website but not sure where to start? Our team of professionals are standing by to answer any questions you may have. Whether you need a free audit of your current website or want to discuss specifics of a new WordPress website build, we look forward to serving you!"
             buttonText="Schedule a Discovery Call"
         />
         <div className="py-24 px-14 2xl:px-0">
-            <h6 className="text-3xl md:text-4xl pb-7 text-center font-play font-bold m-auto leading-tight">Components of Custom WordPress Website Development</h6>
+            <h6 className="text-3xl md:text-4xl pb-7 text-center font-play font-bold m-auto leading-tight">Not All Websites Are Created Equal</h6>
             <p className="font-open text-center max-w-4xl m-auto text-lg font-normal pt-4">
-            Modern websites can take payments, edit pictures, track customer actions, and so much more. Don't get caught behind the technology curve; let us dance on the razor's edge of innovation for you. You want an expert to worry about updates, patches, and adjustments for you. Don't risk error pages, 404 alerts, and broken links- put those issues in the hands of a professional.
+            An unfortunate reality of WordPress websites, particularly template based build are the overeliance on plugins, lack of customization
             </p>
         </div>
         <TwoColumnLayout

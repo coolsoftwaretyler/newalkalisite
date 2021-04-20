@@ -14,7 +14,7 @@ import CarroHeroContent from '../../content/clientPages/clientHeroContent'
 import ClientHeader from '../../components/Clients/ClientHeader'
 import ClientAbout from '../../components/Clients/ClientAbout'
 
-function Amelia() {
+function Carro() {
   const carroGoalImage = CarroContent.carro.goal.map(Carro =>
     <StandardImage
       imageAngle="left"
@@ -142,4 +142,4 @@ function Amelia() {
   </div>
 }
 
-export default Amelia
+export default Carro

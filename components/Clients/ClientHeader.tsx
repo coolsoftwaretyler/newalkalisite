@@ -8,13 +8,15 @@ const ClientHeader = props => {
 
     return (
         <div className={headerBackgroundType()} style={{ backgroundImage: `url(${props.backgroundImg})`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }}>
-            <CombinedNavigation />
+            <CombinedNavigation 
+                headerColor="white"
+            />
             <div className={`max-w-7xl flex justify-between items-center m-auto ${props.style}`}>
-                <div className="ml-7 2xl:mx-0">
+                <div className="w-full md:w-1/2 ml-7 2xl:mx-0">
                     <p className="uppercase text-white font-open font-medium">{props.sub}</p>
                     <h1 className="text-6xl text-white font-play font-bold pt-3 pb-10">{props.title}</h1>
-                    <div className="max-w-7xl m-auto">
-                        <div className="max-w-7xl m-auto">
+                    <div className="">
+                        <div className="">
                             {props.service.map(service =>
                                 <span className="border border-white p-2 mr-7 rounded-md text-xs text-center text-white uppercase font-open font-bold hover:bg-white hover:text-alkaligrey-800" key={service}>
                                     <a href={props.serviceSlug}>
