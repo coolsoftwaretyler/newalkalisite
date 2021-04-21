@@ -301,7 +301,13 @@ function WordPressWebsiteDevelopment() {
         </div>
         <div className="py-24">
             <h6 className="text-3xl md:text-4xl pb-7 text-center font-play font-bold m-auto leading-tight">Frequently Asked Questions About Our WordPress Development</h6>
-            {faqItems}
+            <div className="w-full px-4 pt-16">
+                <div className="w-full max-w-5xl p-2 mx-auto bg-white rounded-2xl">
+                    <div className="grid grid-cols-2 gap-x-10">
+                            {faqItems}
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 }
