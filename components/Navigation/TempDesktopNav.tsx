@@ -29,12 +29,12 @@ const TempDesktopNav = (props) => {
                         />
                     </a>
                 </div>
-                <div className="flex justify-between items-center w-2/5">
-                    <div className="dropdownmega">
+                <div className="flex justify-between items-center w-2/5 transition duration-700">
+                    <div className="dropdownmega transition duration-700">
                         <button className={headerNonDropDown()}>Solutions
                         <i className="fa fa-caret-down"></i>
                         </button>
-                        <div className="dropdownmega-content bg-transparent z-30">
+                        <div className="dropdownmega-content bg-transparent z-30 transition duration-700">
                             <div className="pt-10">
                             </div>
                             <div className="bg-white border-t-2 border-alkali-500">

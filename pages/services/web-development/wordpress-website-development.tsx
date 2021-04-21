@@ -6,7 +6,7 @@ import TestimonialSlide from '../../../components/TestimonialSlide'
 import Testimonials from '../../../content/testimonials'
 import Wordpress from '../../../content/servicePages/wordpress'
 import Integration from '../../../components/Integration'
-import OurProcess from '../../../content/servicePages/ourProcess'
+import wordpressProcess from '../../../content/servicePages/ourProcess'
 import OurProcessComp from '../../../components/Services/OurProcess'
 import TwoColumnLayout from '../../../components/TwoColumnLayout'
 import StandardImage from '../../../components/StandardImage'
@@ -286,7 +286,7 @@ function WordPressWebsiteDevelopment() {
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo, urna ut ultrices maximus, felis libero ultricies justo, quis bibendum ante felis dictum augue. Etiam efficitur odio non tortor finibus feugiat mollis quis ex. Mauris porta tellus a dignissim vestibulum. Praesent sagittis sodales ex, nec.
             </p>
             </div>
-            {OurProcess.wordpress.map((wordpress, index) =>
+            {wordpressProcess.wordpress.map((wordpress, index) =>
                 <OurProcessComp
                     style=""
                     title={wordpress.title}
