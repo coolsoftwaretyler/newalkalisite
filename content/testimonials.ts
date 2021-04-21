@@ -54,6 +54,7 @@ const Testimonials = {
             backgroundOverlay: "bg-gray-50",
             company: "Homewatch Amelia",
             logo: "/images/amelia-logo.png",
+            altText: "",
             name: "Ann Wood, Owner",
             quote: "Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial.Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial Client testimonial."
         }
@@ -62,6 +63,8 @@ const Testimonials = {
 
 const CarroSlide = Testimonials.carro
 
-export { CarroSlide }
+const AmeliaSlide = Testimonials.amelia
+
+export { CarroSlide, AmeliaSlide }
 
 export default Testimonials;

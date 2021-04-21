@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import SiteMap from '../../content/siteMap'
 import Image from 'next/image'
+import Modal from '../Modal';
 
 const Group = (props) => {
     return (
@@ -15,7 +16,7 @@ const Group = (props) => {
     )
 }
 
-export const NavigationRound2 = () => {
+export const TempMobileNav = () => {
     const [active, setActive] = useState(false);
 
     const handleClick = () => {
@@ -51,13 +52,13 @@ export const NavigationRound2 = () => {
     return (
         <>
             <div className="bg-white">
-                <nav className='flex items-center flex-wrap p-3 max-w-7xl m-auto'>
-                    <a className='inline-flex items-center p-2 mr-4 ' style={{fontSize: '0'}}>
-                        <Image 
-                        src="/images/alkali-logo-blue.png"
-                        width={160}
-                        height={34}
-                        alt=""
+                <nav className='flex items-center flex-wrap p-7 max-w-7xl m-auto'>
+                    <a className='inline-flex items-center p-2 mr-4 ' style={{ fontSize: '0' }}>
+                        <Image
+                            src="/images/alkali-logo-blue.png"
+                            width={160}
+                            height={34}
+                            alt=""
                         />
                     </a>
                     <button
@@ -80,58 +81,70 @@ export const NavigationRound2 = () => {
                         </svg>
                     </button>
 
-                    <div className={`${active ? '' : 'hidden'} mt-3 justif-center w-full py-10 px-4 lg:inline-flex lg:flex-grow lg:w-auto bg-black rounded-md shadow-2xl bg-opacity-40`}>
-                        <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto'>
+                    <div className={`${active ? '' : 'hidden'} mt-3 justif-center w-full lg:inline-flex lg:flex-grow lg:w-auto bg-white rounded-md shadow-2xl`}>
+                        <div className='pl-3 py-10 lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto'>
                             <ul className="">
                                 <li>
-                                    <a className='lg:inline-flex lg:w-auto w-full uppercase text-2xl px-3 py-2 rounded font-bold items-center justify-center hover:text-alkali-500 '>
+                                    <a className='lg:inline-flex lg:w-auto w-full uppercase text-2xl py-2 font-bold hover:text-alkali-500'>
                                         Solutions
                                     </a>
                                 </li>
-                                <li className="pb-4 pt-2">
+                                <li className="pt-5">
                                     <button
-                                        className='lg:inline-flex px-3 py-2 rounded font-bold uppercase text-xl items-center justify-center pl-7 hover:text-alkali-500'
+                                        className='lg:inline-flex rounded font-bold uppercase text-xl items-center justify-center pl-4 hover:text-alkali-500'
                                         onClick={handleSubDigitalMarketing}
                                     >
                                         Digital Marketing
                                     </button>
-                                    <ul className={`${toggleSubDigitalMarketing ? '' : 'hidden text-alkali-500'} uppercase text-lg lg:inline-flex lg:w-auto w-full px-3 pl-14 py-2 pl-10 rounded font-bold items-center justify-center`}>
+                                    <ul className={`${toggleSubDigitalMarketing ? '' : 'hidden text-alkali-500'} -mt-5 uppercase text-md text-alkaligrey-400 lg:inline-flex lg:w-auto font-bold pl-10 pt-3`}>
                                         {marketingLinks.map(group => <Group group={group} />)}
                                     </ul>
                                 </li>
-                                <li className="pb-4">
+                                <li className="py-3">
                                     <button
-                                        className='lg:inline-flex px-3 py-2 rounded font-bold uppercase text-xl items-center justify-center pl-7 hover:text-alkali-500'
+                                        className='lg:inline-flex rounded font-bold uppercase text-xl items-center justify-center pl-4 hover:text-alkali-500'
                                         onClick={handleSubWebDevelopment}
                                     >
                                         Web Development
                                     </button>
-                                    <ul className={`${toggleSubWebDevelopment ? '' : 'hidden text-alkali-500'} uppercase text-lg lg:inline-flex lg:w-auto w-full px-3 pl-14 py-2 pl-10 rounded font-bold items-center justify-center`}>
+                                    <ul className={`${toggleSubWebDevelopment ? '' : 'hidden text-alkali-500'} -mt-5 uppercase text-md text-alkaligrey-400 lg:inline-flex lg:w-auto font-bold pl-10 pt-3`}>
                                         {developmentLinks.map(group => <Group group={group} />)}
                                     </ul>
                                 </li>
                                 <li className="pb-4">
                                     <button
-                                        className='lg:inline-flex px-3 py-2 rounded uppercase text-xl font-bold items-center justify-center pl-7 hover:text-alkali-500'
+                                        className='lg:inline-flex rounded font-bold uppercase text-xl items-center justify-center pl-4 hover:text-alkali-500'
                                         onClick={handleSubWebDesign}
                                     >
                                         Web Design
                                     </button>
-                                    <ul className={`${toggleSubWebDesign ? '' : 'hidden text-alkali-500'} uppercase text-lg lg:inline-flex lg:w-auto w-full px-3 pl-14 py-2 pl-10 rounded font-bold items-center justify-center hover:text-white`}>
+                                    <ul className={`${toggleSubWebDesign ? '' : 'hidden text-alkali-500'} -mt-5 uppercase text-md text-alkaligrey-400 lg:inline-flex lg:w-auto font-bold pl-10 pt-3`}>
                                         {designLinks.map(group => <Group group={group} />)}
                                     </ul>
                                 </li>
-                                <li className="pb-4">
-                                    <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 uppercase text-2xl rounded font-bold items-center justify-center hover:text-alkali-500 '>
+                                <li className="py-3">
+                                    <a className='lg:inline-flex lg:w-auto w-full uppercase text-2xl py-2 font-bold hover:text-alkali-500'>
+                                        Clients
+                                    </a>
+                                </li>
+                                <li className="py-3">
+                                    <a className='lg:inline-flex lg:w-auto w-full uppercase text-2xl py-2 font-bold hover:text-alkali-500'>
                                         About
                                     </a>
                                 </li>
-                                <li>
-                                    <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 uppercase text-2xl rounded font-bold items-center justify-center hover:text-alkali-500'>
+                                <li className="py-3">
+                                    <a className='lg:inline-flex lg:w-auto w-full uppercase text-2xl py-2 font-bold hover:text-alkali-500'>
                                         Contact
                                     </a>
                                 </li>
                             </ul>
+
+                        </div>
+                        <div className="max-w-full bg-alkali-500 rounded-b-md relative text-center py-2">
+                            <Modal
+                                style="text-center p-4 px-6 font-semibold text-white shadow-2xl rounded-md transition duration-500 ease-in-out bg-alkali-500 hover:bg-alkali-700"
+                                text="Schedule a Discovery Call"
+                            />
                         </div>
                     </div>
                 </nav>
@@ -140,4 +153,4 @@ export const NavigationRound2 = () => {
     );
 };
 
-export default NavigationRound2
+export default TempMobileNav

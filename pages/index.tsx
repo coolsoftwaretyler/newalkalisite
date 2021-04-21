@@ -6,14 +6,10 @@ import SplitTextImage from '../components/SplitTextImage'
 import ResponsiveScreens from '../components/ResponsiveScreens'
 import Modal from '../components/Modal'
 import Footer from '../components/Footer'
-import DesktopNavigation from '../components/Navigation/DesktopNavigation'
-import MobileNavigation from '../components/Navigation/MobileNavigation'
-import CombinedNavigation from '../components/Navigation/CombinedNavigation'
 
 export default function Home() {
   return (
     <div className="">
-      <CombinedNavigation />
       <HomeHero />
       <div className="">
         <SplitTextImageAlt

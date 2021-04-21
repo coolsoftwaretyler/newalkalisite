@@ -21,20 +21,27 @@ const ClientContentBlocks = {
             ],
     },
 
-    amelia: [
-        {
-            image: "/images/amelia-desktop2.png",
-            sub: "The Goal",
-            title: "Test Title",
-            text: "Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation."
-        },
-        {
-            image: "/images/amelia-desktop.png",
-            sub: "The Goal 2",
-            title: "Test Title",
-            text: "Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation."
-        }
-    ],
+    amelia: {
+        goal:
+            [
+                {
+                    image: "/images/amelia-desktop2.png",
+                    sub: "The Goal",
+                    title: "Test Title",
+                    text: "Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation."
+                },
+            ],
+        result:
+            [
+                {
+                    image: "/images/amelia-desktop.png",
+                    sub: "The Goal 2",
+                    title: "Test Title",
+                    text: "Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation. Talk about the website creation."
+                }
+            ],
+    },
+
     cartalk: [
         {
             title: "Custom-Built WordPress vs. Templated WordPress",
@@ -45,7 +52,9 @@ const ClientContentBlocks = {
     ]
 }
 
-const CarroContent = ClientContentBlocks.carro.goal
+const CarroContent = ClientContentBlocks.carro;
 
-export { CarroContent }
+const AmeliaContent = ClientContentBlocks.amelia;
+
+export { CarroContent, AmeliaContent }
 export default ClientContentBlocks

@@ -29,6 +29,7 @@ const Integrations = props => {
                             <Image
                                 height={144}
                                 width={144}
+                                quality={100}
                                 className="object-center object-cover pointer-events-none rounded-full duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110"
                                 src={`/images/icons/${integration.fileName}.png`}
                                 alt={props.title}

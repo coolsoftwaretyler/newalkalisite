@@ -31,9 +31,9 @@ const DesktopNavigation = props => {
                     </a>
                 </div>
                 <div>
-                    <div className="dropdown">
+                    <a className="dropdown">
                         <div className={headerDropDownColor()}>Solutions</div>
-                        <div className="dropdown-content justify-between bg-black bg-opacity-80 rounded-md shadow-2xl">
+                        <div className="dropdown-content justify-between bg-black bg-opacity-80 z-30 rounded-md shadow-2xl">
                             <div className="p-8 flex justify-between max-w-7xl justify-center m-auto text-white">
                                 <div>
                                     <a>
@@ -74,7 +74,7 @@ const DesktopNavigation = props => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                     <Link href="/clients"><a className={headerNonDropDown()}>Clients</a></Link>
                     <a href="#" className={headerNonDropDown()}>About</a>
                     <a href="/contact" className={headerNonDropDown()}>Contact</a>
