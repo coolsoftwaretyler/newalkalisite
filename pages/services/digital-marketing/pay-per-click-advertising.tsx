@@ -4,7 +4,7 @@ import Header from '../../../components/Header'
 import SearchEngineMetrics from '../../../components/Services/SearchEngineMetrics'
 import StandardImage from '../../../components/StandardImage'
 import StandardTextBlock from '../../../components/StandardTextBlock';
-import SEO from '../../../content/servicePages/seo'
+import PPC from '../../../content/servicePages/payPerClick'
 import TwoColumnLayout from '../../../components/TwoColumnLayout';
 import ServiceLeadSection from '../../../components/ServiceLeadSection';
 import Modal from '../../../components/Modal';
@@ -17,71 +17,71 @@ import Image from 'next/image'
 import CombinedNavigation from '../../../components/Navigation/CombinedNavigation';
 
 
-function SearchEngineOptimization() {
-    const seoImage1 = SEO.text1.map(text1 =>
+function PayPerClick() {
+    const seoImage1 = PPC.text1.map(text1 =>
         <StandardImage
             image={text1.image}
             imageAngle="none"
         />
     )
 
-    const seoText1 = SEO.text1.map(text1 =>
+    const seoText1 = PPC.text1.map(text1 =>
         <StandardTextBlock
             title={text1.title}
             text={text1.text}
         />
     )
 
-    const seoImage2 = SEO.text2.map(text2 =>
+    const seoImage2 = PPC.text2.map(text2 =>
         <StandardImage
             image={text2.image}
             imageAngle="none"
         />
     )
 
-    const seoText2 = SEO.text2.map(text2 =>
+    const seoText2 = PPC.text2.map(text2 =>
         <StandardTextBlock
             title={text2.title}
             text={text2.text}
         />
     )
 
-    const seoImage3 = SEO.text3.map(text3 =>
+    const seoImage3 = PPC.text3.map(text3 =>
         <StandardImage
             image={text3.image}
             imageAngle="none"
         />
     )
 
-    const seoText3 = SEO.text3.map(text3 =>
+    const seoText3 = PPC.text3.map(text3 =>
         <StandardTextBlock
             title={text3.title}
             text={text3.text}
         />
     )
 
-    const seoImage4 = SEO.text4.map(text4 =>
+    const seoImage4 = PPC.text4.map(text4 =>
         <StandardImage
             image={text4.image}
             imageAngle="none"
         />
     )
 
-    const seoText4 = SEO.text4.map(text4 =>
+    const seoText4 = PPC.text4.map(text4 =>
         <StandardTextBlock
             title={text4.title}
             text={text4.text}
         />
     )
 
-    const seoImage5 = SEO.text5.map(text5 =>
+    const seoImage5 = PPC.text5.map(text5 =>
         <StandardImage
             image={text5.image}
             imageAngle="none"
         />
     )
 
-    const seoText5 = SEO.text5.map(text5 =>
+    const seoText5 = PPC.text5.map(text5 =>
         <StandardTextBlock
             title={text5.title}
             text={text5.text}
@@ -112,57 +112,43 @@ function SearchEngineOptimization() {
                 child2={seoText2}
             />
             <div className="py-24">
-                <h6 className="text-3xl md:text-4xl text-center font-play font-bold m-auto leading-tight">Our SEO Services</h6>
+                <h6 className="text-3xl md:text-4xl text-center font-play font-bold m-auto leading-tight">AdWords Isn't The Only Game in Town Anymore</h6>
+                <p className="text-center text-alkaligrey-400 pt-4 text-lg max-w-xl m-auto">We can manage your pay-per-click campagins on more than just AdWords. See what types of campaigns we can manage for you below:</p>
                 <div className="max-w-7xl m-auto grid grid-cols-3 gap-x-14 gap-y-14 pt-24">
                     <div className="rounded shadow-2xl p-7">
                         <img className="w-14" src="/images/alkalismall.png" />
-                        <h4 className="py-3 font-bold">Keyword Research & Strategy</h4>
+                        <h4 className="py-3 font-bold">Search</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam arcu ex, sodales ac ipsum volutpat, mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam arcu ex, sodales ac ipsum volutpat, mattis.</p>
                     </div>
                     <div className="rounded shadow-2xl p-7">
                         <img className="w-14" src="/images/alkalismall.png" />
-                        <h4 className="py-3 font-bold">Technical SEO</h4>
+                        <h4 className="py-3 font-bold">Local Service Ads</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam arcu ex, sodales ac ipsum volutpat, mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam arcu ex, sodales ac ipsum volutpat, mattis.</p>
                     </div>
                     <div className="rounded shadow-2xl p-7">
                         <img className="w-14" src="/images/alkalismall.png" />
-                        <h4 className="py-3 font-bold">On-Site SEO</h4>
+                        <h4 className="py-3 font-bold">Shopping</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam arcu ex, sodales ac ipsum volutpat, mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam arcu ex, sodales ac ipsum volutpat, mattis.</p>
                     </div>
                     <div className="rounded shadow-2xl p-7">
                         <img className="w-14" src="/images/alkalismall.png" />
-                        <h4 className="py-3 font-bold">Off-Site SEO</h4>
+                        <h4 className="py-3 font-bold">Conversion Flywheel</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam arcu ex, sodales ac ipsum volutpat, mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam arcu ex, sodales ac ipsum volutpat, mattis.</p>
                     </div>
                     <div className="rounded shadow-2xl p-7">
                         <img className="w-14" src="/images/alkalismall.png" />
-                        <h4 className="py-3 font-bold">Link Building</h4>
+                        <h4 className="py-3 font-bold">Social Advertising</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam arcu ex, sodales ac ipsum volutpat, mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam arcu ex, sodales ac ipsum volutpat, mattis.</p>
                     </div>
                     <div className="rounded shadow-2xl p-7">
                         <img className="w-14" src="/images/alkalismall.png" />
-                        <h4 className="py-3 font-bold">Content Writing</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam arcu ex, sodales ac ipsum volutpat, mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam arcu ex, sodales ac ipsum volutpat, mattis.</p>
-                    </div>
-                    <div className="rounded shadow-2xl p-7">
-                        <img className="w-14" src="/images/alkalismall.png" />
-                        <h4 className="py-3 font-bold">Analytics Tracking</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam arcu ex, sodales ac ipsum volutpat, mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam arcu ex, sodales ac ipsum volutpat, mattis.</p>
-                    </div>
-                    <div className="rounded shadow-2xl p-7">
-                        <img className="w-14" src="/images/alkalismall.png" />
-                        <h4 className="py-3 font-bold">Local SEO</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam arcu ex, sodales ac ipsum volutpat, mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam arcu ex, sodales ac ipsum volutpat, mattis.</p>
-                    </div>
-                    <div className="rounded shadow-2xl p-7">
-                        <img className="w-14" src="/images/alkalismall.png" />
-                        <h4 className="py-3 font-bold">Competitive Analysis</h4>
+                        <h4 className="py-3 font-bold">Tailored Reporting</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam arcu ex, sodales ac ipsum volutpat, mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam arcu ex, sodales ac ipsum volutpat, mattis.</p>
                     </div>
                 </div>
                 <div className="text-center pt-24">
                     <Modal
-                        style="p-3 px-6 font-semibold text-white shadow-2xl rounded-md transition duration-500 ease-in-out bg-alkali-500 hover:bg-alkali-700"
+                        style="p-3 px-6 font-semibold text-alkaligrey-400 hover:text-white shadow-2xl rounded-md transition duration-500 ease-in-out border border-alkaligrey-400 hover:bg-alkaligrey-400"
                         text="Schedule a call"
                     />
                 </div>
@@ -287,5 +273,5 @@ function SearchEngineOptimization() {
     )
 }
 
-export default SearchEngineOptimization
+export default PayPerClick
 

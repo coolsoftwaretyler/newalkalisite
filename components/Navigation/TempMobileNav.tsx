@@ -51,7 +51,7 @@ export const TempMobileNav = () => {
 
     return (
         <>
-            <div className="h-screen">
+            <div className="">
                 <nav className='flex items-center flex-wrap p-7 max-w-7xl m-auto'>
                     <a className='inline-flex items-center p-2 mr-4 ' style={{ fontSize: '0' }}>
                         <Image
