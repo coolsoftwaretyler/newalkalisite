@@ -13,7 +13,7 @@ const ServiceHero = props => {
                     priority={true}
                 />
                 <div className="relative z-1">
-            <div className="client-hero px-10" >
+                    <div className="client-hero px-10" >
                         <div className="max-w-7xl flex justify-between items-center m-auto pt-56 pb-20">
                             <div className="">
                                 <h1 className="portfolio-title font-open text-white uppercase font-open text-md font-bold">{props.sub}</h1>
