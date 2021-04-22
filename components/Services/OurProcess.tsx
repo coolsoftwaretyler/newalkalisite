@@ -7,8 +7,8 @@ const OurProcess = props => {
     }
 
     const eventDotClass = () => {
-        const pseudoElementClass = props.isLastItem ? 'skipVerticalLine' : ''
         const directionalClass = props.type % 2 === 0 ? 'event-dotR md:ml-7' : 'event-dotL md:mr-7'
+        const pseudoElementClass = props.isLastItem ? 'skipVerticalLine' : ''
         
         return `${directionalClass} ${pseudoElementClass} ml-0 bg-alkali-500 text-center rounded-none md:rounded-full w-auto h-auto md:w-20 md:h-20 self-stretch md:self-center p-6 shadow-none md:shadow-2xl rounded-t-md md:rounded-none`
 
