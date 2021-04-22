@@ -1,5 +1,3 @@
-import Image from 'next/image'
-
 function Footer() {
     return (
         <div className="">
@@ -9,12 +7,7 @@ function Footer() {
             </div>
             </div>
             <div className="flex py-10 flex flex-col space-x-0 md:space-x-14 md:flex-row justify-between max-w-7xl justify-center m-auto mx-14 xl:mx-auto">
-                <div className="w-full md:w-2/5 m-auto" style={{ fontSize: '0' }}>
-                    <Image
-                        src="/images/alkalismall.png"
-                        width={64}
-                        height={64}
-                    />
+                <div className="w-full md:w-2/5 m-auto">
                     <p className="text-alkaligrey-400 max-w-md py-5 text-lg m-auto">
                         Information about Alkali. Information about Alkali. Information about Alkali. Information about Alkali. Information about Alkali. Information about Alkali. Information about Alkali. Information about Alkali. Information about Alkali.
                     </p>

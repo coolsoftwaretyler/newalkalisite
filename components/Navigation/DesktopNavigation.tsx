@@ -21,7 +21,7 @@ const DesktopNavigation = props => {
         <div className={props.style}>
             <div className="flex justify-between max-w-7xl justify-center m-auto py-7">
                 <div className="flex items-center">
-                    <a style={{fontSize: '0'}}>
+                    <a style={{ fontSize: '0' }}>
                         <Image
                             src="/images/alkali-logo-blue.png"
                             width={160}
