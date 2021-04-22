@@ -296,6 +296,7 @@ function LocalSearchEngineOptimization() {
                         step={seo.step}
                         icon={seo.icon}
                         type={index}
+                        isLastItem={index === seoProcess.seo.length - 1}
                     />
                 )}
                 <div className="max-w-5xl bg-white py-20 m-auto rounded-md shadow-2xl text-alkali-500 text-center text-white text-3xl z-20 relative">
