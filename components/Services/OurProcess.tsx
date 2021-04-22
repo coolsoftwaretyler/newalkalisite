@@ -7,12 +7,10 @@ const OurProcess = props => {
     }
 
     const eventDotClass = () => {
-        if (props.isLastItem) {
-            return `${props.type % 2 === 0 ? 'event-dotR ml-0 md:ml-7' : 'event-dotL ml-0 md:mr-7'} skipVerticalLine bg-alkali-500 text-center rounded-none md:rounded-full w-auto h-auto md:w-20 md:h-20 self-stretch md:self-center p-6 shadow-none md:shadow-2xl rounded-t-md md:rounded-none`
-        } else if (props.type % 2 === 0) {
-            return `event-dotR ml-0 md:ml-7 bg-alkali-500 text-center rounded-none md:rounded-full w-auto h-auto md:w-20 md:h-20 self-stretch md:self-center p-6 shadow-none md:shadow-2xl rounded-t-md md:rounded-none`
+        if (props.type % 2 === 0) {
+            return `event-dotR ${props.isLastItem ? 'skipVerticalLine' : ''} ml-0 md:ml-7 bg-alkali-500 text-center rounded-none md:rounded-full w-auto h-auto md:w-20 md:h-20 self-stretch md:self-center p-6 shadow-none md:shadow-2xl rounded-t-md md:rounded-none`
         } else {
-            return `event-dotL ml-0 md:mr-7 bg-alkali-500 text-center rounded-none md:rounded-full w-auto h-auto md:w-20 md:h-20 self-stretch md:self-center p-6 shadow-none md:shadow-2xl rounded-t-md md:rounded-none`
+            return `event-dotL ${props.isLastItem ? 'skipVerticalLine' : ''} ml-0 md:mr-7 bg-alkali-500 text-center rounded-none md:rounded-full w-auto h-auto md:w-20 md:h-20 self-stretch md:self-center p-6 shadow-none md:shadow-2xl rounded-t-md md:rounded-none`
         }
     }
 
