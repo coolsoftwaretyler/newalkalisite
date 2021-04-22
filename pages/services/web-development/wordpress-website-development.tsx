@@ -107,10 +107,14 @@ function WordPressWebsiteDevelopment() {
     )
 
     const faqItems = WordpressFAQ.wordpress.map((wordpress) =>
-        <FAQDropdown
-            question={wordpress.question}
-            answer={wordpress.answer}
-        />
+        <div key={0} className="grid grid-cols-2 gap-x-10">
+            <div>
+                <FAQDropdown
+                    question={wordpress.question}
+                    answer={wordpress.answer}
+                />
+            </div>
+        </div>
     )
 
 
@@ -308,6 +312,7 @@ function WordPressWebsiteDevelopment() {
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 }

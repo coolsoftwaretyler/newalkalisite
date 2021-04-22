@@ -166,8 +166,8 @@ function LocalSearchEngineOptimization() {
                 </div>
             </div>
             <div className="bg-alkaligrey-300 py-24">
-                <div className="flex max-w-7xl space-x-20 m-auto justify-between items-center">
-                    <div>
+                <div className="flex space-x-0 lg:space-x-14 flex-col lg:flex-row m-auto justify-between items-center max-w-7xl">
+                    <div className="w-full lg:w-1/2 pb-10">
                         <Image
                             src="/images/audit.png"
                             width={490}
@@ -175,7 +175,7 @@ function LocalSearchEngineOptimization() {
                             quality={100}
                         />
                     </div>
-                    <div className="w-1/2">
+                    <div className="w-full lg:w-1/2 px-14 lg:px-0">
                         <h2 className="text-2xl md:text-3xl font-play font-bold leading-tight">Get a Complementary Local SEO Audit</h2>
                         <form className="flex rounded-md my-7 shadow-2xl">
                             <input className="rounded-l-lg border-t pl-4 w-screen border-b border-l text-gray-800 border-gray-200 bg-white" placeholder="yourwebsite.com" />
@@ -185,6 +185,7 @@ function LocalSearchEngineOptimization() {
                     </div>
                 </div>
             </div>
+
             <TwoColumnLayout
                 style="mb-3"
                 child2={seoImage3}
