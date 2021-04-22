@@ -258,6 +258,11 @@ a {
     transform: translateY(-50%);
 }
 
+.event-dotR.skipVerticalLine::before,
+.event-dotL.skipVerticalLine::before {
+	display: none;
+}
+
 .IntegrationIcon:hover > .IconSpan {
 	opacity: 1;
 }
