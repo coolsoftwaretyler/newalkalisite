@@ -7,10 +7,11 @@ const OurProcess = props => {
     }
 
     const eventDotClass = () => {
+        const pseudoElementClass = props.isLastItem ? 'skipVerticalLine' : ''
         if (props.type % 2 === 0) {
-            return `event-dotR ${props.isLastItem ? 'skipVerticalLine' : ''} ml-0 md:ml-7 bg-alkali-500 text-center rounded-none md:rounded-full w-auto h-auto md:w-20 md:h-20 self-stretch md:self-center p-6 shadow-none md:shadow-2xl rounded-t-md md:rounded-none`
+            return `event-dotR ${pseudoElementClass} ml-0 md:ml-7 bg-alkali-500 text-center rounded-none md:rounded-full w-auto h-auto md:w-20 md:h-20 self-stretch md:self-center p-6 shadow-none md:shadow-2xl rounded-t-md md:rounded-none`
         } else {
-            return `event-dotL ${props.isLastItem ? 'skipVerticalLine' : ''} ml-0 md:mr-7 bg-alkali-500 text-center rounded-none md:rounded-full w-auto h-auto md:w-20 md:h-20 self-stretch md:self-center p-6 shadow-none md:shadow-2xl rounded-t-md md:rounded-none`
+            return `event-dotL ${pseudoElementClass} ml-0 md:mr-7 bg-alkali-500 text-center rounded-none md:rounded-full w-auto h-auto md:w-20 md:h-20 self-stretch md:self-center p-6 shadow-none md:shadow-2xl rounded-t-md md:rounded-none`
         }
     }
 
