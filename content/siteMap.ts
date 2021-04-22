@@ -12,7 +12,7 @@ const SiteMap = {
                 },
                 {
                     name: "PPC & Retargeting",
-                    slug: "digital-marketing/ppc-retargeting",
+                    slug: "digital-marketing/pay-per-click-advertising",
                 },
                 {
                     name: "Content Marketing",

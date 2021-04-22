@@ -6,7 +6,6 @@ const FAQDropdown = (props) => {
     return (
         <div className="w-full px-4 pt-16">
             <div className="w-full max-w-5xl p-2 mx-auto bg-white rounded-2xl">
-                <div className="grid grid-cols-2 gap-x-10">
                     <div>
                         <Disclosure as="div" className="mt-2">
                             {({ open }) => (
@@ -26,7 +25,6 @@ const FAQDropdown = (props) => {
                             )}
                         </Disclosure>
                     </div>
-                </div>
             </div>
         </div>
     );
