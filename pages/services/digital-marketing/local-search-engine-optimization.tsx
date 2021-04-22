@@ -15,6 +15,13 @@ import seoProcess from '../../../content/servicePages/ourProcess'
 import OurProcessComp from '../../../components/Services/OurProcess'
 import Image from 'next/image'
 import CombinedNavigation from '../../../components/Navigation/CombinedNavigation';
+import ServiceBlocks from '../../../components/Services/ServiceBlocks';
+import ServiceBlocksContent from '../../../content/servicePages/serviceBlocks'
+import ServiceResultsContent from '../../../content/servicePages/resultsBlock'
+import ResultsBlocks from '../../../components/Services/ResultsBlocks';
+import ClientCardContainer from '../../../components/Clients/ClientCardContainer';
+import ClientCard from '../../../components/Clients/ClientCard';
+import ClientMainPage from '../../../content/clientPages/clientMainPage'
 
 
 function LocalSearchEngineOptimization() {
@@ -109,63 +116,20 @@ function LocalSearchEngineOptimization() {
                 child1={seoImage2}
                 child2={seoText2}
             />
-            <div className="py-24">
-                <h6 className="text-3xl md:text-4xl text-center font-play font-bold m-auto leading-tight">Our Local SEO Services</h6>
-                <div className="max-w-7xl m-auto grid grid-cols-3 gap-x-14 gap-y-14 pt-24">
-                    <div className="rounded shadow-2xl p-7">
-                        <img className="w-14" src="/images/alkalismall.png" />
-                        <h4 className="py-3 font-bold">Google My Business Optimization</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam arcu ex, sodales ac ipsum volutpat, mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam arcu ex, sodales ac ipsum volutpat, mattis.</p>
-                    </div>
-                    <div className="rounded shadow-2xl p-7">
-                        <img className="w-14" src="/images/alkalismall.png" />
-                        <h4 className="py-3 font-bold">Keyword Research & Strategy</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam arcu ex, sodales ac ipsum volutpat, mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam arcu ex, sodales ac ipsum volutpat, mattis.</p>
-                    </div>
-                    <div className="rounded shadow-2xl p-7">
-                        <img className="w-14" src="/images/alkalismall.png" />
-                        <h4 className="py-3 font-bold">On-Site Optimization</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam arcu ex, sodales ac ipsum volutpat, mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam arcu ex, sodales ac ipsum volutpat, mattis.</p>
-                    </div>
-                    <div className="rounded shadow-2xl p-7">
-                        <img className="w-14" src="/images/alkalismall.png" />
-                        <h4 className="py-3 font-bold">Link Building</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam arcu ex, sodales ac ipsum volutpat, mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam arcu ex, sodales ac ipsum volutpat, mattis.</p>
-                    </div>
-                    <div className="rounded shadow-2xl p-7">
-                        <img className="w-14" src="/images/alkalismall.png" />
-                        <h4 className="py-3 font-bold">Google Local Service Ads Management</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam arcu ex, sodales ac ipsum volutpat, mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam arcu ex, sodales ac ipsum volutpat, mattis.</p>
-                    </div>
-                    <div className="rounded shadow-2xl p-7">
-                        <img className="w-14" src="/images/alkalismall.png" />
-                        <h4 className="py-3 font-bold">Content Writing</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam arcu ex, sodales ac ipsum volutpat, mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam arcu ex, sodales ac ipsum volutpat, mattis.</p>
-                    </div>
-                    <div className="rounded shadow-2xl p-7">
-                        <img className="w-14" src="/images/alkalismall.png" />
-                        <h4 className="py-3 font-bold">Local Citation Management</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam arcu ex, sodales ac ipsum volutpat, mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam arcu ex, sodales ac ipsum volutpat, mattis.</p>
-                    </div>
-                    <div className="rounded shadow-2xl p-7">
-                        <img className="w-14" src="/images/alkalismall.png" />
-                        <h4 className="py-3 font-bold">Franchise SEO</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam arcu ex, sodales ac ipsum volutpat, mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam arcu ex, sodales ac ipsum volutpat, mattis.</p>
-                    </div>
-                    <div className="rounded shadow-2xl p-7">
-                        <img className="w-14" src="/images/alkalismall.png" />
-                        <h4 className="py-3 font-bold">Service Platform Management</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam arcu ex, sodales ac ipsum volutpat, mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam arcu ex, sodales ac ipsum volutpat, mattis.</p>
-                    </div>
-                </div>
-                <div className="text-center pt-24">
-                    <Modal
-                        style="p-3 px-6 font-semibold text-alkaligrey-400 hover:text-white shadow-2xl rounded-md transition duration-500 ease-in-out border border-alkaligrey-400 hover:bg-alkaligrey-400"
-                        text="Schedule a call"
-                    />
+            <div className="py-24 px-14 2xl:px-0">
+                <h6 className="text-3xl md:text-4xl text-center font-play font-bold m-auto leading-tight pb-24">Our Local SEO Services</h6>
+                <div className="grid grid-cols md:grid-cols-2 xl:grid-cols-3 max-w-7xl m-auto gap-x-14 gap-y-14">
+                    {ServiceBlocksContent.localSEO.map(localSEO =>
+                        <ServiceBlocks
+                            serviceTitle={localSEO.serviceTitle}
+                            serviceText={localSEO.serviceText}
+                            image={localSEO.image}
+                            altText={localSEO.altText}
+                        />
+                    )}
                 </div>
             </div>
-            <div className="bg-alkaligrey-300 py-24">
+            <div className="bg-alkaligrey-300 py-24 px-14 2xl:px-0">
                 <div className="flex space-x-0 lg:space-x-14 flex-col lg:flex-row m-auto justify-between items-center max-w-7xl">
                     <div className="w-full lg:w-1/2 pb-10">
                         <Image
@@ -175,7 +139,7 @@ function LocalSearchEngineOptimization() {
                             quality={100}
                         />
                     </div>
-                    <div className="w-full lg:w-1/2 px-14 lg:px-0">
+                    <div className="w-full lg:w-1/2">
                         <h2 className="text-2xl md:text-3xl font-play font-bold leading-tight">Get a Complementary Local SEO Audit</h2>
                         <form className="flex rounded-md my-7 shadow-2xl">
                             <input className="rounded-l-lg border-t pl-4 w-screen border-b border-l text-gray-800 border-gray-200 bg-white" placeholder="yourwebsite.com" />
@@ -216,69 +180,28 @@ function LocalSearchEngineOptimization() {
                 child1={seoImage4}
                 child2={seoText4}
             />
-            <div className="bg-alkaligrey-300">
-                <div className="pt-24 pb-36 max-w-7xl m-auto">
-                    <h6 className="text-3xl md:text-4xl pb-14 text-center font-play font-bold m-auto leading-tight">You Give Us Trust, We Give You Results</h6>
-                    <div className="grid grid-cols-3 gap-x-14 gap-y-14 pt-10">
-                        <div className="flex items-center bg-white rounded-md shadow-2xl justify-between px-7 py-4">
-                            <div>
-                                <img className="w-36" src="/images/alkalismall.png" />
-                            </div>
-                            <div>
-                                <h3 className="text-alkali-500 relative font-play font-bold text-4xl py-4 pl-5 pb-4">5,319</h3>
-                                <p className="pl-5 uppercase text-md">Top 5 Keywords</p>
-                            </div>
-                        </div>
-                        <div className="flex items-center bg-white rounded-md shadow-2xl justify-between px-7 py-4">
-                            <div>
-                                <img className="w-36" src="/images/alkalismall.png" />
-                            </div>
-                            <div>
-                                <h3 className="text-alkali-500 relative font-play font-bold text-4xl py-4 pl-5 pb-4">5,319</h3>
-                                <p className="pl-5 uppercase text-md">Top 5 Keywords</p>
-                            </div>
-                        </div>
-                        <div className="flex items-center bg-white rounded-md shadow-2xl justify-between px-7 py-4">
-                            <div>
-                                <img className="w-36" src="/images/alkalismall.png" />
-                            </div>
-                            <div>
-                                <h3 className="text-alkali-500 relative font-play font-bold text-4xl py-4 pl-5 pb-4">5,319</h3>
-                                <p className="pl-5 uppercase text-md">Top 5 Keywords</p>
-                            </div>
-                        </div>
-                        <div className="flex items-center bg-white rounded-md shadow-2xl justify-between px-7 py-4">
-                            <div>
-                                <img className="w-36" src="/images/alkalismall.png" />
-                            </div>
-                            <div>
-                                <h3 className="text-alkali-500 relative font-play font-bold text-4xl py-4 pl-5 pb-4">5,319</h3>
-                                <p className="pl-5 uppercase text-md">Top 5 Keywords</p>
-                            </div>
-                        </div>
-                        <div className="flex items-center bg-white rounded-md shadow-2xl justify-between px-7 py-4">
-                            <div>
-                                <img className="w-36" src="/images/alkalismall.png" />
-                            </div>
-                            <div>
-                                <h3 className="text-alkali-500 relative font-play font-bold text-4xl py-4 pl-5 pb-4">5,319</h3>
-                                <p className="pl-5 uppercase text-md">Top 5 Keywords</p>
-                            </div>
-                        </div>
-                        <div className="flex items-center bg-white rounded-md shadow-2xl justify-between px-7 py-4">
-                            <div>
-                                <img className="w-36" src="/images/alkalismall.png" />
-                            </div>
-                            <div>
-                                <h3 className="text-alkali-500 relative font-play font-bold text-4xl py-4 pl-5 pb-4">5,319</h3>
-                                <p className="pl-5 uppercase text-md">Top 5 Keywords</p>
-                            </div>
-                        </div>
-                    </div>
+
+            <div className="py-24 px-14 2xl:px-0">
+                <h6 className="text-3xl md:text-4xl pb-14 text-center font-play font-bold m-auto leading-tight">You Give Us Trust, We Give You Results</h6>
+                <div className="grid grid-cols md:grid-cols-2 lg:grid-cols-3 max-w-7xl m-auto gap-x-14 gap-y-14">
+                    {ServiceResultsContent.localSEO.map(localSEO =>
+                        <ResultsBlocks
+                            image={localSEO.image}
+                            result={localSEO.result}
+                            resultName={localSEO.resultName}
+                            altText={localSEO.altText}
+                        />
+                    )}
                 </div>
             </div>
+            <ServiceLeadSection
+                style="bg-alkali-500 py-24"
+                title="We're Here to Realize Your Vision"
+                text="Do you have an idea and vision for your website but not sure where to start? Our team of professionals are standing by to answer any questions you may have. Whether you need a free audit of your current website or want to discuss specifics of a new WordPress website build, we look forward to serving you!"
+                buttonText="Schedule a Discovery Call"
+            />
             <TwoColumnLayout
-                style="pt-36"
+                style="py-24"
                 child2={seoImage5}
                 child1={seoText5}
             />
@@ -303,6 +226,15 @@ function LocalSearchEngineOptimization() {
                     Start Seeing Results
             </div>
             </div>
+            <ClientCardContainer>
+                {ClientMainPage.map(clientMainPage =>
+                    <ClientCard
+                        name={clientMainPage.name}
+                        backgroundImg={clientMainPage.backgroundImg}
+                        slug={clientMainPage.slug}
+                    />
+                )}
+            </ClientCardContainer>
         </div>
     )
 }

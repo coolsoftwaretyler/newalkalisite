@@ -8,7 +8,7 @@ const ServiceLeadSection = props => {
                 <p className="text-white font-open pt-7 pb-10 text-center max-w-4xl m-auto text-lg font-normal">{props.text}</p>
                 <div className="flex justify-center">
                     <Modal
-                        style="p-4 px-6 font-semibold text-alkali-500 shadow-2xl rounded-md transition duration-500 ease-in-out bg-white hover:bg-alkali-700"
+                        style="p-4 px-6 font-semibold text-white hover:text-alkali-500 hover:bg-white  rounded-md transition duration-500 ease-in-out border border-white"
                         text={props.buttonText}
                     />
                 </div>

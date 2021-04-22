@@ -19,6 +19,7 @@ import Image from 'next/image'
 import CombinedNavigation from '../../../components/Navigation/CombinedNavigation';
 import FAQDropdown from '../../../components/Services/FAQDropdown'
 import WordpressFAQ from '../../../content/servicePages/faq'
+import BGParticles from "../../../components/BGParticles";
 
 
 function WordPressWebsiteDevelopment() {
@@ -106,18 +107,6 @@ function WordPressWebsiteDevelopment() {
         />
     )
 
-    const faqItems = WordpressFAQ.wordpress.map((wordpress) =>
-        <div key={0} className="grid grid-cols-2 gap-x-10">
-            <div>
-                <FAQDropdown
-                    question={wordpress.question}
-                    answer={wordpress.answer}
-                />
-            </div>
-        </div>
-    )
-
-
     return <div className="m-auto overflow-hidden">
         <div>
             <CombinedNavigation />
@@ -148,6 +137,7 @@ function WordPressWebsiteDevelopment() {
                                         className="rounded-b-md"
                                         width={588}
                                         height={410}
+                                        quality={100}
                                     />
                                 </div>
                             </div>
@@ -277,7 +267,7 @@ function WordPressWebsiteDevelopment() {
         <div className="py-24 px-14 2xl:px-0 bg-white">
             <h6 className="text-3xl md:text-4xl pb-7 text-center font-play font-bold m-auto leading-tight">Integration Is the Name of the Game</h6>
             <p className="font-open text-center max-w-4xl m-auto text-lg font-normal pt-4">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo, urna ut ultrices maximus, felis libero ultricies justo, quis bibendum ante felis dictum augue. Etiam efficitur odio non tortor finibus feugiat mollis quis ex. Mauris porta tellus a dignissim vestibulum. Praesent sagittis sodales ex, nec.
+                A website shouldn't only be an extension of your business or brand that looks good. It should fit within and optimize your existing business processes. Integrations shouldn't be an afterthought, but a central part of your next website build.
             </p>
         </div>
         <Integration
@@ -287,8 +277,8 @@ function WordPressWebsiteDevelopment() {
             <div className="py-24 px-14 2xl:px-0">
                 <h6 className="text-3xl md:text-4xl pb-7 text-center font-play font-bold m-auto leading-tight">How Our Process Works</h6>
                 <p className="font-open text-center max-w-4xl m-auto text-lg font-normal pt-4">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo, urna ut ultrices maximus, felis libero ultricies justo, quis bibendum ante felis dictum augue. Etiam efficitur odio non tortor finibus feugiat mollis quis ex. Mauris porta tellus a dignissim vestibulum. Praesent sagittis sodales ex, nec.
-            </p>
+                    Transparency, communication, and customer focus are consistent themes throughout all the services we perform. Curious how our process for creating your next WordPress website would work? Learn more about our process below.
+                </p>
             </div>
             {wordpressProcess.wordpress.map((wordpress, index) =>
                 <OurProcessComp
@@ -308,11 +298,15 @@ function WordPressWebsiteDevelopment() {
             <div className="w-full px-4 pt-16">
                 <div className="w-full max-w-5xl p-2 mx-auto bg-white rounded-2xl">
                     <div className="grid grid-cols-2 gap-x-10">
-                            {faqItems}
+                        {WordpressFAQ.wordpress.map(wordpress =>
+                            <FAQDropdown
+                                question={wordpress.question}
+                                answer={wordpress.answer}
+                            />
+                        )}
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 }
