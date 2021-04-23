@@ -3,16 +3,12 @@ import Modal from '../../components/Modal'
 import ResponsiveScreens from '../../components/ResponsiveScreens'
 import AngledSplitTextImage from '../../components/AngledSplitTextImage'
 import SplitTextImageAlt from '../../components/SplitTextImageAlt'
-import PageHero from '../../components/PageHero'
 import TestimonialSlide from '../../components/TestimonialSlide'
 import ClientCardContainer from '../../components/Clients/ClientCardContainer'
-import Link from 'next/link'
 import { faLongArrowAltRight } from "@fortawesome/free-solid-svg-icons"; // import the icons you need
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
-import { url } from 'node:inspector'
 import Testimonials from '../../content/testimonials'
 import React from 'react'
-import ClientsSummary from '../../components/Clients/ClientCardContainer'
 import ClientMainPage from '../../content/clientPages/clientMainPage'
 import ClientCard from '../../components/Clients/ClientCard'
 
@@ -40,7 +36,7 @@ function CarTalkRepair() {
     <div className="py-24 flex flex-col md:flex-row justify-between max-w-7xl items-center justify-center m-auto mx-7 xl:mx-auto">
       <div className="w-full xs:w-1/2 pb-14 lg:pb-0">
         <h3 className="text-4xl alkaligrey-800 font-play font-bold m-auto leading-tight pb-4 lg:pb-7">About CarTalk Repair</h3>
-        <Link href="https://cartalkrepair.com"><a target="_blank" rel="noopener noreferrer" className="uppercase font-open font-bold text-lg text-alkali-500 duration-500 hover:mr-3">Visit Website</a></Link><FontAwesomeIcon className="text-alkali-500 ml-3" icon={faLongArrowAltRight}></FontAwesomeIcon>
+        <a href="https://cartalkrepair.com" target="_blank" rel="noopener noreferrer" className="uppercase font-open font-bold text-lg text-alkali-500 duration-500 hover:mr-3">Visit Website</a><FontAwesomeIcon className="text-alkali-500 ml-3" icon={faLongArrowAltRight}></FontAwesomeIcon>
       </div>
       <div className="w-full xs:w-1/2 ">
         <p className="text-alkaligrey-400 font-open max-w-4xl text-lg font-normal">Carro is the world’s largest collaborative commerce network, with more than 25,000 brands and 6.5 million influencers. The platform seamlessly enables brands to work with influencers and each other so they can sell more, together.</p>

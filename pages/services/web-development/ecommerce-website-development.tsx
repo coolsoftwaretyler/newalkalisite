@@ -94,20 +94,6 @@ function EcommerceWebsiteDevelopment() {
         />
     )
 
-    const image6 = Ecommerce.text6.map(text6 =>
-        <StandardImage
-            image={text6.image}
-            imageAngle="none"
-        />
-    )
-
-    const text6 = Ecommerce.text6.map(text6 =>
-        <StandardTextBlock
-            title={text6.title}
-            text={text6.text}
-        />
-    )
-
     return <div className="m-auto overflow-hidden">
         <div>
             <CombinedNavigation />

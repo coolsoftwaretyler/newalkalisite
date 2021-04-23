@@ -1,5 +1,4 @@
 import Modal from '../Modal'
-import Image from 'next/image'
 import BGParticles from '../BGParticles'
 
 const ServiceHero = props => {
