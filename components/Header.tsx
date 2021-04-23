@@ -1,5 +1,4 @@
 import Modal from '../components/Modal'
-import Link from 'next/link'
 import SiteMap from '../content/siteMap'
 import SiteMapContainer from '../components/SiteMapContainer'
 
@@ -67,7 +66,7 @@ const Header = props => {
                             </div>
                         </div>
                     </div>
-                    <Link href="/clients"><a className={headerNonDropDown()}>Clients</a></Link>
+                    <a href="/clients"><a className={headerNonDropDown()}>Clients</a></a>
                     <a href="#" className={headerNonDropDown()}>About</a>
                     <a href="/contact" className={headerNonDropDown()}>Contact</a>
                 </div>

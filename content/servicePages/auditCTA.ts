@@ -2,7 +2,7 @@ const AuditCTA = {
     localSEO: [
         {
             title: "Get a Complementary Local SEO Audit",
-            text: "Our Local SEO specialists are standing by to audit your website and provide a detailed and actionable report.",
+            text: "Our Local SEO specialists are standing by to audit your website and provide a detailed action report.",
             image: "/images/audit.png",       
         },
     ],

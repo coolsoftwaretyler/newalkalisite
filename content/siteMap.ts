@@ -50,11 +50,11 @@ const SiteMap = {
                 },
                 {
                     name: "E-commerce Websites",
-                    slug: "website-development/ecommerce-website-development",
+                    slug: "web-development/ecommerce-website-development",
                 },
                 {
                     name: "Custom Websites",
-                    slug: "website-development/custom-website-development",
+                    slug: "web-development/custom-website-development",
                 },
             ]
     }

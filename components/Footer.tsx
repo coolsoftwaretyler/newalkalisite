@@ -1,9 +1,15 @@
+import Image from 'next/image'
+
 function Footer() {
     return (
         <div className="">
             <div className="max-w-7xl m-auto">
             <div className="footer-icon-container">
-                <img className="footer-icon mx-7" width="80" src="/images/alkalismall.png" />
+                <Image 
+                src="/images/alkalismall.png"
+                width={80}
+                height={80}
+                />
             </div>
             </div>
             <div className="flex py-10 flex flex-col space-x-0 md:space-x-14 md:flex-row justify-between max-w-7xl justify-center m-auto mx-14 xl:mx-auto">

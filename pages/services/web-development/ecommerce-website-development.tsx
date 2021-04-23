@@ -4,9 +4,8 @@ import ServiceLeadSection from '../../../components/ServiceLeadSection'
 import TestimonialSlider from '../../../components/TestimonialSlider'
 import TestimonialSlide from '../../../components/TestimonialSlide'
 import Testimonials from '../../../content/testimonials'
-import Wordpress from '../../../content/servicePages/wordpress'
+import Ecommerce from '../../../content/servicePages/ecommerce'
 import Integration from '../../../components/Integration'
-import wordpressProcess from '../../../content/servicePages/ourProcess'
 import OurProcessComp from '../../../components/Services/OurProcess'
 import TwoColumnLayout from '../../../components/TwoColumnLayout'
 import StandardImage from '../../../components/StandardImage'
@@ -19,101 +18,90 @@ import Image from 'next/image'
 import CombinedNavigation from '../../../components/Navigation/CombinedNavigation';
 import FAQDropdown from '../../../components/Services/FAQDropdown'
 import WordpressFAQ from '../../../content/servicePages/faq'
+import EcommerceServices from '../../../content/servicePages/serviceBlocks'
+import ServiceBlocks from '../../../components/Services/ServiceBlocks';
+import ecommerceProcess from '../../../content/servicePages/ourProcess'
 
 
-function WordPressWebsiteDevelopment() {
-    const customBuiltImage = Wordpress.customBuilt.map(customBuilt =>
+function EcommerceWebsiteDevelopment() {
+    const image1 = Ecommerce.text1.map(text1 =>
         <StandardImage
-            image={customBuilt.image}
+            image={text1.image}
             imageAngle="none"
         />
     )
 
-    const customBuiltText = Wordpress.customBuilt.map(customBuilt =>
+    const text1 = Ecommerce.text1.map(text1 =>
         <StandardTextBlock
-            title={customBuilt.title}
-            text={customBuilt.text}
+            title={text1.title}
+            text={text1.text}
         />
     )
 
-    const responsiveDesignImage = Wordpress.responsiveDesign.map(responsiveDesign =>
+    const image2 = Ecommerce.text2.map(text2 =>
         <StandardImage
-            image={responsiveDesign.image}
+            image={text2.image}
             imageAngle="none"
         />
     )
 
-    const responsiveDesignText = Wordpress.responsiveDesign.map(responsiveDesign =>
+    const text2 = Ecommerce.text2.map(text2 =>
         <StandardTextBlock
-            title={responsiveDesign.title}
-            text={responsiveDesign.text}
+            title={text2.title}
+            text={text2.text}
         />
     )
 
-    const seoImage = Wordpress.seo.map(seo =>
+    const image3 = Ecommerce.text3.map(text3 =>
         <StandardImage
-            image={seo.image}
+            image={text3.image}
             imageAngle="none"
         />
     )
 
-    const seoText = Wordpress.seo.map(seo =>
+    const text3 = Ecommerce.text3.map(text3 =>
         <StandardTextBlock
-            title={seo.title}
-            text={seo.text}
+            title={text3.title}
+            text={text3.text}
         />
     )
 
-    const userExperienceImage = Wordpress.userExperience.map(userExperience =>
+    const image4 = Ecommerce.text4.map(text4 =>
         <StandardImage
-            image={userExperience.image}
+            image={text4.image}
             imageAngle="none"
         />
     )
 
-    const userExperienceText = Wordpress.userExperience.map(userExperience =>
+    const text4 = Ecommerce.text4.map(text4 =>
         <StandardTextBlock
-            title={userExperience.title}
-            text={userExperience.text}
+            title={text4.title}
+            text={text4.text}
         />
     )
 
-    const performanceImage = Wordpress.performance.map(performance =>
+    const image5 = Ecommerce.text5.map(text5 =>
         <StandardImage
-            image={performance.image}
+            image={text5.image}
             imageAngle="none"
         />
     )
 
-    const performanceText = Wordpress.performance.map(performance =>
+    const text5 = Ecommerce.text5.map(text5 =>
         <StandardTextBlock
-            title={performance.title}
-            text={performance.text}
-        />
-    )
-
-    const conversionImage = Wordpress.conversion.map(conversion =>
-        <StandardImage
-            image={conversion.image}
-            imageAngle="none"
-        />
-    )
-
-    const conversionText = Wordpress.conversion.map(conversion =>
-        <StandardTextBlock
-            title={conversion.title}
-            text={conversion.text}
+            title={text5.title}
+            text={text5.text}
         />
     )
 
     return <div className="m-auto overflow-hidden">
         <div>
             <CombinedNavigation />
-            {ServiceHeroContent.wordpress.map(wordpress =>
+            {ServiceHeroContent.ecommerce.map(ecommerce =>
                 <ServiceHero
-                    sub={wordpress.sub}
-                    title={wordpress.title}
-                    backgroundImg={wordpress.backgroundImg}
+                    sub={ecommerce.sub}
+                    title={ecommerce.title}
+                    backgroundImg={ecommerce.backgroundImg}
                 />
             )}
         </div>
@@ -121,7 +109,7 @@ function WordPressWebsiteDevelopment() {
             <div className="p-4 py-24 px-0 lg:px-14">
                 <div className="flex flex-col space-x-0 lg:space-x-14 lg:flex-row m-auto justify-between items-center max-w-7xl">
                     <div className="w-5/6 lg:w-1/2 pb-20 lg:pb-0">
-                        <h3 className="text-3xl md:text-4xl font-play font-bold m-auto leading-tight">WordPress Website Development</h3>
+                        <h3 className="text-3xl md:text-4xl font-play font-bold m-auto leading-tight">E-commerce Website Development</h3>
                         <p className="text-alkaligrey-400 font-open max-w-4xl text-lg font-normal pt-7">
                             Standing out in a crowded marketplace can be difficult. Our specialty is not only driving interested users to your site and catching their attention once there but enticing them to engage and come back for more. Whether your site is orientated toward Sales, Information, Charity, or something else, we’ve seen it all, so we do it all. Let our team of talented, inspired professionals give your website the attention it deserves, leaving you free to devote your attention to what matters to you!
                         </p>
@@ -158,35 +146,17 @@ function WordPressWebsiteDevelopment() {
                 </div>
             </div>
         </div>
-        <TwoColumnLayout
-            style="bg-alkaligrey-300"
-            child1={customBuiltText}
-            child2={customBuiltImage}
-        />
-        <div className="py-24 pt-0 bg-alkaligrey-300">
-            <div className="flex flex-col space-x-0 lg:space-x-14 lg:flex-row m-auto justify-between max-w-7xl">
-                <div className="w-full lg:w-3/6 px-14 2xl:px-0">
-                    <h4 className="text-3xl md:text-4xl font-play font-bold m-auto leading-tight pt-7">Advantages:</h4>
-                    <div className="difference-listG">
-                        <ul>
-                            <li className="list-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam arcu ex, sodales ac ipsum volutpat, mattis.</li>
-                            <li className="list-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam arcu ex, sodales ac ipsum volutpat, mattis.</li>
-                            <li className="list-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam arcu ex, sodales ac ipsum volutpat, mattis.</li>
-                            <li className="list-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam arcu ex, sodales ac ipsum volutpat, mattis.</li>
-                            <li className="list-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam arcu ex, sodales ac ipsum volutpat, mattis.</li>
-                            <li className="list-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam arcu ex, sodales ac ipsum volutpat, mattis.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div className="w-full lg:w-3/6 px-14 2xl:px-0">
-                    <h4 className="text-3xl md:text-4xl font-play font-bold m-auto leading-tight pt-7">Disadvantages:</h4>
-                    <div className="difference-listR">
-                        <ul>
-                            <li className="list-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam arcu ex, sodales ac ipsum volutpat, mattis.</li>
-                            <li className="list-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam arcu ex, sodales ac ipsum volutpat, mattis.</li>
-                        </ul>
-                    </div>
-                </div>
+        <div className="py-24 px-14 2xl:px-0 bg-alkaligrey-300">
+            <h6 className="text-3xl md:text-4xl text-center font-play font-bold m-auto leading-tight pb-24">Our E-commerce Services</h6>
+            <div className="grid grid-cols md:grid-cols-2 xl:grid-cols-3 max-w-7xl m-auto gap-x-14 gap-y-14">
+                {EcommerceServices.Ecommerce.map(Ecommerce =>
+                    <ServiceBlocks
+                        serviceTitle={Ecommerce.serviceTitle}
+                        serviceText={Ecommerce.serviceText}
+                        image={Ecommerce.image}
+                        altText={Ecommerce.altText}
+                    />
+                )}
             </div>
         </div>
         <ServiceLeadSection
@@ -195,28 +165,33 @@ function WordPressWebsiteDevelopment() {
             text="Do you have an idea and vision for your website but not sure where to start? Our team of professionals are standing by to answer any questions you may have. Whether you need a free audit of your current website or want to discuss specifics of a new WordPress website build, we look forward to serving you!"
             buttonText="Schedule a Discovery Call"
         />
-        <div className="py-24 px-14 2xl:px-0">
-            <h6 className="text-3xl md:text-4xl pb-7 text-center font-play font-bold m-auto leading-tight">Not All Websites Are Created Equal</h6>
-            <p className="font-open text-center max-w-4xl m-auto text-lg font-normal pt-4">
-                An unfortunate reality of WordPress websites, particularly template based build are the overeliance on plugins, lack of customization
+        <div className="pt-24 px-14 2xl:px-0">
+            <h6 className="text-3xl md:text-4xl pb-7 text-center font-play font-bold m-auto leading-tight">Tailored for Your Business</h6>
+            <p className="font-open text-center max-w-2xl m-auto text-lg font-normal pt-4">
+                There are a lot of e-commerce platforms out there. We work with you to make the right choice based on the needs of your business.
             </p>
         </div>
         <TwoColumnLayout
             flexType="reverse"
-            child1={responsiveDesignImage}
-            child2={responsiveDesignText}
+            child1={image2}
+            child2={text2}
         />
 
         <TwoColumnLayout
-            style="bg-alkaligrey-300 pb-100 mb-2"
-            child1={seoText}
-            child2={seoImage}
+            style="pt-0 mb-2"
+            child1={text3}
+            child2={image3}
         />
-
-        <div className="-mt-72 px-14 2xl:px-0">
+        <TwoColumnLayout
+            flexType="reverse"
+            style="pt-0"
+            child2={text4}
+            child1={image4}
+        />
+        <div className="px-14 pt-24 2xl:px-0">
             <h3 className="text-3xl md:text-4xl text-center font-play font-bold m-auto leading-tight pb-14">Hear It Straight From Our Clients</h3>
         </div>
-        <div className="relative z-20">
+        <div className="relative mb-3 z-20">
             <TestimonialSlider>
                 {Testimonials.wordpress.map(testimonial =>
                     <TestimonialSlide
@@ -233,15 +208,10 @@ function WordPressWebsiteDevelopment() {
             </TestimonialSlider>
         </div>
         <TwoColumnLayout
-            child1={userExperienceText}
-            child2={userExperienceImage}
-        />
-
-        <TwoColumnLayout
-            style="bg-alkaligrey-300"
+            style="pt-80 -mt-48 bg-alkaligrey-300"
             flexType="reverse"
-            child1={performanceImage}
-            child2={performanceText}
+            child1={image4}
+            child2={text4}
         />
         {CarroScreenImages.carro.map(carro =>
             <ResponsiveScreens
@@ -259,14 +229,14 @@ function WordPressWebsiteDevelopment() {
         )}
         <TwoColumnLayout
             style="bg-alkaligrey-300 z-10 relative -mt-48 pt-72"
-            child1={conversionText}
-            child2={conversionImage}
+            child1={text5}
+            child2={image5}
         />
 
         <div className="py-24 px-14 2xl:px-0 bg-white">
-            <h6 className="text-3xl md:text-4xl pb-7 text-center font-play font-bold m-auto leading-tight">Integration Is the Name of the Game</h6>
+            <h6 className="text-3xl md:text-4xl pb-7 text-center font-play font-bold m-auto leading-tight">Keep Your Store Connected</h6>
             <p className="font-open text-center max-w-4xl m-auto text-lg font-normal pt-4">
-                A website shouldn't only be an extension of your business or brand that looks good. It should fit within and optimize your existing business processes. Integrations shouldn't be an afterthought, but a central part of your next website build.
+                Platforms such as Shopify, WooCommerce, and BigCommerce have countless third-party integrations. This provides endless opportunities to streamline your workflow, ultimately allowing you to spend more time on other aspects of your business.
             </p>
         </div>
         <Integration
@@ -279,16 +249,18 @@ function WordPressWebsiteDevelopment() {
                     Transparency, communication, and customer focus are consistent themes throughout all the services we perform. Curious how our process for creating your next WordPress website would work? Learn more about our process below.
                 </p>
             </div>
-            {wordpressProcess.wordpress.map((wordpress, index) =>
-                <OurProcessComp
-                    style=""
-                    title={wordpress.title}
-                    step={wordpress.step}
-                    icon={wordpress.icon}
-                    type={index}
-                    isLastItem={index === wordpressProcess.wordpress.length - 1}
-                />
-            )}
+            <div className="-mb-20">
+                {ecommerceProcess.ecommerce.map((ecommerce, index) =>
+                    <OurProcessComp
+                        style=""
+                        title={ecommerce.title}
+                        step={ecommerce.step}
+                        icon={ecommerce.icon}
+                        type={index}
+                        isLastItem={index === ecommerceProcess.ecommerce.length - 1}
+                    />
+                )}
+            </div>
         </div>
         <div className="py-24 max-w-7xl m-auto">
             <h6 className="text-3xl md:text-4xl pb-7 text-center font-play font-bold m-auto leading-tight">Frequently Asked Questions About Our WordPress Development</h6>
@@ -308,4 +280,4 @@ function WordPressWebsiteDevelopment() {
     </div>
 }
 
-export default WordPressWebsiteDevelopment
+export default EcommerceWebsiteDevelopment

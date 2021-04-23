@@ -1,5 +1,4 @@
 import Modal from '../../components/Modal'
-import Link from 'next/link'
 import SiteMap from '../../content/siteMap'
 import SiteMapContainer from '../../components/SiteMapContainer'
 import Image from 'next/image'
@@ -23,7 +22,7 @@ const DesktopNavigation = props => {
                 <div className="flex items-center">
                     <a style={{ fontSize: '0' }}>
                         <Image
-                            src="/images/alkali-logo-blue.png"
+                            src={headerLogoColor()}
                             width={160}
                             height={34}
                             alt=""
@@ -75,7 +74,7 @@ const DesktopNavigation = props => {
                             </div>
                         </div>
                     </a>
-                    <Link href="/clients"><a className={headerNonDropDown()}>Clients</a></Link>
+                    <a href="/clients"><a className={headerNonDropDown()}>Clients</a></a>
                     <a href="#" className={headerNonDropDown()}>About</a>
                     <a href="/contact" className={headerNonDropDown()}>Contact</a>
                 </div>
