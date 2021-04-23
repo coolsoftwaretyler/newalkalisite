@@ -5,20 +5,20 @@ import Image from 'next/image'
 
 const TempDesktopNav = (props) => {
     const headerDropDownColor = () => {
-        return `${props.headerColor === "white" ? 'text-white hover:text-alkaligrey-700' : 'hover:text-alkali-500'} dropbtn font-play duration-500 font-bold uppercase inline-block p-5`
+        return `${props.headerColor === "white" ? 'text-white hover:text-alkaligrey-700' : 'hover:text-alkali-500'} dropbtn font-play font-bold uppercase inline-block p-5`
     }
     const headerLogoColor = () => {
         return `${props.headerColor === "white" ? '/images/alkali-logo-white.png' : '/images/alkali-logo-blue.png'}`
     }
     const headerCTAColor = () => {
-        return `${props.headerColor === "white" ? 'text-alkaligrey-800 bg-white hover:bg-alkaligrey-700' : 'text-white bg-alkali-500 hover:bg-alkali-700'} p-3 px-6 font-semibold shadow-2xl rounded-md transition duration-500 ease-in-out`
+        return `${props.headerColor === "white" ? 'text-alkaligrey-800 bg-white hover:bg-alkaligrey-700' : 'text-white bg-alkali-500 hover:bg-alkali-700'} p-3 px-6 font-semibold shadow-2xl rounded-md`
     }
     const headerNonDropDown = () => {
-        return `${props.headerColor === "white" ? 'text-white hover:text-alkaligrey-700' : 'hover:text-alkali-500'} text-lg font-play duration-500 font-bold uppercase inline-block p-5`
+        return `${props.headerColor === "white" ? 'text-white hover:text-alkaligrey-700' : 'hover:text-alkali-500'} text-lg font-play font-bold uppercase inline-block p-5`
     }
     return (
         <div className="py-7">
-            <div className="flex justify-between items-center max-w-7xl m-auto px-10 md:px-0">
+            <div className="flex justify-between items-center max-w-7xl m-auto px-10 2xl:px-0">
                 <div>
                     <a href="/">
                         <Image
@@ -29,12 +29,12 @@ const TempDesktopNav = (props) => {
                         />
                     </a>
                 </div>
-                <div className="flex justify-between items-center w-2/5 transition duration-700">
-                    <div className="dropdownmega transition duration-700">
+                <div className="flex justify-between items-center w-2/5 transition">
+                    <div className="dropdownmega transition">
                         <button className={headerNonDropDown()}>Solutions
                         <i className="fa fa-caret-down"></i>
                         </button>
-                        <div className="dropdownmega-content bg-transparent z-30 transition duration-700">
+                        <div className="dropdownmega-content bg-transparent z-30 transition">
                             <div className="pt-7">
                             </div>
                             <div className="bg-white border-t-2 border-alkali-500 shadow-2xl">
