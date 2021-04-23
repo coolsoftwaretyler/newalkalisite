@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 const ServiceBlocks = (props) => {
     return (
-        <div className="rounded shadow-2xl p-7">
+        <div className="rounded shadow-2xl p-7 bg-white">
             <Image 
                 src={props.image}
                 width={60}

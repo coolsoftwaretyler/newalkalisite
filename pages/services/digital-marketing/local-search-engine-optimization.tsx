@@ -1,13 +1,10 @@
 import ServiceHero from '../../../components/Services/ServiceHero';
 import ServiceHeroContent from '../../../content/servicePages/serviceHeroContent'
-import Header from '../../../components/Header'
-import SearchEngineMetrics from '../../../components/Services/SearchEngineMetrics'
 import StandardImage from '../../../components/StandardImage'
 import StandardTextBlock from '../../../components/StandardTextBlock';
 import LocalSEO from '../../../content/servicePages/localSeo'
 import TwoColumnLayout from '../../../components/TwoColumnLayout';
 import ServiceLeadSection from '../../../components/ServiceLeadSection';
-import Modal from '../../../components/Modal';
 import TestimonialSlide from '../../../components/TestimonialSlide';
 import TestimonialSlider from '../../../components/TestimonialSlider'
 import Testimonials from '../../../content/testimonials'
@@ -19,9 +16,6 @@ import ServiceBlocks from '../../../components/Services/ServiceBlocks';
 import ServiceBlocksContent from '../../../content/servicePages/serviceBlocks'
 import ServiceResultsContent from '../../../content/servicePages/resultsBlock'
 import ResultsBlocks from '../../../components/Services/ResultsBlocks';
-import ClientCardContainer from '../../../components/Clients/ClientCardContainer';
-import ClientCard from '../../../components/Clients/ClientCard';
-import ClientMainPage from '../../../content/clientPages/clientMainPage'
 
 
 function LocalSearchEngineOptimization() {
@@ -98,11 +92,11 @@ function LocalSearchEngineOptimization() {
     return (
         <div>
             <CombinedNavigation />
-            {ServiceHeroContent.searchEngineOptimization.map(searchEngineOptimization =>
+            {ServiceHeroContent.localSearchEngineOptimization.map(localSearchEngineOptimization =>
                 <ServiceHero
-                    sub={searchEngineOptimization.sub}
-                    title={searchEngineOptimization.title}
-                    backgroundImg={searchEngineOptimization.backgroundImg}
+                    sub={localSearchEngineOptimization.sub}
+                    title={localSearchEngineOptimization.title}
+                    backgroundImg={localSearchEngineOptimization.backgroundImg}
                 />
             )}
             <TwoColumnLayout
@@ -131,7 +125,7 @@ function LocalSearchEngineOptimization() {
             </div>
             <div className="bg-alkaligrey-300 py-24 px-14 2xl:px-0">
                 <div className="flex space-x-0 lg:space-x-14 flex-col lg:flex-row m-auto justify-between items-center max-w-7xl">
-                    <div className="w-full lg:w-1/2 pb-10">
+                    <div className="w-full lg:w-1/2">
                         <Image
                             src="/images/audit.png"
                             width={490}
@@ -145,7 +139,7 @@ function LocalSearchEngineOptimization() {
                             <input className="rounded-l-lg border-t pl-4 w-screen border-b border-l text-gray-800 border-gray-200 bg-white" placeholder="yourwebsite.com" />
                             <button className="p-3 px-6 font-semibold text-white rounded-r-md transition duration-500 ease-in-out bg-alkali-500 hover:bg-alkali-700">Submit</button>
                         </form>
-                        <p>Our Local SEO specialists are standing by to audit your website and provide a detailed and actionable report.</p>
+                        <p>Our Local SEO specialists are standing by to audit your website and provide a detailed action report.</p>
                     </div>
                 </div>
             </div>
@@ -210,7 +204,7 @@ function LocalSearchEngineOptimization() {
                     <h6 className="text-3xl md:text-4xl pb-7 text-center font-play font-bold m-auto leading-tight">How Our Process Works</h6>
                     <p className="font-open text-center max-w-4xl m-auto text-lg font-normal pt-4">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo, urna ut ultrices maximus, felis libero ultricies justo, quis bibendum ante felis dictum augue. Etiam efficitur odio non tortor finibus feugiat mollis quis ex. Mauris porta tellus a dignissim vestibulum. Praesent sagittis sodales ex, nec.
-            </p>
+                    </p>
                 </div>
                 {seoProcess.seo.map((seo, index) =>
                     <OurProcessComp
@@ -222,19 +216,7 @@ function LocalSearchEngineOptimization() {
                         isLastItem={index === seoProcess.seo.length - 1}
                     />
                 )}
-                <div className="max-w-5xl bg-white py-20 m-auto rounded-md shadow-2xl text-alkali-500 text-center text-white text-3xl z-20 relative">
-                    Start Seeing Results
             </div>
-            </div>
-            <ClientCardContainer>
-                {ClientMainPage.map(clientMainPage =>
-                    <ClientCard
-                        name={clientMainPage.name}
-                        backgroundImg={clientMainPage.backgroundImg}
-                        slug={clientMainPage.slug}
-                    />
-                )}
-            </ClientCardContainer>
         </div>
     )
 }

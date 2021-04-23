@@ -1,19 +1,15 @@
 import ServiceHero from '../../../components/Services/ServiceHero';
 import ServiceHeroContent from '../../../content/servicePages/serviceHeroContent'
-import Header from '../../../components/Header'
-import SearchEngineMetrics from '../../../components/Services/SearchEngineMetrics'
 import StandardImage from '../../../components/StandardImage'
 import StandardTextBlock from '../../../components/StandardTextBlock';
 import PPC from '../../../content/servicePages/payPerClick'
 import TwoColumnLayout from '../../../components/TwoColumnLayout';
-import ServiceLeadSection from '../../../components/ServiceLeadSection';
 import Modal from '../../../components/Modal';
 import TestimonialSlide from '../../../components/TestimonialSlide';
 import TestimonialSlider from '../../../components/TestimonialSlider'
 import Testimonials from '../../../content/testimonials'
 import seoProcess from '../../../content/servicePages/ourProcess'
 import OurProcessComp from '../../../components/Services/OurProcess'
-import Image from 'next/image'
 import CombinedNavigation from '../../../components/Navigation/CombinedNavigation';
 
 
@@ -93,11 +89,11 @@ function PayPerClick() {
             <CombinedNavigation 
             
             />
-            {ServiceHeroContent.searchEngineOptimization.map(searchEngineOptimization =>
+            {ServiceHeroContent.ppc.map(ppc =>
                 <ServiceHero
-                    sub={searchEngineOptimization.sub}
-                    title={searchEngineOptimization.title}
-                    backgroundImg={searchEngineOptimization.backgroundImg}
+                    sub={ppc.sub}
+                    title={ppc.title}
+                    backgroundImg={ppc.backgroundImg}
                 />
             )}
             <TwoColumnLayout

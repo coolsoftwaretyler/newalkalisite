@@ -35,9 +35,9 @@ const TempDesktopNav = (props) => {
                         <i className="fa fa-caret-down"></i>
                         </button>
                         <div className="dropdownmega-content bg-transparent z-30 transition duration-700">
-                            <div className="pt-10">
+                            <div className="pt-7">
                             </div>
-                            <div className="bg-white border-t-2 border-alkali-500">
+                            <div className="bg-white border-t-2 border-alkali-500 shadow-2xl">
                                 <div className="flex justify-between max-w-7xl m-auto py-14">
                                     <div className="items-center flex">
                                         <div>

@@ -36,11 +36,51 @@ const ServiceResultsContent = {
             resultName:"Top 5 Keywords",
             altText:""     
         }
+    ],
+    SEO: [
+        {
+            image:"/images/alkalismall.png",
+            result:"5,319",
+            resultName:"Top 5 Keywords",
+            altText:""  
+        },
+        {
+            image:"/images/alkalismall.png",
+            result:"5,319",
+            resultName:"Top 5 Keywords",
+            altText:""  
+        },
+        {
+            image:"/images/alkalismall.png",
+            result:"5,319",
+            resultName:"Top 5 Keywords",
+            altText:""    
+        },
+        {
+            image:"/images/alkalismall.png",
+            result:"5,319",
+            resultName:"Top 5 Keywords",
+            altText:""   
+        },
+        {
+            image:"/images/alkalismall.png",
+            result:"5,319",
+            resultName:"Top 5 Keywords",
+            altText:""     
+        },
+        {
+            image:"/images/alkalismall.png",
+            result:"5,319",
+            resultName:"Top 5 Keywords",
+            altText:""     
+        }
     ]
 }
 
 const LocalSEOResults = ServiceResultsContent.localSEO
 
-export {LocalSEOResults}
+const SEOResults = ServiceResultsContent.SEO
+
+export {LocalSEOResults, SEOResults}
 
 export default ServiceResultsContent;
