@@ -6,6 +6,7 @@ import SplitTextImage from '../components/SplitTextImage'
 import ResponsiveScreens from '../components/ResponsiveScreens'
 import Modal from '../components/Modal'
 import Footer from '../components/Footer'
+import DesktopNavigation from "../components/Navigation/DesktopNavigation";
 
 export default function Home() {
   return (
