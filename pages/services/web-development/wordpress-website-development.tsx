@@ -130,14 +130,14 @@ function WordPressWebsiteDevelopment() {
                         <div className="angled-mockup rounded-md shadow-2xl">
                             <div className="browser-mockup z-0">
                                 <div style={{ fontSize: '0' }}>
-                                    <Image
+                                    {/* <Image
                                         src="/images/wordpress-stats.png"
                                         alt=""
                                         className="rounded-b-md"
                                         width={588}
                                         height={410}
                                         quality={100}
-                                    />
+                                    /> */}
                                 </div>
                             </div>
                             <div className="bg-white stat-container float-right -mr-6 shadow-2xl p-7 rounded-md text-center uppercase font-medium text-sm -mt-14 relative">
