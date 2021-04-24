@@ -8,7 +8,7 @@ const Modal = props => {
         <button
           className={props.style}
           type="button"
-          style={{ transition: "color .15s ease" }}
+          style={{ transition: "background-color .15s ease" }}
           onClick={() => setShowModal(true)}
         >
           {props.text}
