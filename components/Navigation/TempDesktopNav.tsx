@@ -21,13 +21,13 @@ const TempDesktopNav = (props) => {
             <div className="flex justify-between items-center max-w-7xl m-auto px-10 2xl:px-0">
                 <div>
                     <a href="/">
-                        <Image
+                        {/* <Image
                             src={headerLogoColor()}
                             width={160}
                             height={34}
                             alt=""
-                        />
-                        {/* <img src={headerLogoColor()} width="160" height="34" alt="" /> */}
+                        /> */}
+                        <img src={headerLogoColor()} width="160" height="34" alt="" />
                     </a>
                 </div>
                 <div className="flex justify-between items-center w-2/5 transition">
